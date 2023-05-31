@@ -1,0 +1,51 @@
+---
+export interface Props {
+	link: string;
+    img: string;
+    title: string;
+    difficulty: string;
+    tags: Array<string>;
+}
+
+let {
+    link = "#",
+    img,
+    title,
+    difficulty = "",
+    tags
+} = Astro.props
+---
+
+<div class="card mb-4 card-shadow">
+    <a href={link}>
+        <img src={img} class="card-img-top" alt={title} />
+    </a>
+    <div class="card-body">
+        <h4 class="mb-2 card-title text-truncate">
+            <a href={link} class="text-decoration-none text-reset">
+                {title}
+            </a>
+        </h4>
+        <ul class="list-inline text-muted">
+            <li class="list-inline-item">{difficulty}</li>
+        </ul>
+        <div>
+            {tags.map((t) => <span class="badge rounded-pill text-bg-secondary">{t}</span><span>&nbsp;</span>)}
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        box-shadow: none;
+        transition: box-shadow 0.25s ease;
+    }
+
+    html[data-bs-theme=light] .card-shadow:hover {
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+    html[data-bs-theme=dark] .card-shadow:hover {
+        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15) !important;
+    }
+</style>

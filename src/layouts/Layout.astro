@@ -1,0 +1,90 @@
+---
+import "../styles/site.css";
+
+const { frontmatter = {}, title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title || frontmatter.title}</title>
+		<style>
+			@keyframes cursor {
+				50% {
+					opacity: 0;
+				}
+			}
+
+			.eds-green {
+				color: #0e8b70;
+			}
+
+			.cursor {
+				animation: cursor 1s none infinite;
+			}
+		</style>
+	</head>
+	<body class="line-numbers match-braces">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a href="/" class="navbar-brand">
+					<img
+						src="/logos/eds-logo-128px.png"
+						width="40px"
+						class="d-inline-block align-text-top"
+						alt="eds logo"
+					/>
+					<span>sehs.io:</span><span class="eds-green">~$</span>
+					<span class="cursor">_</span>
+				</a>
+
+				<!-- Theme Toggle -->
+				<div class="form-check form-check-inline ms-auto me-2">
+					<label class="form-check-label" for="theme-toggle">🌞</label>
+				</div>
+				<div class="form-check form-check-inline form-switch">
+					<input type="checkbox" id="theme-toggle" class="form-check-input" onchange="toggleTheme()"/>
+					<label class="form-check-label" for="theme-toggle">🌚</label>
+				</div>
+			</div>
+		</nav>
+		<div class={frontmatter.divStyles}>
+			<slot />
+		</div>
+		<script is:inline defer>
+			const html = document.querySelector('html');
+			const themeToggle = document.querySelector('#theme-toggle');
+
+			if (localStorage.getItem('bs-theme') === null) {
+				localStorage.setItem('bs-theme', 'light');
+				html.setAttribute('data-bs-theme', 'light');
+				themeToggle.checked = false
+			}
+			else if (localStorage.getItem('bs-theme') === 'light') {
+				html.setAttribute('data-bs-theme', 'light');
+				themeToggle.checked = false
+			}
+			else {
+				html.setAttribute('data-bs-theme', 'dark');
+				themeToggle.checked = true
+			}
+
+			function toggleTheme() {
+				let theme = html.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
+				html.setAttribute('data-bs-theme', theme);
+				localStorage.setItem('bs-theme', theme);
+			}
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			import "bootstrap/dist/js/bootstrap.esm";
+			import "prismjs/plugins/line-numbers/prism-line-numbers.js";
+			import "prismjs/plugins/match-braces/prism-match-braces.js";
+		</script>
+	</body>
+</html>

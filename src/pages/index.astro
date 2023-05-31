@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CourseCard from '../components/CourseCard.astro';
+import CircleCollisionAnimation from '../components/CircleCollisionAnimation.astro';
+---
+
+
+<Layout title="Home | Sehs.io">
+  <main>
+    <!-- Jumbotron -->
+    <section class="p-4 mb-5 bg-secondary bg-opacity-25">
+        <h1 class="text-center display-5 fw-bold">St. Edward High School</h1>
+        <h2 class="text-center">Computer Science and other stuff</h2>
+        <div id="logo-animation" class="d-flex justify-content-center">
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-5">Content</h2>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <CourseCard
+                    title="Arduino Fundamentals"
+                    img="/courses/arduino-fundamentals/arduino-course-card.png"
+                    link="/"
+                    difficulty="🐣Beginner"
+                    tags={['Computer Science', 'electronics']}
+                />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <CourseCard
+                    title="C# Fundamentals"
+                    img="/courses/c-sharp-fundamentals/img/c-sharp-course-card.png"
+                    link="/courses/c-sharp-fundamentals/"
+                    difficulty="🐣Beginner"
+                    tags={['Computer Science']}
+                />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <CourseCard
+                    title="Code Challenges"
+                    img="/courses/code-challenges/code-challenges-course-card.png"
+                    link="/"
+                    difficulty="All Levels"
+                    tags={['Computer Science']}
+                />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <CourseCard
+                    title="Python Fundamentals"
+                    img="/courses/python-fundamentals/python-course-card.png"
+                    link="/courses/python-fundamentals/"
+                    difficulty="🐣Beginner"
+                    tags={['Computer Science']}
+                />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <CourseCard
+                    title="Unity 2D Fundamentals"
+                    img="/courses/unity-2d-fundamentals/unity-course-card.png"
+                    link="/courses/unity-2d-fundamentals/"
+                    difficulty="🐣Beginner"
+                    tags={['Computer Science']}
+                />
+            </div>
+        </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+    import P5 from 'p5';
+
+    const sketch = (p: P5) => {
+        let toggled = false;
+        let logo: P5.Geometry;
+
+        let fillLogo = () => {
+            p.fill('#fbc604');
+            p.stroke('#0e8b70');
+        };
+
+        let clearFillLogo = () => {
+            p.noFill();
+            p.noStroke();
+            p.normalMaterial();
+        };
+
+        p.setup = () => {
+            const canvas = p.createCanvas(250, 250, p.WEBGL);
+            canvas.mouseOver(() => (toggled = true));
+            canvas.mouseOut(() => (toggled = false));
+            logo = p.loadModel('/logos/eds-logo.stl');
+        };
+
+        p.draw = () => {
+            toggled ? fillLogo() : clearFillLogo();
+            p.background(0, 0, 0, 0);
+            p.scale(40);
+            p.rotateX(1.50);
+            p.rotateZ(p.frameCount * -0.035);
+            p.model(logo);
+        };
+    };
+
+    new P5(sketch, document.getElementById('logo-animation'));
+</script>
+
+<style>
+    #logo-animation {
+        height: 250px;
+    }
+</style>

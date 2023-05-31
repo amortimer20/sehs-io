@@ -1,0 +1,26 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+@import "prismjs/themes/prism-okaidia.css";
+@import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "prismjs/plugins/match-braces/prism-match-braces.css";
+
+a {
+  color: #0e8b70;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #21a588;
+}
+
+a:not(.underline) {
+  text-decoration: none;
+}
+
+:root, [data-bs-theme=light] {
+  --bs-body-font-family: var(--bs-font-monospace);
+}
+
+:root, [data-bs-theme=dark] {
+  --bs-body-font-family: var(--bs-font-monospace);
+}
