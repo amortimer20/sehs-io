@@ -1,41 +1,34 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CourseCard from '../components/CourseCard.astro';
-import CircleCollisionAnimation from '../components/CircleCollisionAnimation.astro';
 ---
-
 
 <Layout title="Home | Sehs.io">
   <main>
     <!-- Jumbotron -->
     <section class="p-4 mb-5 bg-secondary bg-opacity-25">
-        <h1 class="text-center display-5 fw-bold">St. Edward High School</h1>
-        <h2 class="text-center">Computer Science and other stuff</h2>
-        <div id="logo-animation" class="d-flex justify-content-center">
-        </div>
+        <h1 class="text-center display-5 font-gameplay fw-bold">St. Edward High School</h1>
+        <h2 class="text-center font-gameplay">Computer Science and other stuff</h2>
+        <div id="logo-animation" class="d-flex justify-content-center"></div>
     </section>
 
-    <!-- Content -->
+    <!-- Courses -->
     <section class="container mb-5">
-        <h2 class="text-center mb-5">Content</h2>
+        <h2 class="text-center font-gameplay mb-5">Course Content</h2>
 
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-3">
                 <CourseCard
-                    title="Arduino Fundamentals"
-                    img="/courses/arduino-fundamentals/arduino-course-card.png"
-                    link="/"
-                    difficulty="🐣Beginner"
-                    tags={['Computer Science', 'electronics']}
+                    title="C# Fundamentals"
+                    img="/courses/c-sharp-fundamentals/c-sharp-course-card.png"
+                    link="/c-sharp-fundamentals/"
                 />
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3">
                 <CourseCard
-                    title="C# Fundamentals"
-                    img="/courses/c-sharp-fundamentals/img/c-sharp-course-card.png"
-                    link="/courses/c-sharp-fundamentals/"
-                    difficulty="🐣Beginner"
-                    tags={['Computer Science']}
+                    title="Python Fundamentals"
+                    img="/courses/python-fundamentals/python-course-card.png"
+                    link="/python-fundamentals/"
                 />
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3">
@@ -43,26 +36,6 @@ import CircleCollisionAnimation from '../components/CircleCollisionAnimation.ast
                     title="Code Challenges"
                     img="/courses/code-challenges/code-challenges-course-card.png"
                     link="/"
-                    difficulty="All Levels"
-                    tags={['Computer Science']}
-                />
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="Python Fundamentals"
-                    img="/courses/python-fundamentals/python-course-card.png"
-                    link="/courses/python-fundamentals/"
-                    difficulty="🐣Beginner"
-                    tags={['Computer Science']}
-                />
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="Unity 2D Fundamentals"
-                    img="/courses/unity-2d-fundamentals/unity-course-card.png"
-                    link="/courses/unity-2d-fundamentals/"
-                    difficulty="🐣Beginner"
-                    tags={['Computer Science']}
                 />
             </div>
         </div>
@@ -92,7 +65,7 @@ import CircleCollisionAnimation from '../components/CircleCollisionAnimation.ast
             const canvas = p.createCanvas(250, 250, p.WEBGL);
             canvas.mouseOver(() => (toggled = true));
             canvas.mouseOut(() => (toggled = false));
-            logo = p.loadModel('/logos/eds-logo.stl');
+            logo = p.loadModel('/eds-logo.stl');
         };
 
         p.draw = () => {

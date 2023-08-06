@@ -4,6 +4,16 @@
 @import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 @import "prismjs/plugins/match-braces/prism-match-braces.css";
 
+@font-face {
+  font-family: "gameplay";
+  src: url("../fonts/gameplay.ttf");
+}
+
+@font-face {
+  font-family: "jetbrains-mono";
+  src: url("../fonts/jetbrains-mono.ttf");
+}
+
 a {
   color: #0e8b70;
   font-weight: bold;
@@ -17,10 +27,14 @@ a:not(.underline) {
   text-decoration: none;
 }
 
+.font-gameplay {
+  font-family: "gameplay";
+}
+
 :root, [data-bs-theme=light] {
-  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-font-family: "jetbrains-mono";
 }
 
 :root, [data-bs-theme=dark] {
-  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-font-family: "jetbrains-mono";
 }
