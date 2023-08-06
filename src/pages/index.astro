@@ -6,46 +6,66 @@ import CourseCard from '../components/CourseCard.astro';
 <Layout title="Home | Sehs.io">
   <main>
     <!-- Jumbotron -->
-    <section class="p-4 mb-5 bg-secondary bg-opacity-25">
+    <section class="p-4 bg-secondary bg-opacity-25">
         <h1 class="text-center display-5 font-gameplay fw-bold">St. Edward High School</h1>
         <h2 class="text-center font-gameplay">Computer Science and other stuff</h2>
         <div id="logo-animation" class="d-flex justify-content-center"></div>
     </section>
 
-    <!-- Courses -->
-    <section class="container mb-5">
-        <h2 class="text-center font-gameplay mb-5">Course Content</h2>
+    <!-- Main Content -->
+    <section class="container-fluid pt-5 left-triangle-bg">
 
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="C++ Fundamentals"
-                    img="/courses/cpp-fundamentals/cpp-course-card.png"
-                    link="/"
-                />
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="C# Fundamentals"
-                    img="/courses/c-sharp-fundamentals/c-sharp-course-card.png"
-                    link="/c-sharp-fundamentals/"
-                />
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="Python Fundamentals"
-                    img="/courses/python-fundamentals/python-course-card.png"
-                    link="/python-fundamentals/"
-                />
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <CourseCard
-                    title="Code Challenges"
-                    img="/courses/code-challenges/code-challenges-course-card.png"
-                    link="/"
-                />
+        <!-- Courses -->
+        <div class="container mb-5">
+            <h2 class="text-center font-gameplay mb-5">Course Content</h2>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <CourseCard
+                        title="C++ Fundamentals"
+                        img="/courses/cpp-fundamentals/cpp-course-card.png"
+                        link="/"
+                    />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <CourseCard
+                        title="C# Fundamentals"
+                        img="/courses/c-sharp-fundamentals/c-sharp-course-card.png"
+                        link="/c-sharp-fundamentals/"
+                    />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <CourseCard
+                        title="Python Fundamentals"
+                        img="/courses/python-fundamentals/python-course-card.png"
+                        link="/python-fundamentals/"
+                    />
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <CourseCard
+                        title="Code Challenges"
+                        img="/courses/code-challenges/code-challenges-course-card.png"
+                        link="/"
+                    />
+                </div>
+                <hr>
             </div>
         </div>
+
+        <!-- Cheat Sheets / Utilities -->
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h2 class="text-center font-gameplay mb-5">Cheat Sheets</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic exercitationem consequuntur esse? Tenetur harum explicabo nostrum vitae, ad ut, obcaecati culpa animi quis ipsum quas quod officia aliquam voluptate!</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h2 class="text-center font-gameplay mb-5">Utilities</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, a. Expedita quod ratione iste recusandae quam nulla nisi consectetur quia, ipsam, excepturi blanditiis ullam consequuntur sint dolorem quis harum aut.</p>
+                </div>
+            </div>
+        </div>
+
     </section>
   </main>
 </Layout>
@@ -91,5 +111,10 @@ import CourseCard from '../components/CourseCard.astro';
 <style>
     #logo-animation {
         height: 250px;
+    }
+
+    .left-triangle-bg {
+        background-image: url('/left-triangle-bg-2.png');
+        background-repeat: repeat-y;
     }
 </style>

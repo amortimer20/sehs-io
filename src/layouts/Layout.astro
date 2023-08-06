@@ -46,6 +46,21 @@ const { frontmatter = {}, title } = Astro.props;
 		<div class={frontmatter.divStyles}>
 			<slot />
 		</div>
+		<footer class="py-3 bg-black">
+			<p class="text-center text-light">
+				<span
+					style="display: inline-block; transform: rotate(180deg);"
+				>
+					&copy;
+				</span>
+				Copyleft 2023 Anthony Mortimer
+				<br>
+				Please don't sue me, Nintendo.
+			</p>
+			<img class="mx-auto d-block" src="/mortimer-seal-of-quality.png" alt="Mortimer Seal of Quality">
+			<p class="text-center text-light">
+			</p>
+		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" integrity="sha512-9khQRAUBYEJDCDVP2yw3LRUQvjJ0Pjx0EShmaQjcHa6AXiOv6qHQu9lCAIR8O+/D8FtaCoJ2c0Tf9Xo7hYH01Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-SkmBfuA2hqjzEVpmnMt/LINrjop3GKWqsuLSSB3e7iBmYK7JuWw4ldmmxwD9mdm2IRTTi0OxSAfEGvgEi0i2Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script>
