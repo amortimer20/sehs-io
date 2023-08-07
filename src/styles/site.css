@@ -1,6 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
-@import "prismjs/themes/prism-okaidia.css";
+@import "prism-one-dark.css";
 @import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 @import "prismjs/plugins/match-braces/prism-match-braces.css";
 
@@ -25,6 +25,10 @@ a:hover {
 
 a:not(.underline) {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "gameplay";
 }
 
 .font-gameplay {
