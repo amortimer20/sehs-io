@@ -31,14 +31,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "gameplay";
 }
 
+.btn {
+  --bs-btn-border-radius: 0;
+}
+
+.btn-primary {
+  --bs-btn-bg: #0e8b70;
+  --bs-btn-border-color: #0e8b70;
+}
+
 .font-gameplay {
   font-family: "gameplay";
 }
 
-:root, [data-bs-theme=light] {
-  --bs-body-font-family: "jetbrains-mono";
-}
-
-:root, [data-bs-theme=dark] {
+:root {
   --bs-body-font-family: "jetbrains-mono";
 }

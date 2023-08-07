@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CaesarCipherDial from '../../components/CaesarCipherDial.jsx';
+---
+
+<Layout title="Caesar Cipher">
+    <div class="row justify-content-center align-items-center my-5">
+        <div class="col-auto">
+            <img src="/utilities/caesar-icon.png" class="img-title" />
+        </div>
+        <div class="col-auto">
+            <h1 class="text-center display-5">Caesar Cipher</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+        <CaesarCipherDial client:load />
+    </div>
+</Layout>
+
+<style>
+    .img-title {
+        max-width: 125px;
+    }
+</style>
