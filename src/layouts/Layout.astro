@@ -41,6 +41,39 @@ const { frontmatter = {}, title } = Astro.props;
 					<span class="eds-green font-gameplay">~$</span>
 					<span class="cursor font-gameplay">_</span>
 				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="/">~/Home</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">/Courses</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">/Arduino Fundamentals</a></li>
+							<li><a class="dropdown-item" href="#">/C++ Fundamentals</a></li>
+							<li><a class="dropdown-item" href="/c-sharp-fundamentals/">/C# Fundamentals</a></li>
+							<li><a class="dropdown-item" href="#">/Code Challenges</a></li>
+							<li><a class="dropdown-item" href="/python-fundamentals/">/Python Fundamentals</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">/Utilities</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/utilities/caesar-cipher">/Caesar Cipher</a></li>
+							<li><a class="dropdown-item" href="/utilities/rgb-color-picker">/RGB Color Picker</a></li>
+						</ul>
+					  </li>
+					  <!-- <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="/">/Skynest</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" aria-current="page" href="/">/eSports</a>
+					  </li> -->
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<div class={frontmatter.divStyles}>

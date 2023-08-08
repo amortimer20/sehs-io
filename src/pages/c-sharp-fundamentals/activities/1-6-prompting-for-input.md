@@ -71,7 +71,7 @@ Console.WriteLine("-- IDENTITY CONFIRMED EXITING... --");
 
 Your programs will no longer need look exactly like the sample output. Write whatever you want, you don't have to follow the sample exactly!
 
-```
+```txt
 Hey! What's your name? My name's Buddy! Anthony
 Anthony, that's fun to say! Anthony, Anthony...
 Does someone need a hug? No, weirdo
@@ -98,4 +98,4 @@ GADGET: Metamucil
 
 ## Tips, Tricks, and Reflection
 
-- You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `input()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!
+- You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `Console.ReadLine()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!
