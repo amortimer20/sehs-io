@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: C# Fundamentals 1.4 Variables
 ---
 
-[← Back](/courses/c-sharp-fundamentals/)
+[← Back](/c-sharp-fundamentals/)
 
 # Activity 1.4 Variables
 

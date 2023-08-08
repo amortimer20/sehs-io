@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: "C# Fundamentals 1.1 Hello World"
 ---
 
-[← Back](/courses/c-sharp-fundamentals/)
+[← Back](/c-sharp-fundamentals/)
 
 # Activity 1.1 Hello World!
 

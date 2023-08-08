@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: "C# Fundamentals 0.1 Introduction to the C# Programming Language"
 ---
 
-[← Back](/courses/c-sharp-fundamentals/)
+[← Back](/c-sharp-fundamentals/)
 
 # Introduction to the C# Programming Language
 

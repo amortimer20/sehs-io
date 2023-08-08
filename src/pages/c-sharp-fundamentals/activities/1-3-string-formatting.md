@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: C# Fundamentals 1.3 String Formatting
 ---
 
-[← Back](/courses/c-sharp-fundamentals/)
+[← Back](/c-sharp-fundamentals/)
 
 # Activity 1.3 String Formatting
 

@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: C# Fundamentals 1.5 Manipulating Variables
 ---
 
-[← Back](/courses/c-sharp-fundamentals/)
+[← Back](/c-sharp-fundamentals/)
 
 # Activity 1.5 Manipulating Variables
 
