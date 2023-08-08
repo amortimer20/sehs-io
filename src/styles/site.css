@@ -51,6 +51,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "gameplay";
 }
 
+.form-range::-webkit-slider-thumb {
+  background: var(--bs-primary);
+}
+
+.form-range::-moz-range-thumb {
+  background: var(--bs-primary);
+}
+
+.form-range::-ms-thumb {
+  background: var(--bs-primary);
+}
+
 :root {
   --bs-body-font-family: "jetbrains-mono";
   --bs-primary: #0e8b70;
