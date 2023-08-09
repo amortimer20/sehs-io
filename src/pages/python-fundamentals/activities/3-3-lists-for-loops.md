@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 3.3 Lists and For Loops
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 3.3 For Loops
+## Activity 3.3 For Loops
 
-## Introduction
+### Introduction
 
 Although while loops are capable of iterating through lists, there are other JavaScript constructs that make the process easier. For example, there is a specific kind of loop called a **for loop** whose purpose is to iterate, or loop, through elements in a collection.
 
@@ -42,20 +42,20 @@ The for loop operates as such:
 4. At the end of the loop, the list is checked to see if there is another element in the list. If there is another element, the variable is assigned the next element, and the code block repeats.
 5. The loop continues until there are no more elements in the list to iterate through.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Iterating through lists using for loops
 - Refactoring a previous application
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 1. Create a new repl.
     1. Select *Python* for the language.
     2. Name the Repl "*3.3 For Loops*".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Sodas App Version 2 - Uses a for loop to iterate through list
@@ -112,9 +112,9 @@ while choice != "3" and choice != "exit":
     print("Invalid option, try again...")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --- Sodas App v2 ---
 Add a soda to your list: pepsi
 Add another soda? (yes/no) yes
@@ -167,6 +167,6 @@ Shopping cart:
 -> 3
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Remember that while loops can do anything another loop can do, it's the most flexible of all the loops. But using a loop with a specific purpose can make coding some process easier.

@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.4 Compount Boolean Expressions
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.4 Compound Boolean Expressions
+## Activity 2.4 Compound Boolean Expressions
 
-## Introduction
+### Introduction
 
 The Boolean expressions we learned in the beginning of this section work for many scenarios, but sometimes we need more specific conditions. There are two Boolean operators that are commonly used to create more specific expressions.
 
@@ -41,22 +41,22 @@ The expression read like this: "number is greater than or equal to 0 and number 
 | `"abc" == "abc" or "ABC" == "abc"`     |       True |
 | `10 > 100 or 90 < 10`                  |      False |
 
-### Skills to Practice
+#### Skills to Practice
 
 - Creating compound boolean expressions
   - And operator `and`
   - Or operator `or`
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.4 Compound Boolean Expressions_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 import random
@@ -130,9 +130,9 @@ else:
     print("No match. Better luck next time!")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --Menu--
 1) attack
 2) run
@@ -152,6 +152,6 @@ And the lottery number is....
 No match. Better luck next time!
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - When using the same variable on both sides of an expression, it may be tempting to write your condition like this: `choice == 0 or 1`. This syntax is incorrect, you must be explicit when writing your expressions: `choice == 0 or choice == 1`.

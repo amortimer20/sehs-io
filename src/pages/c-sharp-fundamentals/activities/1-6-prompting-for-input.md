@@ -6,25 +6,25 @@ title: C# Fundamentals 1.6 Prompting for Input
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.6 Prompting for Input
+## Activity 1.6 Prompting for Input
 
-## Introduction
+### Introduction
 
 In this introductory section, we have been writing output using `Console.WriteLine()`. Now we will learn another method that complements `Console.WriteLine()`, and that is the `Console.ReadLine()` method. This method allows us to receive input from the user. I.e. The user can interact with the program via the console. Writing to and reading from the console is known as input and output, or I/O for short. We will also use a method called `Console.Write()`. Notice that it looks very similar to `Console.WriteLine()` sans the word _line_. This method still displays a message, but it keeps the cursor on the same line as the output. This allows the user to type on the same line as the message. This is purely for aesthetics, but I think you will prefer it.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Prompt a user for input and saving it to a variable
 - Using variables containing user input
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.6 Input**.
 2. Click Create.
 
-### Code
+#### Code
 
 ```cs
 // Buddy the Elf Greeting Program
@@ -65,7 +65,7 @@ Console.WriteLine($"GADGET: {gadget}");
 Console.WriteLine("-- IDENTITY CONFIRMED EXITING... --");
 ```
 
-### Debug
+#### Debug
 
 **Important!** Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter**.
 
@@ -96,6 +96,6 @@ GADGET: Metamucil
 -- IDENTITY CONFIRMED EXITING... --
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `Console.ReadLine()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!

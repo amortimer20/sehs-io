@@ -4,29 +4,29 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.6 Prompting for Input
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.6 Prompting for Input
+## Activity 1.6 Prompting for Input
 
-## Introduction
+### Introduction
 
 In this introductory section, we have been writing output using `print()`. Now we will learn another function that complements `print()`, and that is the `input()` function. This function allows us to receive input from the user. I.e. The user can interact with the program via the console. Writing to and reading from the console is known as input and output, or I/O for short.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Prompt a user for input and saving it to a variable
 - Using variables containing user input
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.6 Input_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Buddy the Elf Greeting Program
@@ -64,13 +64,13 @@ print(f"GADGET: {gadget}")
 print("-- IDENTITY CONFIRMED EXITING... --")
 ```
 
-### Debug
+#### Debug
 
 **Important!** Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter**.
 
 Your programs will no longer need look exactly like the sample output. Write whatever you want, you don't have to follow the sample exactly!
 
-```
+```txt
 Hey! What's your name? My name's Buddy! Anthony
 Anthony, that's fun to say! Anthony, Anthony...
 Does someone need a hug? I hate you
@@ -96,6 +96,6 @@ GADGET: ASMR Radio
 -- IDENTITY CONFIRMED EXITING... --
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `input()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!

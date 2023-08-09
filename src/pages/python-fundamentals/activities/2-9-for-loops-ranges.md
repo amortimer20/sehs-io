@@ -4,24 +4,24 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.9 For Loops and Ranges
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.9 For Loops and Ranges
+## Activity 2.9 For Loops and Ranges
 
-## Introduction
+### Introduction
 
 INSERT INTRO...
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.9 For Loops and Ranges_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 import random
@@ -91,9 +91,9 @@ for n in range(1, number_of_rounds):
 print(f"Final score: Wins: {wins} - Losses: {losses}")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Counting from 0 to 4
 0
 1
@@ -145,6 +145,6 @@ Wrong! The correct answer is 186
 Final score: Wins: 2 - Losses: 1
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 INSERT TIP...

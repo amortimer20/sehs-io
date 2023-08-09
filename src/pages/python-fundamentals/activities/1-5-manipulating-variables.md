@@ -4,31 +4,31 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.5 Manipulating Variables
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.5 Manipulating Variables
+## Activity 1.5 Manipulating Variables
 
-## Introduction
+### Introduction
 
 This activity will take you a little bit deeper into how variables can be used. While the programs below are merely simulations, they will demonstrate how variables can have their values changed. Here are a few things you need to understand:
 
 - The equal sign is called the assignment operator in programming. It is used to save, or assign a value to a variable.
 - We can overwrite a variable’s _existing_ value using the assignment operator.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Manipulate variable values
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.5 Manipulating Variables_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Video game demo
@@ -78,9 +78,9 @@ account_balance = account_balance + 99.01
 print(f"{account_name} balance: {account_balance}")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --- Battle Simulator ---
 Health: 100
 Enemy health: 100
@@ -102,7 +102,7 @@ Depositing $99.01 to Checking Account
 Checking Account balance: $199.51
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Remember that variables need to be spelled exactly the same every time.
 - Make sure to use the right data type for your variables. When performing math, use numbers, not strings.

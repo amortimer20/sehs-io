@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.8 Rock, Paper, Scissors Game
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.8 Rock, Paper, Scissors Game
+## Activity 2.8 Rock, Paper, Scissors Game
 
-## Introduction
+### Introduction
 
 Rock, paper, scissors is a fun game to play between friends. Here is a basic rundown of the rules:
 
@@ -17,21 +17,21 @@ Rock, paper, scissors is a fun game to play between friends. Here is a basic run
 - Rock crushes scissors
 - Scissors cuts paper
 
-### Skills to Practice
+#### Skills to Practice
 
 - Writing while loops
 - Nesting multiple levels of code blocks
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.8 Rock, Paper, Scissors_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 import random
@@ -123,9 +123,9 @@ while playing:
   print()
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 ---ROCK, PAPER, SCISSORS---
  --2020 Terminal Edition--
 ROUND 1!
@@ -150,7 +150,7 @@ Play again?
 -> no
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - You can also try rewrite the code to use compound boolean expressions instead of nested if statements when checking if the player won or lost.
 - Try making a two player version of rock, paper, scissors. When player one's turn is done, you can call the function `os.system("clear")` to clear the screen, so player two can't cheat. The system function exists in the os module, which is used to execute terminal commands.

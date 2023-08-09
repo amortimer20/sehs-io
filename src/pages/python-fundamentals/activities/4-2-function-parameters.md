@@ -4,32 +4,32 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 4.2 Function Parameters
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 4.2 Function Parameters
+## Activity 4.2 Function Parameters
 
-## Introduction
+### Introduction
 
 We can give functions dynamic behavior by passing information when calling them. When we give information to a function, we call this _passing arguments_. Argument values are assigned to special variables called _parameters_. Parameter variables store the argument values passed to them. This allows us to use the arguments inside of a function.
 
 **argument** - Information/data passed to a function
 **parameter** - A variable that receives an argument
 
-### Skills to Practice
+#### Skills to Practice
 
 - Defining functions with parameters
 - Invoking user defined functions with arguments
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_4.2 Function Parameters_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 def counter(number):
@@ -65,9 +65,9 @@ specialScolding("") # Pass your name as an argument
 bottlesSong("Pepsi Max", 3) # Replace the arguments with your own values
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Counting from 1 to 10.
 1
 2
@@ -95,6 +95,6 @@ You take one down, pass it around.
 0 bottles of Pepsi Max on the wall!
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Try adding some validations to your functions. For example, if the argument passed to the bottlesSong function is less than 1, refuse to sing the song. For the greeting functions, output an error message if the parameter variables are undefined.

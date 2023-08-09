@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.3 Branching Statements
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.3 Branching Statements
+## Activity 2.3 Branching Statements
 
-## Introduction
+### Introduction
 
 The last activity introduced us to the idea of controlling the flow of an application with _if statements_. The age checker app checked each if statement's condition resulted in true. There are many instances where you only want one selection to execute. i.e. One or the other.
 
@@ -30,21 +30,21 @@ else:
     print("I'm sorry, but you are not old enough to drive")
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Branching if statements with _elif_ and _else_
 - Making a main menu
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.3 Branching_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Chinese Zodiac Calendar
@@ -112,9 +112,9 @@ else:
     print("Invalid option. Exiting...")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --- CHINESE ZODIAC CALENDAR ---
 Enter your birth year: 1990
 
@@ -136,7 +136,7 @@ Thank you for your deposit of $75.95.
 Your balance is now $1275.95.
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Notice how many code blocks are used to create even a simple application. Make sure code inside a code block is indented one tab.
 - Each demo application in this activity only has one `elif` statement. Remember, you can have as many `elif` statements as you need.

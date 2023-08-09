@@ -6,9 +6,9 @@ title: C# Fundamentals 1.4 Variables
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.4 Variables
+## Activity 1.4 Variables
 
-## Introduction
+### Introduction
 
 _Variables_ allow us to save data during our program execution. For example, in an RPG video game, your character has attributes such as health, magic, stamina, etc. These are values that need to be tracked throughout the game. Variables allow us to store this data and use it throughout the program.
 
@@ -32,19 +32,19 @@ double weight = 500.55;
 name = 10; // BAD! name is a string. This will cause an error.
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Declaring and assigning values to variables
 - Use variables in formatted strings
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.4 Variables**.
 2. Click Create.
 
-### Code
+#### Code
 
 ```cs
 // String variables
@@ -82,7 +82,7 @@ double damage = 55.5;
 Console.WriteLine($"You've taken {damage} damage. You have {health - damage} health left.");
 ```
 
-### Debug
+#### Debug
 
 ```txt
 Hello, my name is Anthony
@@ -100,7 +100,7 @@ If you withdraw $0, you will have $35.25.
 You've taken 55.5 damage. You have 44.5 health left.
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Variable names must begin with a letter or underscore.
 - Variables **cannot** contain spaces in their name!

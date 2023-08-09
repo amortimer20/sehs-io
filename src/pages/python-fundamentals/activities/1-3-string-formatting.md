@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.3 String Formatting
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.3 String Formatting
+## Activity 1.3 String Formatting
 
-## Introduction
+### Introduction
 
 In the previous activity, the math expressions were output seperately from the strings. Although this works, it doesn't look nice. In programming we format strings to construct complex text messages. In Python, there are two popular ways to format strings: _passing multiple arguments_\* and _string interpolation_.
 
@@ -26,21 +26,21 @@ A newer way to format strings is to use a feature called _string interpolation_.
 f"My age in months is {30 * 12}."
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Passing multiple arguments to the `print()` function
 - String interpolation
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.3 String Formatting_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Passing multiple arguments - Use the *,* character to seperate data that you want to put together.
@@ -61,9 +61,9 @@ print(f"Therefore, a woodchuck can chuck {32 * 60} wood panels every hour.")
 print()
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 10 squared is 100
 
 I'm 5 foot 10 inches. That's 70 inches.
@@ -74,6 +74,6 @@ A woodchuck can chuck 32 wood panels every minute.
 Therefore, a woodchuck can chuck 1920 wood panels every hour.
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - You are welcome to use either technique for string formatting, but this course will favor string interpolation.

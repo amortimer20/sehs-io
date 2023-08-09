@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.5 Nested If Statements
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.5 Nested If Statements
+## Activity 2.5 Nested If Statements
 
-## Introduction
+### Introduction
 
 There are many instances where you need to further make decisions after executing an if statement. We can put an if statement inside of another if statement. This is called _nesting_.
 
@@ -31,14 +31,14 @@ It's so important to keep your code nicely formatted. Here is a review of the ti
 
 This program is called a choose your own adventure game. It's going to be the biggest program you make so far. Take your time, and test your code frequently. Don't try to write the whole program and then test it at the end, or else it could spell disaster when you try to debug. Write one section at a time, and then test it.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Nesting if statements
 - Testing nested branching statements
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
@@ -156,9 +156,9 @@ if gold > 0:
   print(f"\nYou not only survived, but you found {gold} gold! Good work!")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Your car crahes into a tree during a thunderstorm in the woods.
 As the storm intensifies, you run into a nearby cave to seek shelter.
 Upon entering the cave, you see to diverging paths...
@@ -188,6 +188,6 @@ You survived!!!
 You not only survived, but you found 100 gold! Good work!
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - I cannot stress the importance of testing your application regularly. When you start nesting if statements, your app will potentially have many different paths of execution. It's important to make sure everything runs as you develop your application.

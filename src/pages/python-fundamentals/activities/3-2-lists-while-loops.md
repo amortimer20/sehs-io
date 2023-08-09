@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 3.2 Lists and While Loops
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 3.2 Lists and While Loops
+## Activity 3.2 Lists and While Loops
 
-## Introduction
+### Introduction
 
 We can use loops to iterate through elements of an list. The key is to access each item, one at a time. We do this by tracking what index we are currently at using a number variable. A common convention is to use a variable named _i_ to track the index.
 
@@ -32,22 +32,22 @@ toys = ["train", "car", "slingshot"];
 print(len(toys)); // Outputs 3
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Creating lists
 - Setting values in an list
 - Accessing values in an list using integer variables
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_3.2 Lists and Loops_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 print("--- Sodas App ---")
@@ -101,9 +101,9 @@ while i < len(todo_list):
     i += 1
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --- Sodas App ---
 Add a soda to your list: pepsi
 Add a soda to your list: coke
@@ -145,6 +145,6 @@ Todo list:
 - sleep
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - When you finish, try refactoring, or improving the soda app so it's not hard-coded to five sodas. i.e. Let the user input as many sodas as they want, just like how to todo app lets the user type in as many todo items as they need.

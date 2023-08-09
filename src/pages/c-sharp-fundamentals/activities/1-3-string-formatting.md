@@ -6,9 +6,9 @@ title: C# Fundamentals 1.3 String Formatting
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.3 String Formatting
+## Activity 1.3 String Formatting
 
-## Introduction
+### Introduction
 
 In the previous activity, the math expressions were output seperately from the strings. Although this works, it doesn't look nice. In programming we format strings to construct complex text messages. In C#, there are two popular ways to format strings: _string concatenation_ and _string interpolation_.
 
@@ -24,19 +24,19 @@ A newer way to format strings is to use a feature called _string interpolation_.
 $"My age in months is {30 * 12}."
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - String concatenation
 - String interpolation
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.3 String Formatting**.
 2. Click Create.
 
-### Code
+#### Code
 
 ```cs
 // String concatenation - Use the *+* sign to append math expressions to strings
@@ -56,7 +56,7 @@ Console.WriteLine("A woodchuck can chuck 32 wood panels every minute.");
 Console.WriteLine($"Therefore, a woodchuck can chuck {32 * 60} wood panels every hour.");
 ```
 
-### Debug
+#### Debug
 
 ```txt
 10 squared is 100
@@ -69,6 +69,6 @@ A woodchuck can chuck 32 wood panels every minute.
 Therefore, a woodchuck can chuck 1920 wood panels every hour.
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - You are welcome to use either technique for string formatting, but I personally favor string interpolation.

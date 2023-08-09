@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 5.2 Classes and Objects
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 5.2 Classes and Objects
+## Activity 5.2 Classes and Objects
 
-## Introduction
+### Introduction
 
 Welcome to the world of object-oriented programming, or OOP for short. Object-oriented programming allows us to model our programs around the categories of things we work with in our programs. This style of programming allows us to begin designing our programs in an organized way. Just like any other projects you've worked on, you start with your data. What data do you need to work with? Think in plain English for a moment. Using object-oriented design, we can to create our own _data types_ that resemble the things in our application. Keep this in mind however, you don't _need_ object-oriented programming, it's just a style of programming. But it helps you organize your programs in a useful way. Almost all of the most popular programming languages, including Python, are designed as object-oriented languages.
 
@@ -26,14 +26,14 @@ Using a class, I can begin to design my dog application by defining a dog. I’m
 
 **Method** - A function defined within a class.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Creating a class and instantiating objects
 - Importing a class definition from an external file/module
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 **Warning**: You will be creating a second Python file for the first time. Read the instructions below carefully!
 
@@ -43,7 +43,7 @@ Using a class, I can begin to design my dog application by defining a dog. I’m
 2. Click Create repl.
 3. Create a new file called "_dog.py_".
 
-### Code
+#### Code
 
 **dog.py**
 
@@ -87,9 +87,9 @@ other_dog.bark()
 other_dog.sleep()
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 My dog, Fido, is a Pit bull
 Fido: Woof woof!
 Zzzzz...
@@ -101,6 +101,6 @@ Spot: Woof woof!
 Zzzzz...
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - From now on, pay attention to which code goes to the corresponding file. Everything may not be just be dumped into a single Python file anymore.

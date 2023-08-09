@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.1 Logic Crash Course
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.1 Logic Crash Course
+## Activity 2.1 Logic Crash Course
 
-## Introduction
+### Introduction
 
 Computers aren't limited to performing arithmetic calculations. We are able to program computers to make decisions using logical expressions. When a computer can make decisions, it's able to determine different outcomes in a program. Here are a few example scenarios:
 
@@ -66,7 +66,7 @@ Is 1000 equal to 1000? It is, so the result is the value _True_. You can see a n
 | `not False`       |       True |
 | `not (100 > 100)` |       True |
 
-### Skills to Practice
+#### Skills to Practice
 
 - Constructing boolean expressions using the following operators:
   - equal to (`==`) and not equal to (`!=`)
@@ -74,16 +74,16 @@ Is 1000 equal to 1000? It is, so the result is the value _True_. You can see a n
   - greater than or equal to (`>=`) and less than or equal to (`<=`)
   - not (`!`)
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.1 Logic_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 name = "Mr. Mortimer"
@@ -104,9 +104,9 @@ print(f"{name} is a millionaire: {is_a_millionaire}")
 print(f"So, {name} isn't a millionaire? {not is_a_millionaire}")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Is my name Mr. Mortimer? True
 Is my name Mr. Mertens? False
 My name is not Mr. Merriman: True
@@ -117,7 +117,7 @@ Mr. Mortimer is a millionaire: False
 So, Mr. Mortimer isn't a millionaire? True
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - This demo is not of much use yet. Over the next few activities, you will see just how powerful logical expressions can be in decision making.
 - You can quickly test out a boolean expression using the REPL console.

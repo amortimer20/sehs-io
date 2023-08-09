@@ -4,32 +4,34 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.1 Hello World
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.1 Hello World!
+## Activity 1.1 Hello World!
 
-## Introduction
+### Introduction
 
 Every programming course begins with a simple program known as _Hello World_. The programming construct you will learn in this lesson is known as **output**. Output is information that is given to the user. In order to output information to the use, we need to use something called `print()`.
 
 `print()` is known as a _function_. Functions perform some action in programming. In this case, `print()` outputs a message to the user via the console. The console is a simple terminal for running text based computer applications. Most of the introductory applications in these programming activities will be console based.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Writing and executing code
 - Output messages with the `print()` function
 - Debugging potential errors in your code.
 
-## Activity Instructions
+---
 
-### Setup
+### Instructions
+
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.1 Output_" (No double quotes).
 2. Click Create repl.
 
-### Code
+#### Code
 
 Your new workspace will contain an empty file named _index.py_. Starting on line 1, write the following code below. No copy and pasting! You will never learn how to make programs if you don’t write your own code.
 
@@ -52,7 +54,7 @@ print("Sincerely,")
 print("INSERT YOUR NAME")
 ```
 
-### Debug
+#### Debug
 
 To execute your new program, click the run button at the top of your workspace. If everything was written correctly, you will see the various message output to the console. If not, you need to try and see where you made a mistake in your code. The process of testing your program is called _debugging_.
 
@@ -74,6 +76,8 @@ Papa bless,
 Mr. Mortimer
 ```
 
-## Tips, Tricks, and Reflection
+---
+
+### Tips, Tricks, and Reflection
 
 - What happens when you write `print()` without a message in the parenthesis?

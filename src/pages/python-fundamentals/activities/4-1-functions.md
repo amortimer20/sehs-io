@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 4.1 Functions
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 4.1 Function Basics
+## Activity 4.1 Function Basics
 
-### Introduction
+#### Introduction
 
 Functions are an incredibly important construct in programming. They allow us developers to create a reusable set of procedures. You've used functions since day 1 with `print()`. Someone had to write that function in order for you to use it. Programmers create functions that contain code that can be reused throughout an application. If we have some code that needs to be copy and pasted throughout an application, that's a good use case to implement a function that allows us to reuse that code.
 
@@ -27,21 +27,21 @@ myFunction()
 
 A function definition contains a set of statements that define what will happen when the function is invoked. This is known as a function body. One important thing to note: **The function body does not execute unless the function is invoked.**
 
-### Skills to Practice
+#### Skills to Practice
 
 - Defining simple functions
 - Invoking user defined functions
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_4.1 Function Basics_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Function definitions
@@ -113,9 +113,9 @@ while choice != "5":
         print("Invalid option.")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Hey buddy!
 How's it goin', eh? good
 Glad to hear it!
@@ -168,7 +168,7 @@ Sorry to hear that :(
 -> 5
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Try looking back at some of your previous programs, and see if there were any snippets of code that you copy and pasted for reuse. That is a great instance of where you can move that code into a function, and reduce redundant code in your application.
 - Function definitions are also known as **function declarations**.

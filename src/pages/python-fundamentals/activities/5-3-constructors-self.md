@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 5.3 Constructors and the Self Keyword
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 5.3 Constructors and the Self Keyword
+## Activity 5.3 Constructors and the Self Keyword
 
-## Introduction
+### Introduction
 
 When implementing your classes for a project, you will likely want specific ways you can quickly create objects from that class. So far, we've created objects with some default, blank data. There is a nice way to set up an object that gives us control of the process. These are called _constructors_, sometimes referred to as initializers. A constuctor is a special method defined in a class definition that is responsible for setting up, or _constructing_ an object. You've used constructor methods in previous demos, specifically when you created an object. In the previous program, the `Dog()` method constructed a dog object. It wasn't explicitly defined in the class definition, but a default one exists for any class that is defined. To implement your own constructor, create a method named `__init__()`, where init is short for initializer. Look at the example below:
 
@@ -49,15 +49,15 @@ cat1.meow()
 
 If I call the meow method, how does Python know the value of `self.name`? Whenever a method is called, the current object in use will be referenced with `self`. So, since cat1, Lilly, is the given object, `self` is the cat Lilly. On a side note, you can call this parameter whatever you want, but the convention is call it 'self'.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Creating a class and instantiating objects
 - Implementing a constructor
 - Importing a class definition from an external file/module
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 **Warning**: You will be creating a second Python file for the first time. Read the instructions below carefully!
 
@@ -67,7 +67,7 @@ If I call the meow method, how does Python know the value of `self.name`? Whenev
 2. Click Create repl.
 3. Create a new file called "_pokemon.py_".
 
-### Code
+#### Code
 
 **pokemon.py**
 
@@ -189,9 +189,9 @@ else:
 
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Choose your Pokemon!
 1) Squirtle
 2) Gengar
@@ -276,6 +276,6 @@ Bulbasaur fainted!
 You win! Squirtle gained 10xp!
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Try going back to a previous mini-game you made, and reimplement the game using object-oriented syntax. I think you'll find that the extra upfront work is worth the effort.

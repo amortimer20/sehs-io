@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 4.3 Function Return Statements
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 4.3 Return Statements
+## Activity 4.3 Return Statements
 
-## Introduction
+### Introduction
 
 One important component regarding functions is the ability to give back some information if necessary. Here are a few examples of functions we have used that **return** some value once the function is finished executing.
 
@@ -33,22 +33,22 @@ In the example above, the add function _returns_ the sum of the num1 and num2 pa
 sum = add(10, 15) # sum = 25
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Defining functions with parameters
 - Invoking user defined functions with arguments
 - Returning values from a function
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_4.3 Function Return Statements_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 import random
@@ -110,9 +110,9 @@ while (choice != "6"):
     print("Invalid option...")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 -- Random Utilities Calculator --
 1) Square a number
 2) Subtract two numbers
@@ -174,6 +174,6 @@ You rolled a 4 and a 5 for a total of 9
 Goodbye
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - It's not a big deal, but we are repeating the following statement frequently: `float(input("Enter a number: "))`. It may not be a bad idea to extract this code into a small function.

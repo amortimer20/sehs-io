@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.2 If Statements
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.2 If Statements
+## Activity 2.2 If Statements
 
-## Introduction
+### Introduction
 
 Programming languages have a series of constructs that allow a programmer to control what portions of their program execute, and if necessary, how many times to repeat that code. The first type of control structure to learn is the **if statement**.
 
@@ -24,13 +24,13 @@ if number == 100:
 
 If the condition is _true_, the code block, which is the code indented under the if statement, will execute. If the condition is _false_, the code block is skipped over, and does not execute.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Constructing if statements
   - Create a condition
   - Create a code block
 
-### Activity Instructions
+#### Instructions
 
 ## Setup
 
@@ -39,7 +39,7 @@ If the condition is _true_, the code block, which is the code indented under the
    2. Name the Repl "_2.2 If Statements_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Age Checker Program
@@ -67,9 +67,9 @@ if age >= 35:
     print(f"\n{nickname} {name} for president! Coming {year}")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Enter your age: 35
 You're old enough to join Cobra Kai.
 
@@ -86,7 +86,7 @@ What's your nickname (adjective): Sleepy
 Sleepy Anthony Mortimer for president! Coming 2020
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - There's an age range that's missing. If you type in 0 - 12, nothing happens. Add an if statement to fix this issue.
 - Indentation of code inside a block shows what code belongs to what section. Be consistent with your indentations, your code will be much more readable and maintainable.

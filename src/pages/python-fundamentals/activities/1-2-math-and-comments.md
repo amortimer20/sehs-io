@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.2 Math and Comments
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.2 Math and Comments
+## Activity 1.2 Math and Comments
 
-## Introduction
+### Introduction
 
 Math is extremely important in computer science. Any useful program has to store and use numbers in some way. From video games, to online stores, to graphic design apps, math is necessary to creating the software we use every day. It is necessary to not only calculate math expressions, but also to display the results to the user.
 
@@ -25,23 +25,23 @@ The two symbols for division may throw you off, because we don't have a math sig
 
 We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. We will start with one type of comment, the single line comment: `# comment`.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Write math expressions
 - Output numbers with `print()`
 - Document code with single line comments
 - Control math calculation with order of operations
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.2 Math_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # These are comments. They help programmers take notes in their code.
@@ -92,9 +92,9 @@ print("4 * (10 + 12) equals:")
 print(4 * (10 + 12))
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 I have two apples. I find another apple. How many apples do I have?
 3
 
@@ -125,7 +125,7 @@ After splitting up the dollar, how many cents are left over?
 88
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Let's be honest, this program looks terrible. The math for each statement may correct, but it's hard to read. The division involving money returns a repeating decimal, every answer is on it's own line, and the monetary values don't have a dollar sign. These are called _formatting issues_, and we will learn how to make the output look better in future programs.
 - When writing math expressions in code, you don't have to have a space in between the numbers and signs. It is valid to write **2+2**, but I recommend writing **2 + 2** with the spaces in between.

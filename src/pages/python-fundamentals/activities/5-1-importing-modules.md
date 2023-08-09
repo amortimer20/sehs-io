@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 5.1 Importing Modules
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 5.1 Importing Modules
+## Activity 5.1 Importing Modules
 
-## Introduction
+### Introduction
 
 As your programs grow in size, it's a good idea to seperate certain pieces of functionality into their own files. For small programs, it's okay to keep everything in one file. But think of it like any other collection of files on our computer: we seperate large libraries of photos into folders, we seperate schoolwork by courses, etc. As a Python project grows, we typically seperate code into their own files.
 
@@ -58,13 +58,13 @@ You should recognize the first example. When a module is imported using `import 
 
 There is much to modules in Python, but this is plenty to get you going as you start your programming journey.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Importing modules using various import statements
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
@@ -72,7 +72,7 @@ There is much to modules in Python, but this is plenty to get you going as you s
 2. Click Create repl.
    **Repl add file button**
 
-### Code
+#### Code
 
 ```python
 # Simple import statement
@@ -115,9 +115,9 @@ print(f"Current Date: {datetime.datetime.now().date()}")
 print(f"Current Time: {datetime.datetime.now().time()}")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Function Stuff
 --------------
 Radius 4 - Area: 3.54, Circ: 25.13
@@ -130,6 +130,6 @@ Current Date: 2022-01-09
 Current Time: 14:58:28.108568
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - If you would like to check out the complete list of available modules in the Python standard library, you can find them [here](https://docs.python.org/3/library/index.html). You will learn about some of the more popular modules in later content.

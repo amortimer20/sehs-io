@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 1.8 Constants, Math Functions, and Random Numbers
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 1.8 Constants, Math Functions, and Random Numbers
+## Activity 1.8 Constants, Math Functions, and Random Numbers
 
-## Introduction
+### Introduction
 
 Constants are similar to variables in that you can store values with them. However, once the constant is created, the value it references **cannot** change. There are instances where a value is not meant to be ever changed, such as PI, which never changes. If you try to change the value stored in a constant, the program will crash. You may ask "Why not just create a variable and never change it"? It's important to try writing programs in such a way that you mitigate the potential for issues. Constants are a feature that ensure a value is not accidentally changed.
 
@@ -22,21 +22,21 @@ Another interesting thing we do in programming is generate random numbers. This 
 
 You will notice that in order to use any constans or functions defined in these modules will use a slightly different syntax. For example, to use the constant `pi`, the syntax is `math.pi`. This syntax has is related to how we use imported code. Know that anything we use from the math module must be prefixed with `math.`. You will learn all specifics later on, but again, just try to memorize this syntax for now.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Create constants
 - Use built-in math functions to perform calculations
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_1.8 Constants and Math Functions_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 # Import the math and random modules
@@ -79,9 +79,9 @@ print(f"Randomly generated number (1 to 10): {random.randint(1, 10)}\n")
 print(f"Randomly generated number (1 to 10): {random.randint(1, 10)}\n")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 --- Cash Register Sales Tax Calculator ---
 Subtotal: $10, Total: $18.0
 
@@ -108,6 +108,6 @@ Randomly generated number (1 to 10): 8
 Randomly generated number (1 to 10): 9
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Explore some more math functions [here](https://docs.python.org/3/library/math.html).

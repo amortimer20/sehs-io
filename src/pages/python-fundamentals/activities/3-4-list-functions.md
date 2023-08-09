@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 3.4 List Functions and Keywords
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 3.4 List Functions and Keywords
+## Activity 3.4 List Functions and Keywords
 
-### Introduction
+#### Introduction
 
 Python provides a number of different useful functions and keywords for working with lists. We will learn a small subset of functions, but be sure to check out the documentation at the end of this activity for a full list of included functions.
 
@@ -89,23 +89,23 @@ print(animals)
 []
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Adding elements to a list using the `.append()` function.
 - Finding how many elements exist in a list using the `.count()` function.
 - Removing an element from a list using the `.remove()` function.
 - Removing all elements from a list using the `.clear()` function.
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_3.4 List Functions_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 cart = []
@@ -159,9 +159,9 @@ while shopping:
         print("Invalid option. Try again.\n")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 -- ⚗️🧪Store Menu🗡️🪓 --
 1) Add item to cart
 2) List cart contents
@@ -222,7 +222,7 @@ Clearing cart contents
 Cart contents:
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Note that the Python documentation refers to these functions as _methods_. Methods are functions that belong to a given data type. For now, don't worry about these semantics, we will cover these topics soon.
 - Check out the documentation on the available functions [here](https://docs.python.org/3/tutorial/datastructures.html).

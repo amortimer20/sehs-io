@@ -6,11 +6,11 @@ title: "C# Fundamentals 1.1 Hello World"
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.1 Hello World!
+## Activity 1.1 Hello World!
 
 ---
 
-## Introduction
+### Introduction
 
 Every programming course begins with a simple program known as _Hello World_. The programming construct you will learn in this lesson is known as **output**. Output is information that is given to the user. In order to output information to the use, we need to use something called `Console.WriteLine()`.
 
@@ -18,7 +18,7 @@ Every programming course begins with a simple program known as _Hello World_. Th
 
 We will also learn how to write comments in C#. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. We will start with one type of comment, the single line comment: `// comment`.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Writing and executing code
 - Output messages with the `Console.WriteLine()` function
@@ -27,14 +27,14 @@ We will also learn how to write comments in C#. Comments serve two purposes, to 
 
 ---
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.1 Output**.
 2. Click Create.
 
-### Code
+#### Code
 
 Your new workspace will contain a file with some starter code named _main.cs_ (or _Program.cs_ in Visual Studio). Erase the code on line 1, and follow along by typing the code you see below. No copy and pasting! You will never learn how to make programs if you don’t write your own code.
 
@@ -67,7 +67,7 @@ Console.WriteLine("Mr. Mortimer");
 // Console.WriteLine("PS You're fired!");
 ```
 
-### Debug
+#### Debug
 
 To execute your new program, click the run button at the top of your workspace. If everything was written correctly, you will see the various message output to the console. If not, you need to try and see where you made a mistake in your code. The process of testing your program is called _debugging_.
 
@@ -93,7 +93,7 @@ PS You're fired!!
 
 ---
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - What happens when you write `Console.WriteLine()` without a message in the parentheses?
 - You may have used a programming language where methods are referred to as functions. Technically, a method is a function, but it's defined in a different context. Don't worry about this for now. When we learn about object-oriented programming, we'll talk about this in more detail.

@@ -6,9 +6,9 @@ title: C# Fundamentals 1.5 Manipulating Variables
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.5 Manipulating Variables
+## Activity 1.5 Manipulating Variables
 
-## Introduction
+### Introduction
 
 This activity will take you a little bit deeper into how variables can be used. While the programs below are merely simulations, they will demonstrate how variables can have their values changed. Here are a few things you need to understand:
 
@@ -17,18 +17,18 @@ This activity will take you a little bit deeper into how variables can be used. 
 
 We will also start using a convention for naming variables with multiple words in the name. This is known as _camel case_. To use camel case naming for a variable name containing more than one word, capitalize any word _after_ the first word. Ex. **lastName**, **hitPoints**, **shoppingCart**.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Manipulate variable values using the assignment operator
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.5 Manipulating Variables**.
 2. Click Create.
 
-### Code
+#### Code
 
 ```cs
 // Video game demo
@@ -78,7 +78,7 @@ accountBalance = accountBalance + 99.01;
 Console.WriteLine($"{accountName} balance: {accountBalance}");
 ```
 
-### Debug
+#### Debug
 
 ```txt
 --- Battle Simulator ---
@@ -104,7 +104,7 @@ Depositing $99.01 to Checking Account
 Checking Account balance: 199.51
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Remember that variables need to be spelled exactly the same every time.
 - Make sure to use the right data type for your variables. When performing math, declare integers or doubles, not strings.

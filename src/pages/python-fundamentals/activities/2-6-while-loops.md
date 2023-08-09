@@ -4,11 +4,11 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals 2.6 While Loops
 ---
 
-[← Back](/courses/python-fundamentals/)
+[← Back](/python-fundamentals/)
 
-# Activity 2.6 While Loops
+## Activity 2.6 While Loops
 
-## Introduction
+### Introduction
 
 It is not uncommon for a program to run a set of instructions repeatedly. Programming languages all provide some construct for repeatedly executing a set of statements. These are known as **loops**.
 
@@ -41,20 +41,20 @@ while number > 0:
     print(f"Number is ${number}")
 ```
 
-### Skills to Practice
+#### Skills to Practice
 
 - Writing while loops
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new repl.
    1. Select _Python_ for the language.
    2. Name the Repl "_2.6 While Loops_".
 2. Click Create repl.
 
-### Code
+#### Code
 
 ```python
 import random
@@ -106,9 +106,9 @@ while ordering_food:
     print("Invalid option. Please try again...\n")
 ```
 
-### Debug
+#### Debug
 
-```
+```txt
 Time to sing a song...
 
 Enter your favorite soda: Coke
@@ -157,6 +157,6 @@ Enter an option: 4
 Your order has been placed! It will be ready in 49 minutes.
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Did you mess up a line of code and accidentally create an infinite loop? If so, how did you fix it? If not, try purposely breaking your code to create an infinite loop.

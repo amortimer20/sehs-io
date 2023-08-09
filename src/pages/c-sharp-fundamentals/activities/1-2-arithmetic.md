@@ -6,9 +6,9 @@ title: "C# Fundamentals 1.2 Arithmetic"
 
 [← Back](/c-sharp-fundamentals/)
 
-# Activity 1.2 # Activity 1.2 Arithmetic
+## Activity 1.2 ## Activity 1.2 Arithmetic
 
-## Introduction
+### Introduction
 
 Math is extremely important in computer science. Any useful program has to store and use numbers in some way. From video games, to online stores, to graphic design apps, math is necessary to creating the software we use every day. It is necessary to not only calculate math expressions, but also to display the results to the user. To practice these expressions, we'll be displaying the answer in the console using `Console.WriteLine()`.
 
@@ -22,21 +22,21 @@ Math is extremely important in computer science. Any useful program has to store
 
 The symbols for division may throw you off, because they don't match the traditional arithmetic symbols we use in math class. We'll practice using them in depth, so you can see how useful it is to divide numbers in different ways.
 
-### Skills to Practice
+#### Skills to Practice
 
 - Write math expressions
 - Output numbers with `Console.WriteLine()`
 - Document code with single line comments
 - Control math calculation with order of operations
 
-## Activity Instructions
+### Instructions
 
-### Setup
+#### Setup
 
 1. Create a new C# console application. Name the project **1.2 Math**.
 2. Click Create.
 
-### Code
+#### Code
 
 ```cs
 // Addition
@@ -85,7 +85,7 @@ Console.WriteLine("4 * (10 + 12) equals:");
 Console.WriteLine(4 * (10 + 12));
 ```
 
-### Debug
+#### Debug
 
 ```txt
 I have two apples. I find another apple. How many apples do I have?
@@ -118,7 +118,7 @@ After splitting up the dollar, how many cents are left over?
 88
 ```
 
-## Tips, Tricks, and Reflection
+### Tips, Tricks, and Reflection
 
 - Notice that division with only integers returns an integer result. But if you include at least one decimal number, ex. 5.0 or 5.1, the result will contain a decimal answer.
 - This program looks terrible. The math for each statement may correct, but it's hard to read. The division involving money returns a repeating decimal, every answer is on it's own line, and the monetary values don't have a dollar sign. These are called _formatting issues_, and we will learn how to make the output look better in future programs.
