@@ -21,7 +21,7 @@ We will also learn how to write comments in C#. Comments serve two purposes, to 
 #### Skills to Practice
 
 - Writing and executing code
-- Output messages with the `Console.WriteLine()` function
+- Output messages with the `Console.WriteLine()` method
 - Debugging potential errors in your code.
 - Writing comments to document or disable code.
 
@@ -36,7 +36,7 @@ We will also learn how to write comments in C#. Comments serve two purposes, to 
 
 #### Code
 
-Your new workspace will contain a file with some starter code named _main.cs_ (or _Program.cs_ in Visual Studio). Erase the code on line 1, and follow along by typing the code you see below. No copy and pasting! You will never learn how to make programs if you don’t write your own code.
+Your new workspace will contain a file with some starter code named _main.cs_ (or _Program.cs_ in Visual Studio). Erase the code on line 1, and follow along by typing the code you see below. No copy and pasting! You will never be good at coding if you don’t write your own code.
 
 ```cs
 Console.WriteLine("Hello, world!");
@@ -74,21 +74,24 @@ To execute your new program, click the run button at the top of your workspace. 
 Compare your console output with the example below to see if they match.
 
 ```txt
-Hello world!
+Hello, world!
 This class is taught by Mr. Mortimer.
-People say I look like Ethan from h3h3. Both are giant tools.
-Here, have some soy: https://soylent.com/
+Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com
 
 What is the answer to life, the universe, and everything?
 42. The answer is 42.
 
 Sally sells seashells by the seashore.
-Sally is doing five to ten for tax evasion.
+Sally's doing five years for running a seashell pyramid scheme.
+
+If you start to feel overwhelmed, just remember:
+Mortimers don't quit, we get fired!
+
 
 Sincerely,
-INSERT YOUR NAME
+Mr. Mortimer
 
-PS You're fired!!
+PS You're fired!
 ```
 
 ---

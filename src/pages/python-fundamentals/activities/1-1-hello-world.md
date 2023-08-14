@@ -14,6 +14,8 @@ Every programming course begins with a simple program known as _Hello World_. Th
 
 `print()` is known as a _function_. Functions perform some action in programming. In this case, `print()` outputs a message to the user via the console. The console is a simple terminal for running text based computer applications. Most of the introductory applications in these programming activities will be console based.
 
+We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. Comments begin with the **#** symbol.
+
 #### Skills to Practice
 
 - Writing and executing code
@@ -26,32 +28,40 @@ Every programming course begins with a simple program known as _Hello World_. Th
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.1 Output_" (No double quotes).
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.1 Output**.
+2. Click Create.
 
 #### Code
 
-Your new workspace will contain an empty file named _index.py_. Starting on line 1, write the following code below. No copy and pasting! You will never learn how to make programs if you don’t write your own code.
+Your new workspace will contain an empty file named _index.py_. Starting on line 1, write the following code below. No copy and pasting! You will never be good at coding if you don’t write your own code.
 
 ```python
 print("Hello, world!")
 print("This class is taught by Mr. Mortimer.")
-print("People say I look like Ethan from h3h3.")
 print("Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com")
-print()
+print() # Display a blank line
 
 print("What is the answer to life, the universe, and everything?")
 print("42. The answer is 42.")
 print()
 
 print("Sally sells seashells by the seashore.")
-print("Sally is doing five to ten for tax evasion.")
+print("Sally's doing five years for running a seashell pyramid scheme.")
+print()
+
+print("If you start to feel overwhelmed, just remember:")
+print("Mortimers don't quit, we get fired!")
+print()
 print()
 
 print("Sincerely,")
-print("INSERT YOUR NAME")
+print("Mr. Mortimer")
+
+# These lines are disabled.
+# Remove the comment symbols below (#) and run the program one more time.
+
+# print()
+# print("PS You're fired!")
 ```
 
 #### Debug
@@ -63,17 +73,22 @@ Compare your console output with the example below to see if they match.
 ```txt
 Hello, world!
 This class is taught by Mr. Mortimer.
-People say I look like Ethan from h3h3.
 Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com
 
 What is the answer to life, the universe, and everything?
 42. The answer is 42.
 
 Sally sells seashells by the seashore.
-Sally is doing five to ten for tax evasion.
+Sally's doing five years for running a seashell pyramid scheme.
 
-Papa bless,
+If you start to feel overwhelmed, just remember:
+Mortimers don't quit, we get fired!
+
+
+Sincerely,
 Mr. Mortimer
+
+PS You're fired!
 ```
 
 ---
