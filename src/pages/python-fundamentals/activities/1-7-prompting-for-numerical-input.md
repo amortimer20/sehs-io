@@ -36,10 +36,8 @@ int("32.5") # "32.5" converts to 32. The decimal gets truncated.
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.7 Numerical Input_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.7 Numerical Input**.
+2. Click Create.
 
 #### Code
 

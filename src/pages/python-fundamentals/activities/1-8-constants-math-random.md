@@ -31,10 +31,8 @@ You will notice that in order to use any constans or functions defined in these 
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.8 Constants and Math Functions_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.8 Constants and Math Functions**.
+2. Click Create.
 
 #### Code
 

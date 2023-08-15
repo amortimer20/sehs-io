@@ -21,10 +21,8 @@ In this introductory section, we have been writing output using `print()`. Now w
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.6 Input_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.6 Input**.
+2. Click Create.
 
 #### Code
 

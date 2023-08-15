@@ -21,10 +21,8 @@ _Variables_ allow us to save data during our program execution. For example, in 
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.4 Variables_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.4 Variables**.
+2. Click Create.
 
 #### Code
 

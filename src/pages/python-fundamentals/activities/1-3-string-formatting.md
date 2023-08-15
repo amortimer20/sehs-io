@@ -35,10 +35,8 @@ f"My age in months is {30 * 12}."
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.3 String Formatting_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.3 String Formatting**.
+2. Click Create.
 
 #### Code
 

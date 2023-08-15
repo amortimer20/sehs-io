@@ -23,10 +23,8 @@ This activity will take you a little bit deeper into how variables can be used. 
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.5 Manipulating Variables_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.5 Manipulating Variables**.
+2. Click Create.
 
 #### Code
 
