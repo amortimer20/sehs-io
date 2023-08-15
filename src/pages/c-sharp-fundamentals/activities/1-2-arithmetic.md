@@ -6,7 +6,7 @@ title: "C# Fundamentals 1.2 Arithmetic"
 
 [← Back](/c-sharp-fundamentals/)
 
-## Activity 1.2 ## Activity 1.2 Arithmetic
+## Activity 1.2 Arithmetic
 
 ### Introduction
 

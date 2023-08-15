@@ -6,7 +6,7 @@ title: Python Fundamentals 1.2 Math and Comments
 
 [← Back](/python-fundamentals/)
 
-## Activity 1.2 Math and Comments
+## Activity 1.2 Arithmetic
 
 ### Introduction
 
@@ -14,16 +14,13 @@ Math is extremely important in computer science. Any useful program has to store
 
 `print()` doesn’t just output text messages, it is also capable of outputting the numbers and math expressions. In this activity, we will writing simple programs to demonstrate how math works in Python. There are multiple symbols used to write math expressions:
 
-- \+ Addition
-- \- Subtraction
-- \* Multiplication (asterisk, Shift+8)
-- / Division, quotient (forward slash)
-- // Integer Division
-- % Division, remainder (percent sign)
+- **`+`** Addition operator
+- **`-`** Subtraction operator
+- **`*`** Multiplication operator
+- **`/`** Division operator, calculates quotient
+- **`%`** Modulus (mod) operator, calculates remainer
 
-The two symbols for division may throw you off, because we don't have a math sign for remainder division in traditional arithmetic. We'll practice this symbol in depth, so you can see how useful it can be when creating certain programs.
-
-We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. We will start with one type of comment, the single line comment: `# comment`.
+The symbols for division may throw you off, because they don't match the traditional arithmetic symbols we use in math class. We'll practice using them in depth, so you can see how useful it is to divide numbers in different ways.
 
 #### Skills to Practice
 
@@ -36,10 +33,8 @@ We will also learn how to write comments in Python. Comments serve two purposes,
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_1.2 Math_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **1.2 Math**.
+2. Click Create.
 
 #### Code
 
@@ -127,6 +122,6 @@ After splitting up the dollar, how many cents are left over?
 
 ### Tips, Tricks, and Reflection
 
-- Let's be honest, this program looks terrible. The math for each statement may correct, but it's hard to read. The division involving money returns a repeating decimal, every answer is on it's own line, and the monetary values don't have a dollar sign. These are called _formatting issues_, and we will learn how to make the output look better in future programs.
+- This program looks terrible. The math for each statement may correct, but it's hard to read. The division involving money returns a repeating decimal, every answer is on it's own line, and the monetary values don't have a dollar sign. These are called _formatting issues_, and we will learn how to make the output look better in future programs.
 - When writing math expressions in code, you don't have to have a space in between the numbers and signs. It is valid to write **2+2**, but I recommend writing **2 + 2** with the spaces in between.
-- Math signs `+ - * / %` are known as operators, and numbers used with operators are known as operands. When we write math statements they are called expressions.
+- Math signs `+ - * / %` are known as operators, and numbers used with operators are known as _operands_. When we write math statements they are called _expressions_.
