@@ -55,7 +55,7 @@ Console.WriteLine("Choose your gadget:");
 Console.WriteLine("- ASMR Radio");
 Console.WriteLine("- Flashbang Energy Drink");
 Console.WriteLine("- Metamucil");
-Console.Write("-> "); // Cool arrow prompt; Doesn't actually do anything
+Console.Write("-> "); // Cool arrow prompt; Doesn't do anything special
 string gadget = Console.ReadLine();
 Console.WriteLine();
 

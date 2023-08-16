@@ -52,7 +52,7 @@ print("Choose your gadget:")
 print("- ASMR Radio")
 print("- Flashbang Energy Drink")
 print("- Metamucil")
-gadget = input("-> ") # Cool looking arrow prompt
+gadget = input("-> ") # Cool looking arrow prompt; Doesn't do anything special
 print()
 
 print("-- Constructing your agent identity --")

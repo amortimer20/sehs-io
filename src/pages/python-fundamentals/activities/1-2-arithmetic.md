@@ -17,7 +17,8 @@ Math is extremely important in computer science. Any useful program has to store
 - **`+`** Addition operator
 - **`-`** Subtraction operator
 - **`*`** Multiplication operator
-- **`/`** Division operator, calculates quotient
+- **`/`** Division operator, calculates quotient with decimals
+- **`//`** Integer division operator, cuts off decimal (Think long division)
 - **`%`** Modulus (mod) operator, calculates remainer
 
 The symbols for division may throw you off, because they don't match the traditional arithmetic symbols we use in math class. We'll practice using them in depth, so you can see how useful it is to divide numbers in different ways.
