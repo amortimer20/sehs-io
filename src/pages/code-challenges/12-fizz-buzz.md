@@ -1,6 +1,6 @@
 ---
 container: "container"
-layout: "../../../layouts/PageLayout.astro"
+layout: "../../layouts/Layout.astro"
 title: Code Challenge 12 - Fizz Buzz
 ---
 

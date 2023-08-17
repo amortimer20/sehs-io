@@ -1,6 +1,6 @@
 ---
 container: "container"
-layout: "../../../layouts/PageLayout.astro"
+layout: "../../layouts/Layout.astro"
 title: Code Challenge 11 - Tip Calculator
 ---
 
