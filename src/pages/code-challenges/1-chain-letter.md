@@ -27,4 +27,8 @@ A classic form of spam in the early days of the internet are known as chain lett
 
 #### Sample Output
 
-<video src="/courses/code-challenges/code-challenge-1-sample.mp4" autoplay loop width="100%"></video>
+<div class="row">
+    <div class="col-sm-12 col-xl-10 offset-xl-1">
+        <video src="/courses/code-challenges/code-challenge-1-sample.mp4" autoplay loop width="100%"></video>
+    </div>
+</div>
