@@ -10,6 +10,14 @@ title: Python Fundamentals 1.8 Constants, Math Functions, and Random Numbers
 
 ### Introduction
 
+This lesson introduces you to further topics you will utilize throughout this course. We will cover the exponent operator, constants, advanced math functions, and how to generate random numbers.
+
+The exponent operator `**` allows you to easily perform math expressions involving exponents. It looks similar to the multiplication operator, but contains two asterisks instead of one.
+
+```python
+result = some_number ** 2 # number raised to the second power
+```
+
 Constants are similar to variables in that you can store values with them. However, once the constant is created, the value it references **cannot** change. There are instances where a value is not meant to be ever changed, such as PI, which never changes. If you try to change the value stored in a constant, the program will crash. You may ask "Why not just create a variable and never change it"? It's important to try writing programs in such a way that you mitigate the potential for issues. Constants are a feature that ensure a value is not accidentally changed.
 
 Speaking of PI, Python provides a number of built-in math constants and functions that we can use in our programs. We can calculate, exponents, square roots, round numbers, and many other things. In order to use these features, we need to learn how to write an `import` statement. We will learn about imports and modules later on, but for now, just know that we need to import the code for doing math into our program. The import statement will retrieve the code containing these constants and functions, and will make them available for us to use in our applications.
@@ -60,10 +68,11 @@ print(f"Radius: {radius}, Circumference: {circumference}")
 print(f"Rounded circumference: {round(circumference, 2)}\n") # round() is available without an import statement
 
 
-print("--- Math Functions ---")
+print("--- More Math Operations ---")
 
+# Exponent Operator
 number = float(input("Input a number to get n cubed: "))
-print(f"{number} cubed = {math.pow(number, 3)}\n")
+print(f"{number} cubed = {number ** 3}\n")
 
 number = float(input("Input a number to get the square root of n: "))
 print(f"Square root of {number} = {math.sqrt(number)}\n")
@@ -88,7 +97,7 @@ Enter radius: 15
 Radius: 15.0, Circumference: 94.24777960769379
 Rounded circumference: 94.25
 
---- Math Functions ---
+--- More Math Operations ---
 Input a number to get n cubed: 7
 7.0 cubed = 343.0
 
