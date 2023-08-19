@@ -20,7 +20,7 @@ This is America (the greatest country on Earth), and we use Fahrenheit for tempe
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge3CToF**.
+1. Create a console project named **CodeChallenge4CToF**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter a value to represent Celsius.
    2. Convert the Celsius value to Fahrenheit. If you don't know the math formula, search it!
