@@ -8,6 +8,8 @@ title: Code Challenge 2 - Mad Lib
 
 ## Code Challenge 2 - Mad Lib
 
+---
+
 ### Introduction
 
 A mad lib is a simple word game where the player is asked to provide a number of words such as a noun, food, place, verb, adjective, etc. The player is then provided a silly story that has their words inserted into specific places. **<a href="http://www.madtakes.com/libs/176.html" target="_blank">Try a mad lib here</a>** if you've never played one before.

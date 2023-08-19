@@ -8,6 +8,8 @@ title: Code Challenge 1 - Chain Letter
 
 ## Code Challenge 1 - Chain Letter
 
+---
+
 ### Introduction
 
 A classic form of spam in the early days of the internet are known as chain letters. A chain letter involves a story and command to send the letter to a number of contacts. Here is a sample:

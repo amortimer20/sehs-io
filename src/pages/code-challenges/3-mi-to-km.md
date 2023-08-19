@@ -8,6 +8,8 @@ title: Code Challenge 3 - Miles to Kilometers Calculator
 
 ## Code Challenge 3 - Miles to Kilometers Calculator
 
+---
+
 ### Introduction
 
 Unit conversion programs are great for practicing elementary programming concepts. This first calculator program is converting distances from miles to kilometers.

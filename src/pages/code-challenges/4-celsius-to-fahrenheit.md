@@ -8,6 +8,8 @@ title: Code Challenge 4 - Celsius to Fahrenheit Calculator
 
 ## Code Challenge 4 - Celsius to Fahrenheit Calculator
 
+---
+
 ### Introduction
 
 This is America (the greatest country on Earth), and we use Fahrenheit for temperature values. Celsius is okay though. This program will help you convert temperature values from Celsius to Fahrneheit.
