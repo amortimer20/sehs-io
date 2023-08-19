@@ -20,6 +20,8 @@ When graphing lines in Algebra, it's important to understand how to calculate th
 
 </div>
 
+where _m_ is the slope, the ordered pair _(x1, y1)_ is the first point, and the ordered pair _(x2, y2)_ is the second point.
+
 #### Skills to Practice
 
 - Prompting a user for input
