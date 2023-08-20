@@ -34,7 +34,7 @@ Another interesting thing we do in programming is generate random numbers. This 
 
 #### Setup
 
-1. Create a new C# console application. Name the project **1.8 MathMethodsRandom**.
+1. Create a new C# console application. Name the project **1.8 Math Methods Random**.
 2. Click Create.
 
 #### Code
