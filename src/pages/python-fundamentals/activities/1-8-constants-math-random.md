@@ -28,7 +28,7 @@ import math
 
 Another interesting thing we do in programming is generate random numbers. This allows us to make dynamic games, autogenerate data, etc. The features for generating random numbers also need to be imported. It's as simple as the statement above, `import random`.
 
-You will notice that in order to use any constans or functions defined in these modules will use a slightly different syntax. For example, to use the constant `pi`, the syntax is `math.pi`. This syntax has is related to how we use imported code. Know that anything we use from the math module must be prefixed with `math.`. You will learn all specifics later on, but again, just try to memorize this syntax for now.
+You will notice that in order to use any constants or functions defined in these modules will use a slightly different syntax. For example, to use the constant `pi`, the syntax is `math.pi`. This syntax has is related to how we use imported code. Know that anything we use from the math module must be prefixed with `math.`. You will learn all specifics later on, but again, just try to memorize this syntax for now.
 
 #### Skills to Practice
 
