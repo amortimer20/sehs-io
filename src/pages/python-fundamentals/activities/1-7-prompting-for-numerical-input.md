@@ -78,7 +78,7 @@ The area of the square is 650.25ft squared
 
 ### Tips, Tricks, and Reflection
 
-- If getting input, converting it to a number, and saving it to a variable is confusing, then write the code the long way. Sometimes it can be confusing, and it's perfectly fine to write the code over a few lines.
+- If getting input, converting it to a number, and saving it to a variable in one line is confusing, then write the code the long way. Sometimes it can be confusing, and it's perfectly fine to write the code over a few lines.
 
 Example:
 
