@@ -76,7 +76,7 @@ Is 1000 equal to 1000? It is, so the result is the value **true**. You can see a
   - Equality (`==`) and inequality (`!=`)
   - Greater than (`>`) and less than (`<`)
   - Greater than or equal (`>=`) and less than or equal (`<=`)
-  - not (`!`)
+  - Not (`!`)
 
 ---
 

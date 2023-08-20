@@ -22,7 +22,9 @@ These examples all use instances of decision making. Think of it like a computer
 - If I type in my birthday, _May 24, 1990_ when viewing a mature game on Steam, will I be able to see it? **True** or **False**?
 - If I'm playing Skyrim, and my health goes below 0, do I lose? **True** or **False**?
 
-Just as math has math operators (`+ - * /`), boolean logic has logic operators: equal to `==`, not equal to `!=`, greater than (`>`), less than (`<`), greater than or equal to (`>=`), less than or equal to (`<=`), and not (`!`). Logic expressions can be constructed using different data types combined with these operators. The result will be either _True_ or _False_. Here's an example:
+Just as math has arithmetic operators (`+ - * /`), Python has two categories of boolean operators: comparison operators and logical operators. We won't cover every logical operator in this lesson, but there is more to come.
+
+Here is a brief rundown of the various operators: equality `==`, inequality `!=`, greater than (`>`), less than (`<`), greater than or equal to (`>=`), less than or equal to (`<=`), and not (`not`). Logic expressions can be constructed using different data types combined with these operators. The result will be either **true** or **false**. Here's an example:
 
 ```python
 1000 == 1000
@@ -69,19 +71,17 @@ Is 1000 equal to 1000? It is, so the result is the value _True_. You can see a n
 #### Skills to Practice
 
 - Constructing boolean expressions using the following operators:
-  - equal to (`==`) and not equal to (`!=`)
-  - greater than (`>`) and less than (`<`)
-  - greater than or equal to (`>=`) and less than or equal to (`<=`)
-  - not (`!`)
+  - Equality (`==`) and inequality (`!=`)
+  - Greater than (`>`) and less than (`<`)
+  - Greater than or equal to (`>=`) and less than or equal (`<=`)
+  - Not (`not`)
 
 ### Instructions
 
 #### Setup
 
-1. Create a new repl.
-   1. Select _Python_ for the language.
-   2. Name the Repl "_2.1 Logic_".
-2. Click Create repl.
+1. Create a new Python application. Name the project **2.1 Logic**.
+2. Click Create.
 
 #### Code
 
