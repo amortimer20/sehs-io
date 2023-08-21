@@ -8,6 +8,8 @@ title: C# Fundamentals 2.2 If Statements
 
 ## Activity 2.2 If Statements
 
+---
+
 ### Introduction
 
 Programming languages have a series of constructs that allow a programmer to control what portions of their program execute, and if necessary, how many times to repeat that code. The first category of control structures to learn are referred to as _selection statements_. The first selection statement to learn is called the **if statement**.
@@ -36,7 +38,9 @@ Notice that if statements do not have a semi-colon to terminate it. Remember, co
 
 #### Instructions
 
-## Setup
+---
+
+### Setup
 
 1. Create a new C# console application. Name the project **2.2 If Statements**.
 2. Click Create.
@@ -103,6 +107,8 @@ What's your nickname (adjective): Sleepy
 
 Sleepy Anthony Mortimer for president! Coming 2020
 ```
+
+---
 
 ### Tips, Tricks, and Reflection
 
