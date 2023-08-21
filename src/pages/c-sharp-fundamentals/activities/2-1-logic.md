@@ -18,21 +18,21 @@ Computers aren't limited to performing arithmetic calculations. We are able to p
 - When viewing mature games on Steam, the app needs to verify if you are old enough to view the game or not.
 - If you're playing a video game, the game needs to know when you've won or lost.
 
-These examples all use instances of decision making. Think of it like a computer being able to answer _yes_ or _no_, _correct_ or _incorrect_, or more specifically, _True_ or _False_. Programming languages have a data type called a **boolean** that represents the values **frue** and **false**. The study of computing logical expressions is known as boolean logic. Logical expressions in programming result in either a True or False answer. Let's revisit the examples above:
+These examples all use instances of decision making. Think of it like a computer being able to answer _yes_ or _no_, _correct_ or _incorrect_, or more specifically, _True_ or _False_. Programming languages have a data type called a **boolean** that represents the values `true` and `false`. The study of computing logical expressions is known as boolean logic. Logical expressions in programming result in either a True or False answer. Let's revisit the examples above:
 
-- If I sign into Instagram with a my username but an invalid password, will I see my feed? **true** or **false**?
-- If I type in my birthday, _May 24, 1990_ when viewing a mature game on Steam, will I be able to see it? **true** or **false**?
-- If I'm playing Skyrim, and my health goes below 0, do I lose? **true** or **false**?
+- If I sign into Instagram with a my username but an invalid password, will I see my feed? `true` or `false`?
+- If I type in my birthday, _May 24, 1990_ when viewing a mature game on Steam, will I be able to see it? `true` or `false`?
+- If I'm playing Skyrim, and my health goes below 0, do I lose? `true` or `false`?
 
 Just as math has arithmetic operators (`+ - * /`), C# has various categories of boolean operators: equality operators, comparison operators, and logical operators. We won't cover every logical operator in this lesson, but there is more to come.
 
-Here is a brief rundown of the various operators: equality `==`, inequality `!=`, greater than (`>`), less than (`<`), greater than or equal to (`>=`), less than or equal to (`<=`), and not (`!`). Logic expressions can be constructed using different data types combined with these operators. The result will be either **true** or **false**. Here's an example:
+Here is a brief rundown of the various operators: equality `==`, inequality `!=`, greater than (`>`), less than (`<`), greater than or equal to (`>=`), less than or equal to (`<=`), and not (`!`). Logic expressions can be constructed using different data types combined with these operators. The result will be either `true` or `false`. Here's an example:
 
 ```cs
 1000 == 1000
 ```
 
-Is 1000 equal to 1000? It is, so the result is the value **true**. You can see a number of different examples in the tables below. These are known as truth tables.
+Is 1000 equal to 1000? It is, so the result is the value `true`. You can see a number of different examples in the tables below. These are known as truth tables.
 
 | **Equality (`==`)** | **Result** |
 | :------------------ | ---------: |
