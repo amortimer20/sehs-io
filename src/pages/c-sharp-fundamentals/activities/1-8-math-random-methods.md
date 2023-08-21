@@ -67,7 +67,7 @@ number = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine($"Round: {Math.Round(number)}, Floor: {Math.Floor(number)}, Ceil: {Math.Ceiling(number)}\n");
 
 Console.WriteLine("--- Random number generation ---");
-Random random = new Random();
+Random random = new();
 
 Console.WriteLine($"Random number between 1 and 10: {random.Next(1, 11)}");
 Console.WriteLine($"Random number between 1 and 10: {random.Next(1, 11)}");
