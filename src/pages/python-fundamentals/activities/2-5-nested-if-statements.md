@@ -122,17 +122,10 @@ elif choice == "right":
       gold = 100000
 
     dragon_ending = True
-  elif choice == "yes":
-    print("'Fool!!!'")
-    print("The dragon is angry that you would try to deceive him.")
-    print("He smells that you have no Twinkie, and devours you instead...")
-  elif choice == "no" or choice == "n":
+  else:
     print("'Fool!!!'")
     print("The dragon devours you whole.")
     print("He desired a delicious Hostess treat, settling for you instead...\n")
-  else:
-    print("Your inability to answer his question upsets him.")
-    print("The dragon smashes you with his tail...\n")
 # End right path
 else:
     print("You decide not to enter. You receive a thundershock and lie in the storm...\n")
