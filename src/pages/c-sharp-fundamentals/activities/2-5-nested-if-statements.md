@@ -57,7 +57,7 @@ This program is called a choose your own adventure game. It's going to be the bi
 
 #### Setup
 
-1. Create a new C# console application. Name the project **2.4 Nesting**.
+1. Create a new C# console application. Name the project **2.5 Nesting**.
 2. Click Create.
 
 ## Code
