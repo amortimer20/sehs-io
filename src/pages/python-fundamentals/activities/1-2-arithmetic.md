@@ -73,7 +73,7 @@ print()
 print("I have to split this dollar between the six of us. We each get: ")
 print(100 / 6) # Will this divide evenly?
 print("Without fractional amounts, this is: ")
-print(100//6)
+print(100 // 6)
 print()
 
 # Remainder using the modulus, or mod, operator
