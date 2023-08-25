@@ -57,7 +57,7 @@ print(f"Final grade: {grade_percentage}%. Letter grade: {letter_grade}")
 print("\n")
 
 
-# Mix data types within an array
+# Mix data types within a list
 wallet1 = ["Johnny", 1000]
 wallet2 = ["Francis", 2.55]
 wallet3 = ["Adam", -10]
