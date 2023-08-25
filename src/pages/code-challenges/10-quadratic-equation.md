@@ -23,7 +23,7 @@ The quadratic equation is a fundamental algebra formula for discovering roots of
 
 ### Challenge Tasks
 
-1. Open your code editor and create a new program title "_Quadratic Equation_".
+1. Create a console project named **CodeChallenge10Quadratics**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter the values for variables **a**, **b**, and **c**.
    2. Calculate the discriminant
