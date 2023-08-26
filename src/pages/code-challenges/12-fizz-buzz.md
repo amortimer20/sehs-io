@@ -16,9 +16,9 @@ FizzBuzz is a classic elementary programming challenge. The program outputs 100 
 
 #### Skills to Practice
 
-- Repeat statements using loops
-- Make decisions using if statements
-- Check for divisibility
+- Repeating statements using loops
+- Making decisions using if statements
+- Checking for divisibility
 
 ### Challenge Tasks
 
