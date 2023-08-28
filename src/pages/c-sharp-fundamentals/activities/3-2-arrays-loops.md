@@ -202,7 +202,6 @@ Printing List
 
 ---
 
-
 ### Tips, Tricks, and Reflection
 
 - Notice arrays are inconvenient when we have collections like todo lists where we don't know exactly how many elements we will have. There exists a more suitable data type called a **List** which we will cover shortly.
