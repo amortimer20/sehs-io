@@ -104,45 +104,40 @@ while i < len(todo_list):
 #### Debug
 
 ```txt
---- Sodas App ---
-Add a soda to your list: pepsi
-Add a soda to your list: coke
-Add a soda to your list: sprite
-Add a soda to your list: crush
-Add a soda to your list: A&W
+Enter a soda: Pepsi
+Enter a soda: Coke
+Enter a soda: Dr. Pepper
+Enter a soda: Sprite
+Enter a soda: Slice
 
-Here are your sodas:
-- pepsi
-- coke
-- sprite
-- crush
-- A&W
+Here are your drinks:
+* Pepsi
+* Coke
+* Dr. Pepper
+* Sprite
+* Slice
 
+Press enter to continue.
 
---- Todo App ---
+--- Todo List ---
 -Menu-
-1) Add a todo item
+1) Add a task
 2) Finish
 -> 1
-Enter todo item: cook
+Enter task: Grade homework
 -Menu-
-1) Add a todo item
+1) Add a task
 2) Finish
 -> 1
-Enter todo item: clean
+Enter task: Answer emails
 -Menu-
-1) Add a todo item
+1) Add a task
 2) Finish
--> 1
-Enter todo item: sleep
--Menu-
-1) Add a todo item
-2) Finish
+-> 2
 
-Todo list:
-- cook
-- clean
-- sleep
+Printing List
+* Grade homework
+* Answer emails
 ```
 
 ### Tips, Tricks, and Reflection
