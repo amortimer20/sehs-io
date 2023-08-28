@@ -12,7 +12,7 @@ title: C# Fundamentals 1.3 String Formatting
 
 In the previous activity, the math expressions were output seperately from the strings. Although this works, it doesn't look nice. In programming we format strings to construct complex text messages. In C#, there are two popular ways to format strings: _string concatenation_ and _string interpolation_.
 
-String concatenation involves using the plus sign **`+`** to _combine_ data. For example, I can combining `"My name is "` with `"Anthony Mortimer` using the plus sign.
+String concatenation involves using the plus sign **`+`** to _combine_ data. For example, I can combining `"My name is "` with `"Anthony Mortimer"` using the plus sign.
 
 ```cs
 "My name is " + "Anthony Mortimer"
