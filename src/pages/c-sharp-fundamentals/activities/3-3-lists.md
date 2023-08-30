@@ -55,6 +55,22 @@ Number of games: 4
 
 Notice that elements are still accessed using the square bracket notation. You can still access and modify elements at any valid index.
 
+##### List Initialization Syntax
+
+Lists can also be initialized with data, similar to initialization syntax with arrays.
+
+```cs
+List<int> stats = new() { 99, 72, 33, 5, 100, 67, 1776 };
+
+// For larger datasets, you can break down data over multiple lines.
+List<string> roster = new()
+{
+    "Jim",
+    "Jack",
+    "Joe Bob"
+};
+```
+
 ##### Arrays vs. Lists
 
 Follow this rule: if you know the number of elements needed ahead of time, you can use an array. If the number of elements will vary, use a list. In theory, you could use a list for just about any scenario over an array, but you should always consider your options.
