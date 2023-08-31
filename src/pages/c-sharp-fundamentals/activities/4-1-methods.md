@@ -45,6 +45,10 @@ Greeting();
 
 you can imagine the code was copy and pasted. However, we now have reusable code. If I need to make changes, I only need to change the method body once. This is very helpful for maintainability.
 
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/method-animation.mp4" width="640" controls></video>
+
 ##### Return Types
 
 Methods have the ability to return a value when it is finished executing. For example, the `Console.ReadLine()` method returns a string containing user input. Return values allow us to save useful information that the method has generated. The signature for `Console.ReadLine()` looks like this: `string Console.ReadLine()`. The signature tells you what the return type is, and in this case, the return type is `string`. It's up to you as the programmer to decide if it's necessary to store the value the method returns.
