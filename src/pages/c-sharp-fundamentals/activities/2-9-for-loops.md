@@ -40,7 +40,7 @@ for (int i = 10; i >= 1; i--) {
 
 **Example Video**
 
-<video src="/courses/c-sharp-fundamentals/for-loop-animation.mp4" width="640" controls></video>
+<video src="/courses/c-sharp-fundamentals/for-loop-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
 
 #### Skills to Practice
 
