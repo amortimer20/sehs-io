@@ -49,7 +49,6 @@ Notice that if statements do not have a semi-colon to terminate it. Remember, co
 
 ```cs
 // Age Validator
-using System.Xml.Linq;
 
 Console.Write("Enter your age: ");
 string input = Console.ReadLine();
