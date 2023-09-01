@@ -13,6 +13,7 @@ title: Python Fundamentals 4.2 Function Parameters
 We can give functions dynamic behavior by passing information when calling them. When we give information to a function, we call this _passing arguments_. Argument values are assigned to special variables called _parameters_. Parameter variables store the argument values passed to them. This allows us to use the arguments inside of a function.
 
 **argument** - Information/data passed to a function
+
 **parameter** - A variable that receives an argument
 
 #### Skills to Practice
