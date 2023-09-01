@@ -36,39 +36,39 @@ Is 1000 equal to 1000? It is, so the result is the value `true`. You can see a n
 
 | **Equality (`==`)** | **Result** |
 | :------------------ | ---------: |
-| `100 == 100`        |       True |
-| `100 == 99`         |      False |
-| `"abc" == "abc"`    |       True |
-| `"ABC" == "abc"`    |      False |
-| `True == True`      |       True |
-| `True == False`     |      False |
+| `100 == 100`        |       true |
+| `100 == 99`         |      false |
+| `"abc" == "abc"`    |       true |
+| `"ABC" == "abc"`    |      false |
+| `true == true`      |       true |
+| `true == false`     |      false |
 
 | **Inequality (`!=`)** | **Result** |
 | :---------------------- | ---------: |
-| `100 != 100`            |      False |
-| `100 != 99`             |       True |
-| `"abc" != "abc"`        |      False |
-| `"ABC" != "abc" `       |       True |
-| `True != True`          |      False |
-| `True != False`         |       True |
+| `100 != 100`            |      false |
+| `100 != 99`             |       true |
+| `"abc" != "abc"`        |      false |
+| `"ABC" != "abc" `       |       true |
+| `true != true`          |      false |
+| `true != false`         |       true |
 
 | **Greater than/Less than (`>`,`<`)** | **Result** |
 | :----------------------------------- | ---------: |
-| `100 > 100`                          |      False |
-| `100 > 99`                           |       True |
-| `0 < 100`                            |       True |
-| `0 < -1`                             |      False |
+| `100 > 100`                          |      false |
+| `100 > 99`                           |       true |
+| `0 < 100`                            |       true |
+| `0 < -1`                             |      false |
 
 | **Greater than or equal/Less than or equal (`>=`,`<=`)** | **Result** |
 | :---------------------------------------------------------- | ---------: |
-| `100 >= 100`                                                |       True |
-| `100 <= 99`                                                 |      False |
+| `100 >= 100`                                                |       true |
+| `100 <= 99`                                                 |      false |
 
 | **Not (`!`)**   | **Result** |
 | :---------------- | ---------: |
-| `!True`        |      False |
-| `!False`       |       True |
-| `!(100 > 100)` |       True |
+| `!true`        |      false |
+| `!false`       |       true |
+| `!(100 > 100)` |       true |
 
 #### Skills to Practice
 
