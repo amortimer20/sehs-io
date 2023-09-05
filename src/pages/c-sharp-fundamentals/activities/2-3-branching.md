@@ -121,7 +121,7 @@ Console.WriteLine();
 // Simple ATM Demo
 Console.WriteLine("\n--- ATM Demo ---\n");
 Console.Write("Set your initial balance: $");
-string input = Console.ReadLine();
+input = Console.ReadLine();
 double balance = Convert.ToDouble(input);
 
 Console.WriteLine("Simple ATM");
