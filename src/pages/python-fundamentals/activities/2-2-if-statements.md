@@ -24,6 +24,10 @@ if number == 100:
 
 If the condition is _true_, the code block, which is the code indented under the if statement, will execute. If the condition is _false_, the code block is skipped over, and does not execute.
 
+**Example Video**
+
+<video src="/courses/python-fundamentals/if-statement-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Skills to Practice
 
 - Constructing if statements
