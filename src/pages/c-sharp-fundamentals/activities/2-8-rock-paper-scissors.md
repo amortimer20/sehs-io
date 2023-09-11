@@ -100,7 +100,7 @@ while (playing)
         Console.WriteLine("You win! Rock crushes scissors!");
         wins++;
     }
-    else if (player == "rock" && computer == "player")
+    else if (player == "rock" && computer == "paper")
     {
         Console.WriteLine("You lose! Paper covers rock!");
         losses++;
