@@ -111,7 +111,7 @@ else if (playerHealth > enemyHealth)
 {
     Console.WriteLine("You are beating the enemy!");
 }
-else if (enemyHealth < playerHealth)
+else if (enemyHealth > playerHealth)
 {
     Console.WriteLine("Be careful, the enemy is beating you!");
 }
