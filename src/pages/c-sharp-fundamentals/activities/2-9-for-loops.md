@@ -12,7 +12,7 @@ title: C# Fundamentals 2.9 For Loops
 
 ### Introduction
 
-c# has a number of different loop constructs built in to the language. The while loop is flexible enough to perform just about any task where iteration is required. However, there are other loops that can perform certain tasks with more efficient code.
+C# has a number of different loop constructs built in to the language. The while loop is flexible enough to perform just about any task where iteration is required. However, there are other loops that can perform certain tasks with more efficient code.
 
 The **for loop** is similar in nature to a while loop, but it has a different organization. There are three parts to a for loop, other than the `for` keyword and code block:
 
