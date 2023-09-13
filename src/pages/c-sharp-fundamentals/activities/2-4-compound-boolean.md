@@ -145,7 +145,7 @@ if (entryNumber == winningNumber)
 {
     Console.WriteLine("Exact match! You win the grand prize of $10,000!");
 }
-else if (winningDigitOne == entryDigitOne && winningDigitTwo == entryDigitTwo)
+else if (winningDigitOne == entryDigitTwo && winningDigitTwo == entryDigitOne)
 {
     Console.WriteLine("Your digits match, but out of order! You win $3,000!");
 }
