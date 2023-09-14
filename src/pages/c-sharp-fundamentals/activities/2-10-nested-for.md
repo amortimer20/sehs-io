@@ -57,7 +57,7 @@ The outer for loop iterates three times, where i increments from 0 to 2 the inne
 
 ```cs
 Console.WriteLine("--- Multiplication Table ---");
-Console.Write("What number to you want to multiply up to? ");
+Console.Write("What number do you want to multiply up to? ");
 int max = Convert.ToInt32(Console.ReadLine());
 
 // Header row
@@ -119,4 +119,4 @@ What number to you want to multiply up to? 10
 
 ### Tips, Tricks, and Reflection
 
-- Notice the table becomes uneven as you list larger numbers. Consider a way to pad numbers ahead of time.
+- Notice the table becomes uneven as you list larger numbers. Consider a way to pad numbers ahead of time. Maybe use \t and see what it does?
