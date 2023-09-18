@@ -42,7 +42,7 @@ When writing a class, you're describing three major things:
 
 The identity defines what the class **is**. The attributes describe the values We use variables to store those attributes. The behavior describes what actions an object can perform. We define behavior using methods. The variables an methods defined in a class are referred to as **class members**, or **members** for short.
 
-Variables defined in a class are referred to as **fields** or **instance variables**. That's because each dog object (or instance) will have it's own copy of those variables. We'll discuss this more below.
+Variables defined in a class are referred to as **fields**, as in data fields, or **instance variables**. That's because each dog object (or instance) will have it's own copy of those variables. We'll discuss this more below.
 
 **Example Dog Class**
 ```cs
