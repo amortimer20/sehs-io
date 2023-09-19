@@ -20,7 +20,7 @@ The number 20 is passed to `number`. Data passed to a parameter is called an **a
 
 **Example**
 ```cs
-static double CubeNumber(double number)
+double CubeNumber(double number)
 {
     return number * number * number;
 }
@@ -37,7 +37,7 @@ You can specify as many parameters as you need for a given method definition. Ke
 
 **Multiple Parameters**
 ```cs
-static double Power(double baseNumber, double exponent)
+double Power(double baseNumber, double exponent)
 {
     double product = baseNumber;
 
@@ -79,7 +79,7 @@ Console.WriteLine(Power(10, 3));
 // Check if an integer is even
 // Parameters: number - number to be evaluated
 // Returns: true if even, otherwise false
-static bool IsEven(int number)
+bool IsEven(int number)
 {
     return number % 2 == 0;
 }
@@ -87,7 +87,7 @@ static bool IsEven(int number)
 // Check if an integer is odd
 // Parameters: number - number to be evaluated
 // Returns: true if odd, otherwise false
-static bool IsOdd(int number)
+bool IsOdd(int number)
 {
     return number % 2 == 1;
 }
@@ -95,7 +95,7 @@ static bool IsOdd(int number)
 // Roll a die
 // Parameters: numberOfSides - number of sides of the die
 // Returns: number rolled as integer
-static int RollDie(int numberOfSides)
+int RollDie(int numberOfSides)
 {
     Random random = new();
     return random.Next(1, numberOfSides + 1);
@@ -104,7 +104,7 @@ static int RollDie(int numberOfSides)
 // Calculate wattage
 // Parameters: voltage and amperage values
 // Returns: watt value
-static double GetWattage(double volts, double amps)
+double GetWattage(double volts, double amps)
 {
     return volts * amps;
 }

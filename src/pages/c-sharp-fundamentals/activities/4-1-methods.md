@@ -18,11 +18,11 @@ Methods (also known as functions, subroutines, sub-programs, or procedures) are 
 
 To create a user-defined method, which is just a method created by a programmer (i.e. _you_), we create what is called a **method definition**. Method definitions are composed of two parts, the **method signature** and the the **method body**. The signature defines three key pieces of information: the method **identifier**/name, the **return type**, and any necessary **parameters**. The method body is the code block that follows the signature. We will learn about parameters in the next lesson.
 
-The signature for the example below is `void Greeting()`. The method body is the code block containing the two statements. Note, regarding the example below, and for all method definitions in this section, we will begin all method definitions using the `static` keyword. We won't always need to use this keyword, but we will learn more about this keyword in the next section.
+The signature for the example below is `void Greeting()`. The method body is the code block containing the two statements.
 
 **Example Method Definition**
 ```cs
-static void Greeting()
+void Greeting()
 {
     Console.WriteLine("Hey buddy!");
     Console.WriteLine("How are you?");
@@ -62,7 +62,7 @@ If a method has no value to return, the signature will have a return type of `vo
 **Example Method with a Return Type**
 
 ```cs
-static int RandomNumber()
+int RandomNumber()
 {
     Random random = new();
     return random.Next(1, 1000001);
@@ -81,14 +81,14 @@ In Part 2, there were instances where declared variables were only accessible in
 **Example**
 
 ```cs
-static int RandomNumber()
+int RandomNumber()
 {
     // random is only accessible within this method
     Random random = new();
     return random.Next(1, 1000001);
 }
 
-static void Greeting()
+void Greeting()
 {
     Console.WriteLine("Hey buddy!");
     Console.WriteLine("How are you?");
@@ -115,7 +115,7 @@ static void Greeting()
 These programs are not written using best practices. However, we're just practicing defining and calling methods at this point.
 
 ```cs
-static void Genie()
+void Genie()
 {
     Console.Write("What is your first wish? ");
     Console.ReadLine();
@@ -128,7 +128,7 @@ static void Genie()
     Console.WriteLine("I'll get right on that.");
 }
 
-static int RandomNumber()
+int RandomNumber()
 {
     Random random = new();
     Console.Write("Enter your minimum: ");
