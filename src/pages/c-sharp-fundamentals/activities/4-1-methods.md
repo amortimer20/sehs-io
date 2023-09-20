@@ -137,6 +137,11 @@ int RandomNumber()
     int max = Convert.ToInt32(Console.ReadLine());
     return random.Next(min, max + 1);
 }
+
+Genie();
+RandomNumber();
+RandomNumber();
+RandomNumber();
 ```
 
 #### Debug
