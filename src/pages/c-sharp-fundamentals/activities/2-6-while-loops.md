@@ -27,7 +27,7 @@ int number = 10;
 while (number > 0)
 {
     Console.WriteLine($"Number is {number}");
-    number = number - 1;
+    number--;
 }
 ```
 
@@ -94,7 +94,7 @@ while (bottles > 0)
     Console.WriteLine($"{bottles} bottles of {soda} on the wall,");
     Console.WriteLine($"{bottles} bottles of {soda}!");
     Console.WriteLine("You take one down, pass it around,");
-    bottles = bottles - 1; // # Subtract one from bottles variables
+    bottles--; // # Subtract one from bottles to 'take one down'
     Console.WriteLine($"{bottles} bottles of {soda} on the wall!\n");
 
     // Console.ReadLine(); // Uncomment to pause after every iteration.
