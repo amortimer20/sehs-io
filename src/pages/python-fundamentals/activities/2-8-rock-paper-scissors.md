@@ -77,7 +77,7 @@ while playing:
     computer_hand = "rock"
   elif random_number == 1:
     computer_hand = "paper"
-  elif random_number == 2:
+  else:
     computer_hand = "scissors"
 
 
