@@ -16,7 +16,7 @@ In addition to `List.Add()`, we will cover more methods that make lists easy to 
 
 **Example List**
 ```cs
-List<string> movies = new()
+List<string> movies = new List<string>()
 {
     "Jurassic Park",
     "Toy Story",
@@ -123,7 +123,7 @@ This activity only uses a subset of the methods, but know that these methods and
 
 ```cs
 bool managingInventory = true;
-List<string> inventory = new()
+List<string> inventory = new List<string>()
 {
     "axe",
     "shovel",

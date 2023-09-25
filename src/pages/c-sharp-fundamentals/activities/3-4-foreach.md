@@ -12,11 +12,11 @@ title: C# Fundamentals 3.4 Foreach Loops
 
 ### Introduction
 
-Although while loops and for loops are capable of iterating through arrays, there is another C# loop that makes iterating through arrays very easy and intuitive. This loop is known as a **foreach loop**, and it's purpose is to iterate through array elements in sequence, or one at a time.
+Although while loops and for loops are capable of iterating through collections, there is another C# loop that makes iterating through collections very easy and intuitive. This loop is known as a **foreach loop**, and it's purpose is to iterate through array elements in sequence, or one at a time.
 
 **Example**
 ```cs
-string[] fruits = { "apples", "bananas", "cherries", "dates" };
+string[] fruits = new string[] { "apples", "bananas", "cherries", "dates" };
 
 foreach (string fruit in fruits)
 {
@@ -42,7 +42,7 @@ You may be wondering if the foreach loop renders while and for loops obselete. T
 - When you need to access each element without modifications, use a foreach loop.
 - When you need to **modify**, or change elements, consider a for loop or even a while loop, depending on your needs.
 
-Foreach loops don't have a way to get the index of an element, so changing the value at the current index is not so simple with foreach loops. I would consider a for loop in this case. As always, use the right tool for the job.
+Foreach loops are not meant to modify the collection it's iterating through, so I would consider a for loop in this case.
 
 #### Skills to Practice
 
@@ -61,7 +61,7 @@ Foreach loops don't have a way to get the index of an element, so changing the v
 #### Code
 
 ```cs
-List<string> shoppingCart = new();
+List<string> shoppingCart = new List<string>();
 string input = "";
 
 Console.WriteLine("--- Shopping Cart ---");

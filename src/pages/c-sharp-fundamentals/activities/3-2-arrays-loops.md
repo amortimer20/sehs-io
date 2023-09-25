@@ -15,7 +15,7 @@ title: C# Fundamentals 3.2 Arrays and Loops
 We can use loops to iterate through elements of an array. The key is to access each item, one at a time. We do this by tracking what index we are currently at using a number variable. A common convention is to use a variable named _i_ to track the index.
 
 ```cs
-string[] games = { "Fallout", "Sonic", "Super Mario" };
+string[] games = new string[] { "Fallout", "Sonic", "Super Mario" };
 int i = 0;
 
 Console.WriteLine(games[i]);
@@ -35,7 +35,7 @@ Super Mario
 Notice the repetition and copied code? Let's refactor this so it uses a while loop.
 
 ```cs
-string[] games = { "Fallout", "Sonic", "Super Mario" };
+string[] games = new string[] { "Fallout", "Sonic", "Super Mario" };
 int i = 0;
 
 while (i < 3)
@@ -50,7 +50,7 @@ while (i < 3)
 There are three games with indexes ranging from 0 to 2. So, we make sure the loop stops when i becomes 3. This code is inflexible though, because it only works for arrays of size 3. Luckily, there's a simple fix. Arrays have what's known as a **property** called **Length**. It returns the total number of elements in the array. The syntax looks like this: `arrayName.Length`. Keeping track of the size, or length, of a data structure is important in programming. We'll learn more about properties in Part 4 of this course.
 
 ```cs
-string[] games = { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
+string[] games = new string[] { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
 int i = 0;
 
 while (i < games.Length) // games.Length returns 7
@@ -67,7 +67,7 @@ It doesn't matter what the size of the array is, because `games.Length`` will al
 For loops are extremely useful when processing arrays. Notice the while loop contains all the necessary statements that make up a for loop. We can perform one final refactor our code.
 
 ```cs
-string[] games = { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
+string[] games = new string[] { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
 
 for (int i = 0; i < games.Length; i++)
 {

@@ -14,10 +14,10 @@ title: C# Fundamentals 3.3 Lists
 
 Lists are a convenient data type for storing elements in a collection. While they are similar to arrays in that they can store elements of a given type in a collection, there is one significant difference: **lists are resizable**. In other words, we don't need to set their size, unlike arrays. This makes lists an attractive option when you need to store values in a group, but you don't know ahead of time what the size needs to be, or if there is ever a final size. Consider this exmaple, do you always shop for the same number of items every time you go to the grocery store? Of course not. Sometimes you may have a cart overflowing with foods, and sometimes you have just a few items you need to pick up.
 
-Lists are declared using different syntax than you may be used to: `List<data type> nameOfList = new();`. Notice the data type is surrounded by angle brackets. This is called generic syntax. It's an intermediate level concept that you needn't worry to much about at this point.
+Lists are declared using different syntax than you may be used to: `List<data type> nameOfList = new List<string>();`. Notice the data type is surrounded by angle brackets. This is called generic syntax. It's an intermediate level concept that you needn't worry to much about at this point.
 
 ```cs
-List<string> games = new();
+List<string> games = new List<string>();
 ```
 
 This code initializes an empty list. Keep in mind that until elements are added, there are no available indexes. `games[0]` will cause an out of range error.
@@ -60,10 +60,10 @@ Notice that elements are still accessed using the square bracket notation. You c
 Lists can also be initialized with data, similar to initialization syntax with arrays.
 
 ```cs
-List<int> stats = new() { 99, 72, 33, 5, 100, 67, 1776 };
+List<int> stats = new List<string>() { 99, 72, 33, 5, 100, 67, 1776 };
 
 // For larger datasets, you can break down data over multiple lines.
-List<string> roster = new()
+List<string> roster = List<string>()
 {
     "Jim",
     "Jack",
@@ -93,7 +93,7 @@ Follow this rule: if you know the number of elements needed ahead of time, you c
 #### Code
 
 ```cs
-List<string> tasks = new();
+List<string> tasks = new List<string>();
 bool addingTasks = true;
 
 Console.WriteLine("--- Todo List ---");

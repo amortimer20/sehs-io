@@ -58,7 +58,7 @@ If the values to be inserted into the array are pre-determined, you may use arra
 
 ```cs
 // Initialize an array with three elements. This array has a capacity of 3 elements.
-double [] accounts = { 1000.50, 999.99, 2530.02 };
+double [] accounts = new double[]{ 1000.50, 999.99, 2530.02 };
 ```
 
 #### Skills to Practice
@@ -94,7 +94,7 @@ Console.ReadLine();
 
 Console.WriteLine("--- Gradebook ---");
 // Initialize array with 5 elements.
-double[] grades = { 90, 88, 95, 60, 85 };
+double[] grades = new double[]{ 90, 88, 95, 60, 85 };
 double totalPoints = grades[0] + grades[1] + grades[2] + grades[3] + grades[4];
 // Assuming grades are out of 100. Total possible points = 500
 // Multiply by 100 to get percentage as a whole number
