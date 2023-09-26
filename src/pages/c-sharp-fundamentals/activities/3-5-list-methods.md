@@ -48,8 +48,8 @@ movies.Contains("A Bug's Life"); //returns false
 **`List.IndexOf(item)`** - Returns the index of the first occurrence of a value in the list. If not found, returns **-1**.
 
 ```cs
-movies.Contains("Toy Story"); // returns 1
-movies.Contains("A Bug's Life"); //returns -1
+movies.IndexOf("Toy Story"); // returns 1
+movies.IndexOf("A Bug's Life"); //returns -1
 ```
 
 **`List.Insert(index, item)`** - Inserts an element into the list at the specified index. Elements at or to the right of the index get shifted to the right.
