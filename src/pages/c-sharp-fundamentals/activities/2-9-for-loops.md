@@ -25,7 +25,8 @@ The following examples can be written with a while loop, but notice how the for 
 **Example**: Count up from 1 to 10 with a for loop
 
 ```cs
-for (int i = 1; i <= 10; i++) {
+for (int i = 1; i <= 10; i++)
+{
   Console.WriteLine(i);
 }
 ```
@@ -33,7 +34,8 @@ for (int i = 1; i <= 10; i++) {
 **Example**: Count down from 10 to 1 with a for loop
 
 ```cs
-for (int i = 10; i >= 1; i--) {
+for (int i = 10; i >= 1; i--)
+{
   Console.WriteLine(i);
 }
 ```
