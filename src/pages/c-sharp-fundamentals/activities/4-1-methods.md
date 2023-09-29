@@ -124,7 +124,7 @@ void Genie()
     Console.Write("What is your third wish? ");
     Console.ReadLine();
     Console.WriteLine("...");
-    Thread.Sleep(3000); // Pause program for 3000 milliseconds, or 1 second.
+    Thread.Sleep(3000); // Pause program for 3000 milliseconds, or 3 seconds.
     Console.WriteLine("I'll get right on that.");
 }
 
@@ -139,9 +139,10 @@ int RandomNumber()
 }
 
 Genie();
-RandomNumber();
-RandomNumber();
-RandomNumber();
+int n1 = RandomNumber();
+int n2 =RandomNumber();
+int n3 = RandomNumber();
+Console.WriteLine($"Your random numbers are: {n1}, {n2}, and {n3}");
 ```
 
 #### Debug
