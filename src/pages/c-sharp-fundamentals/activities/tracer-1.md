@@ -21,6 +21,7 @@ For each question, complete the following:
 3. Answer the following questions:
     1. How many iterations are performed?
     2. What is/are the final value of the variable(s) when the loop terminates?
+    3. What is the output, if any?
 
 ##### Example
 
@@ -31,6 +32,7 @@ int n = 5;
 
 while (n <= 25)
 {
+    Console.Write(n + ",");
     n = n + 4;
 }
 ```
@@ -38,6 +40,7 @@ while (n <= 25)
 - n: ~~5~~, ~~9~~, ~~13~~, ~~17~~, ~~21~~, ~~25~~, 29
 - Number of iterations: 6
 - Final value of n: 29
+- Output: 5,9,13,17,21,25
 
 ### Questions
 
