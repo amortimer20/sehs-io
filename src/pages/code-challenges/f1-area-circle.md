@@ -20,12 +20,6 @@ The area of a circle is calculated using the formula:
 
 The function may be tested with a program that prompts the user to enter the radius of a circle.
 
-#### Skills to Practice
-
-- Creating and running a program
-- Console output
-- Submitting a program for credit
-
 ### Challenge Tasks
 
 1. Create a console project named **FunctionChallenge1CircleArea**.
