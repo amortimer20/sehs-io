@@ -1,7 +1,7 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: "C# Fundamentals Lab 1 Raylib Part 1"
+title: "C# Fundamentals Tracer 1"
 ---
 
 [← Back](/c-sharp-fundamentals/)
