@@ -41,13 +41,13 @@ points_earned = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
 # Multiply by 100 to get grade percentage as a whole number
 grade_percentage = round(points_earned / 500 * 100, 1)
 
-if grade_percentage > 90:
+if grade_percentage >= 90:
     letter_grade = "A"
-elif grade_percentage > 80:
+elif grade_percentage >= 80:
     letter_grade = "B"
-elif grade_percentage > 70:
+elif grade_percentage >= 70:
     letter_grade = "C"
-elif grade_percentage > 60:
+elif grade_percentage >= 60:
     letter_grade = "D"
 else:
     letter_grade = "F"
