@@ -7,5 +7,6 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: false
   },
-  integrations: [react()]
+  integrations: [react()],
+  site: 'https://sehs.io'
 });
