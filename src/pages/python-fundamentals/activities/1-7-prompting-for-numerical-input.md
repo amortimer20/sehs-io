@@ -25,6 +25,10 @@ float("100.4") # "100.4" converts to 100.4
 int("32.5") # "32.5" converts to 32. The decimal gets truncated.
 ```
 
+**Example Video**
+
+<video src="/courses/python-fundamentals/type-conversion-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Skills to Practice
 
 - Prompt a user for input and saving it to a variable
