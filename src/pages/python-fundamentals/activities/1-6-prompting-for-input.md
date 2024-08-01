@@ -12,6 +12,10 @@ title: Python Fundamentals 1.6 Prompting for Input
 
 In this introductory section, we have been writing output using `print()`. Now we will learn another function that complements `print()`, and that is the `input()` function. This function allows us to receive input from the user. I.e. The user can interact with the program via the console. Writing to and reading from the console is known as input and output, or I/O for short.
 
+**Example Video**
+
+<video src="/courses/python-fundamentals/input-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Skills to Practice
 
 - Prompt a user for input and saving it to a variable
