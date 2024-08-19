@@ -10,11 +10,11 @@ title: Python Fundamentals 1.1 Hello World
 
 ### Introduction
 
-Every programming course begins with a simple program known as _Hello World_. The programming construct you will learn in this lesson is known as **output**. Output is information that is given to the user. In order to output information to the use, we need to use something called `print()`.
+The programming construct you will learn in this lesson is known as **output**. With regards to console applications, output is information that is displayed to the user. However, output can mean different things depending on the context. In order to output information to the use, we need to use something called `print()`.
 
 `print()` is known as a _function_. Functions perform some action in programming. In this case, `print()` outputs a message to the user via the console. The console is a simple terminal for running text based computer applications. Most of the introductory applications in these programming activities will be console based.
 
-We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. Comments begin with the **#** symbol.
+We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for temporary purposes, such as testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. Comments begin with the **#** symbol.
 
 #### Skills to Practice
 
