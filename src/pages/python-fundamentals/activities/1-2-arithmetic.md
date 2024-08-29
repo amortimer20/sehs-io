@@ -113,7 +113,7 @@ Without fractional amounts, this is:
 16
 
 After splitting up the dollar, how many cents are left over?
-4
+4.0
 
 4 * 10 + 2 equals:
 52
