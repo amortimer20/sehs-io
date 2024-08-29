@@ -64,7 +64,7 @@ Console.WriteLine();
 // Notice the difference between using integers and decimals.
 Console.WriteLine("We have eight slices of pizza between the three of us.");
 Console.WriteLine("We each get this many slices:");
-Console.WriteLine(8 / 2);
+Console.WriteLine(8 / 3);
 Console.WriteLine("If we cut up the other slice, we get:");
 Console.WriteLine(8 / 3.0);
 Console.WriteLine();
