@@ -10,11 +10,11 @@ title: Python Fundamentals 1.1 Hello World
 
 ### Introduction
 
-The programming construct you will learn in this lesson is known as **output**. With regards to console applications, output is information that is displayed to the user. However, output can mean different things depending on the context. In order to output information to the use, we need to use something called `print()`.
+In this lesson, you will learn about output in programming. For console applications, **output** refers to information displayed to the user. However, the meaning of output can vary depending on the context. To output information to the user, we use the `print()` function.
 
-`print()` is known as a _function_. Functions perform some action in programming. In this case, `print()` outputs a message to the user via the console. The console is a simple terminal for running text based computer applications. Most of the introductory applications in these programming activities will be console based.
+The `print()` function is a fundamental concept in programming. **Functions** perform specific actions, and in this case, `print()` outputs a message to the user via the console. The console is a simple terminal for running text-based computer applications. Most of the introductory applications in these programming activities will be console-based.
 
-We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for temporary purposes, such as testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. Comments begin with the **#** symbol.
+Additionally, we will learn how to write comments in Python. **Comments** serve two main purposes: documenting your code and temporarily disabling parts of your program for testing. As we progress, our programs will grow in size and complexity. It’s crucial to document your code to ensure it is easily understood and maintainable by yourself and your team. In Python, comments begin with the `#` symbol.
 
 #### Skills to Practice
 
@@ -28,25 +28,25 @@ We will also learn how to write comments in Python. Comments serve two purposes,
 
 #### Setup
 
-1. Create a new Python application. Name the project **1.1 Output**.
+1. Create a new Python application. Name the project **1-1-output.py**.
 2. Click Create.
 
 #### Code
 
-Your new workspace will contain an empty file named _index.py_. Starting on line 1, write the following code below. No copy and pasting! You will never be good at coding if you don’t write your own code.
+Starting on line 1, write the following code below. No copy and pasting! You will never be good at coding if you don’t write your own code.
 
 ```python
 print("Hello, world!")
 print("This class is taught by Mr. Mortimer.")
-print("Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com")
+print("You are currently visiting: https://sehs.io")
 print() # Display a blank line
 
 print("What is the answer to life, the universe, and everything?")
-print("42. The answer is 42.")
+print("The answer is 42.")
 print()
 
 print("Sally sells seashells by the seashore.")
-print("Sally's doing five years for running a seashell pyramid scheme.")
+print("Sally wants to invite you to invest in a money making opportunity.")
 print()
 
 print("If you start to feel overwhelmed, just remember:")
@@ -61,7 +61,7 @@ print("Mr. Mortimer")
 # Remove the comment symbols below (#) and run the program one more time.
 
 # print()
-# print("PS You're fired!")
+# print("Display this message for 1 extra credit point")
 ```
 
 #### Debug
@@ -73,13 +73,13 @@ Compare your console output with the example below to see if they match.
 ```txt
 Hello, world!
 This class is taught by Mr. Mortimer.
-Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com
+You are currently visiting: https://sehs.io
 
 What is the answer to life, the universe, and everything?
-42. The answer is 42.
+The answer is 42.
 
 Sally sells seashells by the seashore.
-Sally's doing five years for running a seashell pyramid scheme.
+Sally wants to invite you to invest in a money making opportunity.
 
 If you start to feel overwhelmed, just remember:
 Mortimers don't quit, we get fired!
@@ -87,8 +87,6 @@ Mortimers don't quit, we get fired!
 
 Sincerely,
 Mr. Mortimer
-
-PS You're fired!
 ```
 
 ---
