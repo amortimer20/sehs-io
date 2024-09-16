@@ -21,6 +21,7 @@ Additionally, we will learn how to write comments in Python. **Comments** serve 
 - Writing and executing code
 - Output messages with the `print()` function
 - Debugging potential errors in your code.
+- Writing comments to document or disable code.
 
 ---
 
