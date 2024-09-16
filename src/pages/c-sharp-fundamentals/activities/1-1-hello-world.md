@@ -12,11 +12,11 @@ title: "C# Fundamentals 1.1 Hello World"
 
 ### Introduction
 
-The programming construct you will learn in this lesson is known as **output**. With regards to console applications, output is information that is displayed to the user. However, output can mean different things depending on the context. In order to output information to the use, we need to use something called `Console.WriteLine()`.
+In this lesson, you will learn about output in programming. For console applications, **output** refers to information displayed to the user. However, the meaning of output can vary depending on the context. To output information to the user, we use the `Console.WriteLine()` methods.
 
-`Console.WriteLine()` is known as a _method_. Methods perform some action in programming. In this case, `Console.WriteLine()` outputs a message to the user via the console. The console is a simple terminal for running text based computer applications. Most of the introductory applications in these programming activities will be console based.
+The `Console.WriteLine()` method is a fundamental concept in programming. **Methods** perform specific actions, and in this case, `Console.WriteLine()` outputs a message to the user via the console. The console is a simple terminal for running text-based computer applications. Most of the introductory applications in these programming activities will be console-based.
 
-We will also learn how to write comments in Python. Comments serve two purposes, to document, or take notes, in your code, and to disable parts of your program for temporary purposes, such as testing. We will be writing simple programs for the time being, but they will eventually grow in size and complexity. It's important to document parts of your code for yourself and your team, so your code can be easily understood and maintainable. We will start with one type of comment, the single line comment: `// comment`.
+Additionally, we will learn how to write comments in C#. **Comments** serve two main purposes: documenting your code and temporarily disabling parts of your program for testing. As we progress, our programs will grow in size and complexity. It’s crucial to document your code to ensure it is easily understood and maintainable by yourself and your team. In C#, comments begin with the `//` symbol.
 
 #### Skills to Practice
 
@@ -36,12 +36,12 @@ We will also learn how to write comments in Python. Comments serve two purposes,
 
 #### Code
 
-Your new workspace will contain a file with some starter code named _main.cs_ (or _Program.cs_ in Visual Studio). Erase the code on line 1, and follow along by typing the code you see below. No copy and pasting! You will never be good at coding if you don’t write your own code.
+Your new project will contain a file with some starter code named _Program.cs_. Erase the code on line 1, and follow along by typing the code you see below. No copy and pasting! You will never be good at coding if you don’t write your own code.
 
 ```cs
 Console.WriteLine("Hello, world!");
 Console.WriteLine("This class is taught by Mr. Mortimer.");
-Console.WriteLine("Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com");
+Console.WriteLine("You are currently visiting: https://sehs.io");
 Console.WriteLine(); // Display a blank line
 
 Console.WriteLine("What is the answer to life, the universe, and everything?");
@@ -49,7 +49,7 @@ Console.WriteLine("The answer is 42.");
 Console.WriteLine();
 
 Console.WriteLine("Sally sells seashells by the seashore.");
-Console.WriteLine("Sally's doing five years for running a seashell pyramid scheme.");
+Console.WriteLine("Sally wants to invite you to invest in a money making opportunity.");
 Console.WriteLine();
 
 Console.WriteLine("If you start to feel overwhelmed, just remember:");
@@ -64,7 +64,7 @@ Console.WriteLine("Mr. Mortimer");
 // Remove the comment symbols below (//) and run the program one more time.
 
 // Console.WriteLine();
-// Console.WriteLine("PS You're fired!");
+// Console.WriteLine("Display this message for 1 extra credit point");
 ```
 
 #### Debug
@@ -76,13 +76,13 @@ Compare your console output with the example below to see if they match.
 ```txt
 Hello, world!
 This class is taught by Mr. Mortimer.
-Please visit my blog: https://www.what-oh-heck-no-hold-up-huh-oh-okay.com
+You are currently visiting: https://sehs.io
 
 What is the answer to life, the universe, and everything?
-42. The answer is 42.
+The answer is 42.
 
 Sally sells seashells by the seashore.
-Sally's doing five years for running a seashell pyramid scheme.
+Sally wants to invite you to invest in a money making opportunity.
 
 If you start to feel overwhelmed, just remember:
 Mortimers don't quit, we get fired!
@@ -90,8 +90,6 @@ Mortimers don't quit, we get fired!
 
 Sincerely,
 Mr. Mortimer
-
-PS You're fired!
 ```
 
 ---
