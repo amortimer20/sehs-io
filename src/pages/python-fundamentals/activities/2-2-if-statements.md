@@ -49,9 +49,6 @@ If the condition is _true_, the code block, which is the code indented under the
 # Age Checker Program
 age = int(input("Enter your age: "))
 
-if age < 0:
-    print("You're still a baby, get back in there!")
-
 if age >= 13:
     print("You're old enough to join Cobra Kai.\n")
 

@@ -54,10 +54,6 @@ Console.Write("Enter your age: ");
 string input = Console.ReadLine();
 int age = Convert.ToInt32(input);
 
-if (age < 0)
-{
-    Console.WriteLine("You're just a baby, you're not ready yet!\n");
-}
 if (age >= 13)
 {
     Console.WriteLine("You're old enough to join Cobra Kai!");

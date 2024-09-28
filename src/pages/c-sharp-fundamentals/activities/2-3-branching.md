@@ -124,7 +124,6 @@ Console.Write("Set your initial balance: $");
 input = Console.ReadLine();
 double balance = Convert.ToDouble(input);
 
-Console.WriteLine("Simple ATM");
 Console.WriteLine("------------------------");
 Console.WriteLine("Select an option: ");
 Console.WriteLine("1) View Balance");

@@ -84,7 +84,6 @@ elif zodiac_number == 11:
 print("\n--- ATM Demo ---\n")
 balance = float(input("Set your initial balance: $"))
 
-print("Crangis McBasketball ATM")
 print("------------------------")
 print("Select an option: ")
 print("1) View Balance")
