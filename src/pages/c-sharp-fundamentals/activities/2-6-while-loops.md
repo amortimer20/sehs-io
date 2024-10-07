@@ -12,11 +12,17 @@ title: C# Fundamentals 2.6 While Loops
 
 ### Introduction
 
-It is not uncommon for a program to run a set of instructions repeatedly. Programming languages all provide some construct for repeatedly executing a set of statements. These are known as **loops**.
+Ever faced a situation where a piece of code in your app needs to run over and over again? Think back to those battle demos we did earlier—they only ran for one turn. But what if we wanted them to keep going until someone wins? In programming, we use **loops** to make instructions repeat.
 
-There are a few different ways to repeat code. For C# developers, the first construct to learn is known as the while loop.
+Imagine these scenarios:
 
-**While loops** look similar to if statements in that they have a keyword, a condition, and an associated code block. However, a while loop while repeatedly execute as long as the specified condition is `true`. That means somewhere in the loop, there needs to be a statement that will change the condition to evaluate to `false`.
+- Playing each song in a playlist until you reach the end.
+- Adding up the prices of items in your cart, one by one, to get the total.
+- Printing out every student's name in a class roster.
+
+One type of loop in C# is called a **while loop**. This loop will keep running a set of instructions while a certain condition is true.
+
+A while loop is similar in structure to an if statement. It has a keyword, a condition, and a block of code. The key difference is that a while loop repeats as long as the condition remains true. Therefore, you will need a statement inside the loop that will eventually make the condition evaluate false, or else the loop may run forever!
 
 **Example**
 
@@ -24,6 +30,7 @@ There are a few different ways to repeat code. For C# developers, the first cons
 int number = 10;
 
 // Keep executing loop while number is greater than 0
+// Or, try this: while (number >= 1)
 while (number > 0)
 {
     Console.WriteLine($"Number is {number}");
@@ -43,6 +50,10 @@ Number is 3
 Number is 2
 Number is 1
 ```
+
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/while-loop-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
 
 #### Infinite Loops
 
@@ -103,10 +114,10 @@ while (bottles > 0)
 Console.WriteLine("\n");
 
 // ATM Lite
-bool usingAtm = true;
+string input = "";
 double balance = 100.55;
 
-Console.WriteLine("-- ATM Lite --");
+Console.WriteLine("-- ATM --");
 
 while (usingAtm)
 {
@@ -139,7 +150,7 @@ while (usingAtm)
     }
     else if (input == "4")
     {
-        Console.WriteLine("Thank you for using ATM Lite");
+        Console.WriteLine("Thank you for using the ATM");
         usingAtm = false;
     }
     else
@@ -167,7 +178,7 @@ You take one down, pass it around,
 
 
 
--- ATM Lite --
+-- ATM --
 
 - Menu -
 1) Check Balance
@@ -192,11 +203,12 @@ Your new balance is $125.55
 3) Withdraw Money
 4) Exit
 -> 4
-Thank you for using ATM Lite
+Thank you for using the ATM
 ```
 
 ---
 
 ### Tips, Tricks, and Reflection
 
+- Notice that you can specify invalid numbers for the deposit and withdraw values. For example, you shouldn't be able to deposit an amount less than or equal to $0. You also shouldn't be allowed to withdraw more money than your balance. How can we use if statements to validate the amounts the user specifies?
 - Did you mess up a line of code and accidentally create an infinite loop? If so, how did you fix it? If not, try purposely breaking your code to create an infinite loop.
