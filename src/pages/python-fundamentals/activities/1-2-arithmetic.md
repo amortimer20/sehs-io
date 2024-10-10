@@ -1,7 +1,7 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: Python Fundamentals 1.2 Math and Comments
+title: Python Fundamentals 1.2 Arithmetic
 ---
 
 [← Back](/python-fundamentals/)
@@ -10,18 +10,24 @@ title: Python Fundamentals 1.2 Math and Comments
 
 ### Introduction
 
-Math is extremely important in computer science. Any useful program has to store and use numbers in some way. From video games, to online stores, to graphic design apps, math is necessary to creating the software we use every day. It is necessary to not only calculate math expressions, but also to display the results to the user.
+Mathematics is a cornerstone of computer science. Any useful program, from video games to online stores, relies on numbers. Whether it's calculating scores, processing transactions, or generating graphics, math is everywhere in software.
 
-`print()` doesn’t just output text messages, it is also capable of outputting the numbers and math expressions. In this activity, we will writing simple programs to demonstrate how math works in Python. There are multiple symbols used to write math expressions:
+In Python, we don’t just use math to crunch numbers; we also use it to display results to users. The `print()` function helps us with this—it can output text messages, numbers, and the results of math expressions.
 
-- **`+`** Addition operator
-- **`-`** Subtraction operator
-- **`*`** Multiplication operator
-- **`/`** Division operator, calculates quotient with decimals
-- **`//`** Integer division operator, cuts off decimal (Think long division)
-- **`%`** Modulus (mod) operator, calculates remainer
+**Integers and Doubles**
 
-The symbols for division may throw you off, because they don't match the traditional arithmetic symbols we use in math class. We'll practice using them in depth, so you can see how useful it is to divide numbers in different ways.
+Python, like many other programming languages, differentiates between whole numbers and decimal numbers. Whole numbers are called integers, while decimal numbers are referred to as floats (or floating-point numbers). This distinction is crucial for handling arithmetic operations accurately.
+
+**Math Operators**
+
+- **`+`** Addition: Adds two numbers together.
+- **`-`** Subtraction: Subtracts one number from another.
+- **`*`** Multiplication: Multiplies two numbers.
+- **`/`** Division: Divides one number by another and returns the quotient as a decimal.
+- **`//`** Integer Division: Divides one number by another and cuts off the decimal.
+- **`%`** Modulus (aka mod): Returns the remainder after division.
+
+The use of multiple division symbols might seem a bit unfamiliar because they don't match the ones we use in traditional arithmetic. Don't worry, we'll practice them thoroughly so you can see how useful they are for dividing numbers in different ways.
 
 #### Skills to Practice
 
@@ -34,26 +40,23 @@ The symbols for division may throw you off, because they don't match the traditi
 
 #### Setup
 
-1. Create a new Python application. Name the project **1.2 Math**.
+1. Create a new Python application. Name the project **1-2-math.py**.
 2. Click Create.
 
 #### Code
 
 ```python
-# These are comments. They help programmers take notes in their code.
-# Comments are ignored by the compiler.
-
 # Addition
-print("I have two apples. I find another apple. How many apples do I have?")
+print("I'm adding 2 and 1. The result is:")
 print(2 + 1)
 print()
 
-print("Bank balance: $1000. Depositing $500.96. Your new balance is:")
+print("Adding $1000 and $500.96 gives us:")
 print(1000 + 500.96)
 print()
 
 # Subtraction
-print("I'm hungry and I want to eat an apple. How many apples will I have left?")
+print("I have 3 apples, and I eat one. Now, I have:")
 print(3 - 1)
 print()
 
@@ -65,64 +68,67 @@ print()
 # Division - Quotient and remainder
 
 # Quotient
-print("We have eight slices of pizza between the two of us.")
-print("We each get this many slices: ")
+print("If we divide 8 pizza slices between 2 people, each person gets:")
 print(8 / 2)
 print()
 
-print("I have to split this dollar between the six of us. We each get: ")
-print(100 / 6) # Will this divide evenly?
-print("Without fractional amounts, this is: ")
+print("Dividing $100 among 6 people gives each person:")
+print(100 / 6)
+print("Without fractional amounts, each person gets:")
 print(100 // 6)
 print()
 
 # Remainder using the modulus, or mod, operator
-print("After splitting up the dollar, how many cents are left over?")
+print("After dividing $100 among 6 people, the leftover cents are:")
 print(100 % 6)
 print()
 
 # Order of operations
-print("4 * 10 + 12 equals:")
+print("The expression 4 * 10 + 12 equals:")
 print(4 * 10 + 12)
-print("4 * (10 + 12) equals:")
+print("The expression 4 * (10 + 12) equals:")
 print(4 * (10 + 12))
 ```
 
 #### Debug
 
 ```txt
-I have two apples. I find another apple. How many apples do I have?
+I'm adding 2 and 1. The result is:
 3
 
-Bank balance: $1000. Depositing $500.96. Your new balance is:
+Adding $1000 and $500.96 gives us:
 1500.96
 
-I'm hungry and I want to eat an apple. How many apples will I have left?
+I have 3 apples, and I eat one. Now, I have:
 2
 
 I'm 30 years old. In months, that's:
 360
 
-We have eight slices of pizza between the two of us.
-We each get this many slices:
-4
-
-I have to split this dollar between the six of us. We each get:
-16.666666666666668
-Without fractional amounts, this is:
-16
-
-After splitting up the dollar, how many cents are left over?
+If we divide 8 pizza slices between 2 people, each person gets:
 4.0
 
-4 * 10 + 2 equals:
+Dividing $100 among 6 people gives each person:
+16.666666666666668
+Without fractional amounts, each person gets:
+16
+
+After dividing $100 among 6 people, the leftover cents are:
+4
+
+The expression 4 * 10 + 12 equals:
 52
-4 * (10 + 2) equals:
+The expression 4 * (10 + 12) equals:
 88
 ```
 
 ### Tips, Tricks, and Reflection
 
-- This program looks terrible. The math for each statement may correct, but it's hard to read. The division involving money returns a repeating decimal, every answer is on it's own line, and the monetary values don't have a dollar sign. These are called _formatting issues_, and we will learn how to make the output look better in future programs.
-- When writing math expressions in code, you don't have to have a space in between the numbers and signs. It is valid to write **2+2**, but I recommend writing **2 + 2** with the spaces in between.
-- Math signs `+ - * / %` are known as operators, and numbers used with operators are known as _operands_. When we write math statements they are called _expressions_.
+This program works correctly, but the output could be much easier to read. Formatting is key to making your code and its output more user-friendly.
+
+- Formatting Issues: Notice how the division involving money returns a repeating decimal, every answer is on its own line, and the monetary values lack a dollar sign. We'll learn how to fix these issues in future lessons to make the output more readable and professional.
+- Spacing in Math Expressions: While it’s valid to write `2+2`, it’s much clearer to write `2 + 2`. Using spaces around math operators improves readability and helps you spot errors more easily.
+- You will see this math terms used frequently:
+    - Operators: The symbols used in math expressions (+, -, *, /, %).
+    - Operands: The numbers used with operators.
+    - Expressions: Math statements that combine operators and operands to calculate a value.
