@@ -18,7 +18,7 @@ One such loop is the **for loop**. Although it shares similarities with the whil
 
 - **Initialization statement**: Executed once at the beginning of the loop, this statement typically initializes a variable used in the loop condition and termination.
 - **Condition**: A logical expression evaluated before each iteration. If the condition is true, the loop continues; otherwise, it stops. This works similarly to the condition in a while loop.
-- **Final expression**: Executed at the end of each iteration, this statement usually updates the variable initialized in the first part.
+- **Increment/Decrement expression**: Executed at the end of each iteration, this statement usually updates the variable initialized in the first part.
 
 **Example**: Count up from 1 to 10 with a for loop
 

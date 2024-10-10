@@ -36,7 +36,7 @@ title: "C# Fundamentals Part 2 Summary"
 - Iteration statements repeatedly execute a block of code as long as a specified condition is true. Iteration can also be referred to as _looping_.
 
 - The `while` loop will repeatedly execute a block of code as long as the specified condition remains true. While loops are typically used when the number of iterations are not predetermined.
-- The `for` loop executes a block of code a set number of times based on three statements: the initialization, condition, and the final expression (usually an increment/decrement operation).
+- The `for` loop executes a block of code a set number of times based on three statements: the initialization, condition, and the final expression, which is some increment/decrement operation.
 - A loop _terminates_ when it has finished executing its iterations.
 - A code block associated with a loop is referred to as the _loop body_.
 - A sentinel value is a special value used to terminate a loop.
