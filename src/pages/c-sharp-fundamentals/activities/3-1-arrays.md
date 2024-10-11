@@ -14,7 +14,7 @@ title: C# Fundamentals 3.1 Arrays
 
 Thus far, we've been able to start building some pretty cool applications. There's one big missing piece though when it comes to storing data: What happens when we need to store many things of the same kind? For example, what if you're building an application that allows a user to create a music playlist. How many variables will you need? One string variable per song? What if you need to store a couple songs, one hundred songs, or even one thousand songs!? This could become a massive headache if we stored one song per variable. Luckily, there's a solution to this problem.
 
-Programming languages have a way to store many things together in a group. These are known as **data structures**. C# provides a data type known as an **array** that is capable of storing data of the same type in a collection. An important feature of an array is that it is of a _fixed size_, meaning that the number of items an array can store must be determined when it is initialized.
+Programming languages have a way to store many things together in a group using **data structures**. C# provides a data type called an **array**. An array can store a collection of items, all of the same type (like strings or numbers). However, an important thing to know is that arrays have a **fixed size**, which means we need to specify the number of elements the array can hold when we create it. This makes arrays efficient, but less flexible than some other data structures, which we’ll explore later.
 
 ##### Declaring an Array Variable
 
@@ -22,7 +22,7 @@ Programming languages have a way to store many things together in a group. These
 string[] friends;
 ```
 
-The variable titled `friends` is capable of storing a collection of strings.
+The variable _friends_ is declared as an array capable of storing a collection of strings. At this point, the array has been declared but not initialized, meaning it does not yet have a specific size or contain any elements.
 
 ##### Assigning an Empty Array to a Variable
 
@@ -30,11 +30,11 @@ The variable titled `friends` is capable of storing a collection of strings.
 string[] friends = new string[100];
 ```
 
-The friends array has now been initialized and is capable of storing 100 strings. Values of an array are referred to as **elements**. The array is only ever capable of storing 100 elements. This is a limitation of arrays in that they are not resizable. There are other data structures available when you need a collection type that can resize as needed.
+The friends array is now initialized and can store up to 100 strings. Each spot in an array is called an element, and right now, all 100 elements of the friends array are empty (holding null). One important limitation of arrays is that they are not resizable. Once you decide the size of an array, it cannot be changed. If you need a structure that can grow or shrink as needed, other data structures might be more suitable.
 
 ##### Assigning and Accessing Elements in an Array
 
-Elements in an array are positioned in sequence. Their positions are referred to as **indexes**. Arrays begin indexing elements at position _0_. Therefore, the friends array can index elements of the range between 0 and 99.
+Each element in an array is stored in a specific position, called an **index**. C# arrays use zero-based indexing, meaning the first element is at position 0. For example, the friends array can hold elements from index 0 to 99 (since its size is 100).
 
 ```cs
 // Assign element at index 0, or the first index
@@ -43,23 +43,31 @@ friends[1] = "Schilf";
 friends[2] = "Rupanovic";
 ```
 
-Notice the square bracket notation is a common indicator that we're working with arrays.
+Notice the use of square brackets `[]`. This is the notation used to assign or access elements in an array.
 
 ```cs
 // Access elements of the friends array
-Console.WriteLine($"I am friends with {friends[0]}, {friends[1]}, and {friends[2]}.");
+Console.WriteLine($"The best teachers at St. Ed's are {friends[0]}, {friends[1]}, and {friends[2]}.");
 ```
 
-If you attempt to access an element outside of the available indexes, such as `friends[500]`, your program will crash and you will receive an `IndexOutOfRangeException`. You may not attempt to access elements outside of the specified range.
+If you attempt to access an element outside of the available indexes, such as `friends[500]`, the program will crash and throw an `IndexOutOfRangeException`. This is because arrays can only store elements within the range specified at initialization (in this case, 0 to 99).
 
-##### Array Initialization
+##### Array Initialization with Pre-determined Values
 
-If the values to be inserted into the array are pre-determined, you may use array initialization syntax to pre-populate an array. Note that the number of elements you assign at initialization will determine the array's size.
+If you already know the values that the array will contain, you can initialize the array with those values from the start. The number of elements you provide will determine the size of the array.
 
 ```cs
-// Initialize an array with three elements. This array has a capacity of 3 elements.
-double [] accounts = new double[]{ 1000.50, 999.99, 2530.02 };
+// Initialize an array with three elements. This array has a capacity, or length, of 3 elements.
+double[] accounts = [1000.50, 999.99, 2530.02];
 ```
+
+This syntax is a collection expression, a newer feature in C#. However, you'll often encounter the more traditional syntax for array initialization, which is slightly more verbose:
+
+```cs
+double[] accounts = new double[] {1000.50, 999.99, 2530.02};
+```
+
+Both syntaxes are valid and do the same thing: they initialize an array and pre-populate it with the specified values.
 
 #### Skills to Practice
 
@@ -80,24 +88,29 @@ double [] accounts = new double[]{ 1000.50, 999.99, 2530.02 };
 #### Code
 
 ```cs
-string[] besties = new string[3]; // 3 empty elements
-besties[0] = "Mr. Fistek";
-besties[1] = "Mr. Barrett";
+Console.WriteLine("--- Demo 1 - Movies ---");
 
-Console.Write("Which teacher is your bestie? ");
-besties[2] = Console.ReadLine();
+string[] movies = new string[3]; // 3 empty indexes
 
-Console.WriteLine($"My besties are {besties[0]}, {besties[1]}, and {besties[2]}!\n");
+Console.WriteLine("Enter your top three movies of all time: ");
+
+// Copy and pasted code 🤮. Is there a better way to implement this?
+Console.Write("1) ");
+movies[0] = Console.ReadLine();
+Console.Write("2) ");
+movies[1] = Console.ReadLine();
+Console.Write("3) ");
+movies[2] = Console.ReadLine();
+Console.WriteLine($"Your top three movies are {movies[0]}, {movies[1]}, and {movies[2]}!\n");
 
 Console.WriteLine("Press enter to continue...");
 Console.ReadLine();
 
-Console.WriteLine("--- Gradebook ---");
-// Initialize array with 5 elements.
-double[] grades = new double[]{ 90, 88, 95, 60, 85 };
+Console.WriteLine("--- Demo 2 - Gradebook ---");
+
+double[] grades = [90, 88, 95, 60, 85];
 double totalPoints = grades[0] + grades[1] + grades[2] + grades[3] + grades[4];
-// Assuming grades are out of 100. Total possible points = 500
-// Multiply by 100 to get percentage as a whole number
+// Assuming grades are out of 100, five assignments = 500 points total.
 double gradePercentage = Math.Round(totalPoints / 500 * 100);
 string letterGrade;
 
@@ -122,20 +135,24 @@ else
     letterGrade = "F";
 }
 
-Console.WriteLine($"Grades: {grades[0]}, {grades[1]}, {grades[2]}, {grades[3]}, {grades[4]}");
+Console.WriteLine($"Grades: {grades[0]}/100, {grades[1]}/100, {grades[2]}/100, {grades[3]}/100, {grades[4]}/100");
 Console.WriteLine($"Final grade: {gradePercentage}%. Letter grade: {letterGrade}");
 ```
 
 #### Debug
 
 ```txt
-Which teacher is your bestie? Mr. Mortimer
-My besties are Mr. Fistek, Mr. Barrett, and Mr. Mortimer!
+--- Demo 1 - Movies ---
+Enter your top three movies of all time:
+1) Terminator 2
+2) Tron
+1) The Matrix
+Your top three movies are Terminator 2, Tron, and The Matrix!
 
 Press enter to continue...
 
---- Gradebook ---
-Grades: 90, 88, 95, 60, 85
+--- Demo 2 - Gradebook ---
+Grades: 90/100, 88/100, 95/100, 60/100, 85/100
 Final grade: 84%. Letter grade: B
 ```
 
@@ -143,6 +160,8 @@ Final grade: 84%. Letter grade: B
 
 ### Tips, Tricks, and Reflection
 
-- For more information on arrays, check out the Microsoft C# documentation:
-    - <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/" target="_blank">Arrays</a>
-    - <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays" target="_blank">Single-Dimension Arrays</a>
+These sample applications are not very practical, because we are manually working with indexs for each array. What if I have hundreds or even thousands of elements to process? In our next lesson, we'll explore how to combine loops with arrays for data processing. By using these two tools together, you'll be able to create much more dynamic and efficient programs.
+
+For more information on arrays, check out the Microsoft C# documentation:
+- <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/" target="_blank">Arrays</a>
+- <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/single-dimensional-arrays" target="_blank">Single-Dimension Arrays</a>
