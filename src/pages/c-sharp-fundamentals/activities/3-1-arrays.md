@@ -69,6 +69,11 @@ double[] accounts = new double[] {1000.50, 999.99, 2530.02};
 
 Both syntaxes are valid and do the same thing: they initialize an array and pre-populate it with the specified values.
 
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/array-basics-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
+
 #### Skills to Practice
 
 - Declaring arrays
