@@ -12,10 +12,14 @@ title: C# Fundamentals 3.2 Arrays and Loops
 
 ### Introduction
 
-We can use loops to iterate through elements of an array. The key is to access each item, one at a time. We do this by tracking what index we are currently at using a number variable. A common convention is to use a variable named _i_ to track the index.
+At this point, we've seen how arrays allow us to store multiple elements under a single variable, making it much easier to manage collections of data. However, the examples we've worked with might not seem very practical. After all, we've been manually accessing specific indexes, assigning values, and retrieving them one by one. This approach works fine when dealing with a handful of elements, but what if you had hundreds or even thousands of elements to process?
+
+Manually working with each index would not only be inefficient but also highly error-prone. Imagine trying to manage a large dataset—having to manually reference each element would be overwhelming and impractical.
+
+**Sample array with output**
 
 ```cs
-string[] games = new string[] { "Fallout", "Sonic", "Super Mario" };
+string[] games = ["Fallout", "Sonic", "Super Mario"];
 int i = 0;
 
 Console.WriteLine(games[i]);
@@ -35,7 +39,7 @@ Super Mario
 Notice the repetition and copied code? Let's refactor this so it uses a while loop.
 
 ```cs
-string[] games = new string[] { "Fallout", "Sonic", "Super Mario" };
+string[] games = ["Fallout", "Sonic", "Super Mario"];
 int i = 0;
 
 while (i < 3)
@@ -45,12 +49,17 @@ while (i < 3)
 }
 ```
 
-#### Array Length
+While this code works, it’s not flexible. If the array size changes, we would need to update the condition manually. To address this, we can use the `Length` property of arrays.
 
-There are three games with indexes ranging from 0 to 2. So, we make sure the loop stops when i becomes 3. This code is inflexible though, because it only works for arrays of size 3. Luckily, there's a simple fix. Arrays have what's known as a **property** called **Length**. It returns the total number of elements in the array. The syntax looks like this: `arrayName.Length`. Keeping track of the size, or length, of a data structure is important in programming. We'll learn more about properties in Part 4 of this course.
+#### Array.Length
+
+Arrays in C# have a property called `Length`, which gives the total number of elements in the array. This makes our code more flexible by allowing us to loop through all elements, regardless of how many there are.
+
+Note, we will cover properties properly later on in the course.
+
 
 ```cs
-string[] games = new string[] { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
+string[] games = ["Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound"];
 int i = 0;
 
 while (i < games.Length) // games.Length returns 7
@@ -60,14 +69,14 @@ while (i < games.Length) // games.Length returns 7
 }
 ```
 
-It doesn't matter what the size of the array is, because `games.Length`` will always correspond to the total number of elements. This algorithm for processing the array is now much more flexible.
+In this code, games.Length dynamically adjusts to the size of the array. The loop will process every element, even if the array grows or shrinks.
 
 #### For Loops
 
-For loops are extremely useful when processing arrays. Notice the while loop contains all the necessary statements that make up a for loop. We can perform one final refactor our code.
+A for loop is a more concise and often preferred way to iterate through arrays. We can use a for loop perform one more refactor our code.
 
 ```cs
-string[] games = new string[] { "Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound" };
+string[] games = ["Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound"];
 
 for (int i = 0; i < games.Length; i++)
 {
@@ -75,7 +84,7 @@ for (int i = 0; i < games.Length; i++)
 }
 ```
 
-We get the exact same result but with concise code. You will often see for loops favored over while loops when working with arrays, although you should always use the correct control structure based on what you need to get done. If you think a while loop works better for a given scenario, use it.
+The result is the same as the while loop, but the for loop makes the code more concise and easier to read. You'll often see for loops favored when working with arrays because of this simplicity. However, always choose the loop type that best fits your needs.
 
 #### Skills to Practice
 
@@ -96,112 +105,67 @@ We get the exact same result but with concise code. You will often see for loops
 #### Code
 
 ```cs
-// Drinks List
-string[] sodas = new string[5];
+Console.WriteLine("Demo 1 - Populate an array\n");
 
-for (int i = 0; i < sodas.Length; i++)
+Console.Write("How many numbers will your collection contain? ");
+int size = Convert.ToInt32(Console.ReadLine());
+
+double[] numbers = new double[size]; // Length is determined by user input
+
+for (int i = 0; i < numbers.Length; i++)
 {
-    Console.Write("Enter a soda: ");
-    sodas[i] = Console.ReadLine();
+    // Start counting at 1 from user's perspective
+    Console.Write($"Element {i + 1}: ");
+    numbers[i] = Convert.ToDouble(Console.ReadLine());
 }
 
-Console.WriteLine("\nHere are your drinks: ");
+Console.Write("Here are your elements: ");
 
-for (int i = 0; i < sodas.Length; i++)
+for (int i = 0; i < numbers.Length; i++)
 {
-    Console.WriteLine($"* {sodas[i]}"); // * is a bullet list symbol
+    Console.Write(numbers[i] + " ");
 }
+Console.WriteLine();
 
-Console.WriteLine("\nPress enter to continue.");
+Console.WriteLine("\nPress enter to continue...");
 Console.ReadLine();
 
-// Todo List
-string[] tasks = new string[100];
-bool addingTasks = true;
-int taskCount = 0; // Keep track of next empty index
+Console.WriteLine("Demo 2 - Sum Calculator\n");
 
-Console.WriteLine("--- Todo List ---");
+double sum = 0;
 
-while (addingTasks)
+for (int i = 0; i < numbers.Length; i++)
 {
-    Console.WriteLine("-Menu-");
-    Console.WriteLine("1) Add a task");
-    Console.WriteLine("2) Finish");
-    Console.Write("-> ");
-    string input = Console.ReadLine();
-
-    if (input == "1")
-    {
-        // Fill in task and move to the next empty index
-        Console.Write("Enter task: ");
-        tasks[taskCount] = Console.ReadLine();
-        taskCount++;
-    }
-    else if (input == "2")
-    {
-        addingTasks = false;
-    }
-    else
-    {
-        Console.WriteLine("Invalid option. Try again.\n");
-    }
-
-    if (taskCount == 100)
-    {
-        Console.WriteLine("List is full.");
-        addingTasks = false;
-    }
+    // Uncomment to see the sum algorithm in action
+    //Console.WriteLine($"{sum} + {numbers[i]} = {sum + numbers[i]}");
+    sum = sum + numbers[i];
 }
 
-Console.WriteLine("\nPrinting List");
-
-for (int i = 0; i < taskCount; i++)
-{
-    Console.WriteLine($"* {tasks[i]}");
-}
+Console.WriteLine($"The sum is {sum}");
 ```
 
 #### Debug
 
 ```txt
-Enter a soda: Pepsi
-Enter a soda: Coke
-Enter a soda: Dr. Pepper
-Enter a soda: Sprite
-Enter a soda: Slice
+Demo 1 - Populate an array
 
-Here are your drinks:
-* Pepsi
-* Coke
-* Dr. Pepper
-* Sprite
-* Slice
+How many numbers will your collection contain? 5
+Element 1: 34
+Element 2: 19
+Element 3: 25.5
+Element 4: 42
+Element 5: 96
+Here are your elements: 34 19 25.5 42 96
 
-Press enter to continue.
+Press enter to continue...
 
---- Todo List ---
--Menu-
-1) Add a task
-2) Finish
--> 1
-Enter task: Grade homework
--Menu-
-1) Add a task
-2) Finish
--> 1
-Enter task: Answer emails
--Menu-
-1) Add a task
-2) Finish
--> 2
+Demo 2 - Sum Calculator
 
-Printing List
-* Grade homework
-* Answer emails
+The sum is 216.5
 ```
 
 ---
 
 ### Tips, Tricks, and Reflection
 
-- Notice arrays are inconvenient when we have collections like todo lists where we don't know exactly how many elements we will have. There exists a more suitable data type called a **List** which we will cover shortly.
+- Be cautious when writing while loops for iterating over arrays. If you forget to increment i (e.g., by leaving out i++), the condition will never become false, and your program could get stuck in an infinite loop.
