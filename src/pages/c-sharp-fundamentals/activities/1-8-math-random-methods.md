@@ -94,7 +94,7 @@ Console.ReadLine();
 
 
 Console.WriteLine("--- Demo 3 - Random Number Generation ---");
-Random random = new();
+Random random = new Random();
 
 int n1 = random.Next(1, 11); // 1 to 10
 int n2 = random.Next(1, 1001); // 1 to 1000
