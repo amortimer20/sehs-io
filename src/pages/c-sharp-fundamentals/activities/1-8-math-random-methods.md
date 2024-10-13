@@ -37,6 +37,10 @@ int randomNumber = random.Next(1, 101); // Generates a number between 1 and 100
 Console.WriteLine("Random number between 1 and 100: " + randomNumber);
 ```
 
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/random-number-generation-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Skills to Practice
 
 - Utilizing math methods for complex math operations
