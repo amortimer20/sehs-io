@@ -17,8 +17,6 @@ This lesson introduces you to some essential math methods and constants provided
 - `Math.Round()` - Rounds a number. Can be used to round to a specific decimal place.
     - `Math.Round(33.526)` rounds to the nearest integer (34).
     - `Math.Round(33.526, 2)` rounds to the second decimal place (33.53).
-- `Math.Floor()` - Always rounds down to the nearest integer.
-- `Math.Ceiling()` - Always roudns up to the nearest integer.
 - `Math.Sqrt()` - Calculate the square root of a non-negative number.
 - `Math.Pow()` - Raise a base number to the specified exponent.
 - `Math.PI` - Represents the constant value π (pi).
@@ -87,11 +85,6 @@ Console.Write("Enter a positive number: ");
 number = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine($"The square root of {number} is {Math.Sqrt(number)}\n");
 
-Console.WriteLine("-Rounding methods-");
-Console.Write("Enter a decimal number: ");
-number = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine($"Round: {Math.Round(number)}, Floor: {Math.Floor(number)}, Ceil: {Math.Ceiling(number)}\n");
-
 
 Console.WriteLine("Press enter to continue...");
 Console.ReadLine();
@@ -127,10 +120,6 @@ Enter exponent: 4
 -Square Roots-
 Enter a positive number: 16
 The square root of 16 is 4
-
--Rounding methods-
-Enter a decimal number: 53.54
-Round: 54, Floor: 53, Ceil: 54
 
 Press enter to continue...
 
