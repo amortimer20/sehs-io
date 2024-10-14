@@ -10,7 +10,7 @@ title: "C# Fundamentals Part 2 Summary"
 
 ---
 
-## Boolean Logic
+### Boolean Logic
 
 - A Boolean data type represents the the values `true` and `false`.
 - Like arithmetic, Boolean expressions have a number of operators for performing comparisons and logic operations.
