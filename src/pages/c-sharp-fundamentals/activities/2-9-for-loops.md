@@ -42,6 +42,12 @@ for (int i = 10; i >= 1; i--)
 
 <video src="/courses/c-sharp-fundamentals/for-loop-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
 
+
+**While loop vs For loop**
+
+- Use a for loop when you know the exact number of iterations required before starting the loop. This means you have a predetermined number of times the loop should execute.
+- Use a while loop when the number of iterations is unknown, such as when you're waiting for a condition to be met during program execution.
+
 #### Skills to Practice
 
 - Writing for loops
