@@ -96,5 +96,6 @@ Mr. Mortimer
 
 ### Tips, Tricks, and Reflection
 
+- Be mindful of your capitalization of certain keywords. Programming languages are typically **case-sensitive**. Case sensitivity means that the distinction between uppercase and lowercase letters matters. For example, "Apple" and "apple" would be considered different words in a case-sensitive environment. 
 - What happens when you write `Console.WriteLine()` without a message in the parentheses?
 - You may have used a programming language where methods are referred to as functions. Technically, a method is a function, but it's defined in a different context. Don't worry about this for now. When we learn about object-oriented programming, we'll discuss this in more detail.
