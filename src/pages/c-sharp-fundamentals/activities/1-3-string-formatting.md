@@ -10,15 +10,15 @@ title: C# Fundamentals 1.3 String Formatting
 
 ### Introduction
 
-In the previous activity, the math expressions were output seperately from the strings. Although this works, it doesn't look nice. In programming we format strings to construct complex text messages. In C#, there are two popular ways to format strings: _string concatenation_ and _string interpolation_.
+In the previous activity, we outputted math expressions separately from the strings. While this works, it's not very visually appealing. In programming, we format strings to construct complex text messages. In C#, there are two popular ways to format strings: string concatenation and string interpolation.
 
-String concatenation involves using the plus sign **`+`** to _combine_ data. For example, I can combining `"My name is "` with `"Anthony Mortimer"` using the plus sign.
+String concatenation involves using the plus sign ( + ) to combine data. For example, we can combine `"My name is "` with `"Anthony Mortimer"` using the plus sign:
 
 ```cs
 "My name is " + "Anthony Mortimer"
 ```
 
-A newer way to format strings is to use a feature called _string interpolation_. With string interpolation, you prefix a string with the dollar sign **`$`**. You then use the curly brace symbols `{}` to insert code expressions anywhere you want to execute code in the string.
+A newer way to format strings is through a feature called string interpolation. With string interpolation, you prefix a string with the dollar sign ( $ ). Then you use curly braces {} to insert code expressions directly within the string:
 
 ```cs
 $"My age in months is {30 * 12}."
@@ -26,8 +26,8 @@ $"My age in months is {30 * 12}."
 
 #### Skills to Practice
 
-- String concatenation
-- String interpolation
+- Formatting strings using string concatenation
+- Formatting strings using string interpolation
 
 ### Instructions
 
@@ -39,8 +39,8 @@ $"My age in months is {30 * 12}."
 #### Code
 
 ```cs
-// String concatenation - Use the *+* sign to append math expressions to strings
-Console.WriteLine("10 squared is " + 10 * 10); // Multiply 10 * ten, then append it to the string.
+// String concatenation - Use the + sign to append math expressions to strings
+Console.WriteLine("10 squared is " + (10 * 10)); // It helps to enclose arithmetic in parenthesis
 Console.WriteLine();
 
 // Mixing addition and string concatenation together can cause problems.
@@ -71,4 +71,4 @@ Therefore, a woodchuck can chuck 1920 wood panels every hour.
 
 ### Tips, Tricks, and Reflection
 
-- You are welcome to use either technique for string formatting, but I personally favor string interpolation.
+- You are welcome to use either technique for string formatting, but this course favors string interpolation. I personally only use concatenation for very basic formatting.
