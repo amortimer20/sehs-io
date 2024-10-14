@@ -42,6 +42,8 @@ title: "C# Fundamentals Part 1 Summary"
 - Integer Division: When both operands are integers, the division operation returns an integer result, discarding any remainder
 - Floating Point Division: When at least one operand is a decimal number (like double), the division operation returns a floating-point result, including any decimals.
 - Use parenthesis () for order of operations.
+- **`++`** - Increment operator: Adds 1 (increment) the value of a numeric variable.
+- **`--`** - Decrement operator: Subtracts 1 (decrement) from the value of a numeric variable.
 
 ### String Formatting
 
