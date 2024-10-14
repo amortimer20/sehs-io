@@ -14,7 +14,7 @@ title: C# Fundamentals 1.8 Math Methods and Random Numbers
 
 This lesson introduces you to some essential math methods and constants provided by the C# Math class. These tools will be invaluable throughout your programming journey, helping you perform advanced mathematical operations with ease. Here are some of the methods and constants we'll cover:
 
-- `Math.Round()` - Rounds a number. Can be used to round to a specific decimal place.
+- `Math.Round()` - Rounds a number to either an integer or to some decimal place
     - `Math.Round(33.526)` rounds to the nearest integer (34).
     - `Math.Round(33.526, 2)` rounds to the second decimal place (33.53).
 - `Math.Sqrt()` - Calculate the square root of a non-negative number.
