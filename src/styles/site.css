@@ -5,6 +5,11 @@
 @import "prismjs/plugins/match-braces/prism-match-braces.css";
 
 @font-face {
+  font-family: "retro-gaming";
+  src: url("../fonts/retro-gaming.ttf");
+}
+
+@font-face {
   font-family: "gameplay";
   src: url("../fonts/gameplay.ttf");
 }
@@ -28,7 +33,7 @@ a:not(.underline) {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "gameplay";
+  font-family: "retro-gaming";
 }
 
 .btn {
@@ -45,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
   --bs-btn-active-bg: #095d4b;
   --bs-btn-active-border-color: #0e8b70;
 
+}
+
+.font-retro-gaming {
+  font-family: "retro-gaming";
 }
 
 .font-gameplay {
