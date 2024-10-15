@@ -41,9 +41,9 @@ where _m_ is the slope, the ordered pair (x<sub>1</sub>, y<sub>1</sub>) is the f
 ### Sample Output
 
 ```txt
-Enter x1: 2
-Enter y1: 3
-Enter x2: 12
-Enter y2: 14
+Enter x1: 2 [Enter]
+Enter y1: 3 [Enter]
+Enter x2: 12 [Enter]
+Enter y2: 14 [Enter]
 The slope of the line is 1.1
 ```

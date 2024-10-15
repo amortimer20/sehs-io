@@ -35,11 +35,11 @@ In short, when the user plays the game, they should be able to enter some values
 
 ```txt
 --- The Wonderful Journey ---
-Enter a noun: Nintendo Entertainment System
-Enter an adjective: smelly
-Enter a verb: jump
-Enter another noun: hot dog
-Enter an adverb: suspiciously
+Enter a noun: Nintendo Entertainment System [Enter]
+Enter an adjective: smelly [Enter]
+Enter a verb: jump [Enter]
+Enter another noun: hot dog [Enter]
+Enter an adverb: suspiciously [Enter]
 
 Here is your story:
 Once upon a time, a smelly Nintendo Entertainment System decided to jump.

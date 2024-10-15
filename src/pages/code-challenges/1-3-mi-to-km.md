@@ -32,6 +32,6 @@ Create a console application that converts a distance from miles to kilometers b
 
 ```txt
 --- Miles to Kilometers Calculator ---
-Enter the distance in miles: 12.5
+Enter the distance in miles: 12.5 [Enter]
 12.5 miles is equal to 20.11 kilometers
 ```

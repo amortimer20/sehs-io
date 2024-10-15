@@ -36,6 +36,6 @@ If you want to use the degree symbol in your output, I've provided it here to co
 
 ```txt
 --- Celsius to Fahrenheit Calculator ---
-Enter the temperature in Celsius: 62
+Enter the temperature in Celsius: 62 [Enter]
 62°C is equal to 143.6°F
 ```
