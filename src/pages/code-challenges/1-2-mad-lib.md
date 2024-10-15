@@ -10,11 +10,11 @@ title: Code Challenge 1.2 - Mad Lib
 
 ---
 
-### Introduction
+### Objective
 
-A mad lib is a simple word game where the player is asked to provide a number of words such as a noun, food, place, verb, adjective, etc. The player is then provided a silly story that has their words inserted into specific places. **<a href="http://www.madtakes.com/libs/176.html" target="_blank">Try a mad lib here</a>** if you've never played one before.
+A mad lib is a fun and interactive word game where the player provides various words—such as nouns, foods, places, verbs, and adjectives. These words are then inserted into a pre-written story to create a humorous and often nonsensical tale. Try a mad lib **<a href="http://www.madtakes.com/libs/176.html" target="_blank">Try a mad lib here</a>** if you've never played one before.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Prompting a user for input
 - Saving user input to variables
@@ -22,19 +22,35 @@ A mad lib is a simple word game where the player is asked to provide a number of
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 1-2**.
-2. Complete the folowing tasks:
-   1. Output a story title at the beginning of your program.
-   2. Prompt the user to input two nouns and save them each to a variable.
-   3. Prompt the user to input two numbers and save it to a variable.
-   4. Output  a story that is four lines long. Your story should use the variables throughout and resemble a mad lib game.
+- Create a console project named **Challenge 1-2**.
+- Output a story title at the beginning of your program.
+- Prompt the user to enter different types of words (e.g., noun, verb, adjective, etc.).
+- There needs to be a minimum of 5 inputs.
+- Insert the user-provided words into a pre-written story template.
+- Display the completed story to the user in a fun and readable format.
 
 In short, when the user plays the game, they should be able to enter some values, and read their custom story.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-2-sample.mp4" autoplay loop width="100%"></video>
+```txt
+--- The Wonderful Journey ---
+Enter a noun: Nintendo Entertainment System
+Enter an adjective: smelly
+Enter a verb: jump
+Enter another noun: hot dog
+Enter an adverb: suspiciously
+
+Here is your story:
+Once upon a time, a smelly Nintendo Entertainment System decided to jump.
+On its journey, it found a mysterious hot dog.
+The Nintendo Entertainment System and the hot dog became friends.
+Together, they jumped suspiciously into the sunset.
+And they lived happily ever after.
+```
+
+<div class="row justify-content-center mb-5">
+    <div class="col-sm-4 cold-md-3">
+        <img src="/courses/code-challenges/mad-lib.webp" class="img-fluid" />
     </div>
 </div>

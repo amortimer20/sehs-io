@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 1.8 - Line Slope Formula
+title: Code Challenge 1.8 - Line Slope Calculator
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 1.8 - Line Slope Formula
+## Code Challenge 1.8 - Line Slope Calculator
 
 ---
 
@@ -20,27 +20,30 @@ When graphing lines in Algebra, it's important to understand how to calculate th
 
 </div>
 
-where _m_ is the slope, the ordered pair _(x1, y1)_ is the first point, and the ordered pair _(x2, y2)_ is the second point.
+where _m_ is the slope, the ordered pair (x<sub>1</sub>, y<sub>1</sub>) is the first point, and the ordered pair (x<sub>2</sub>, y<sub>2</sub>) is the second point.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Prompting a user for input
 - Saving user input to variables
-- Performing arithmetic and saving results to variables
-- Formatting output using variables
+- Converting input to the correct data type (if necessary)
+- Performing arithmetic calculations
+- Formatting custom output using variables
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 1-8**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter four values corresponding to two points of a line i.e. **(x1, y1)** and **(x2, y2)**.
-   2. Calculate the slope using the Slope Formula.
-   3. Display the answer to the user. Consider rounding your answer to a decimal place.
+- Create a console project named **Challenge 1-8**.
+- Prompt the user to enter four values corresponding to two points of a line i.e. **(x<sub>1</sub>, y<sub>1</sub>)** and **(x<sub>2</sub>, y<sub>2</sub>)**.
+- Calculate the slope using the Slope Formula.
+- Optionally, round the answer to three decimal places.
+- Display the calculated slope to the user in a clear and formatted manner.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-8-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Enter x1: 2
+Enter y1: 3
+Enter x2: 12
+Enter y2: 14
+The slope of the line is 1.1
+```

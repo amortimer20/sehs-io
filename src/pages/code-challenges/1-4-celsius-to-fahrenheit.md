@@ -10,30 +10,32 @@ title: Code Challenge 1.4 - Celsius to Fahrenheit Calculator
 
 ---
 
-### Introduction
+### Objective
 
-This is America (the greatest country on Earth), and we use Fahrenheit for temperature values. However, Celsius is sometimes necessary. This program will help you convert temperature values from Celsius to Fahrneheit.
+Create a console application that converts a temperature from Celsius to Fahrenheit based on user input.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Prompting a user for input
 - Saving user input to variables
+- Converting input to the correct data type (if necessary)
+- Performing arithmetic calculations
 - Formatting custom output using variables
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 1-4**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter a value to represent Celsius.
-   2. Convert the Celsius value to Fahrenheit. If you don't know the math formula, search it!
-   3. Output a message to display the Celsius value and the equivalent Fahrenheit value.
+- Create a console project named **Challenge 1-4**.
+- Prompt the user to enter a temperature in Celsius.
+- Convert the Celsius value to Fahrenheit using the formula **F = C × 1.8 + 32**.
+- Optionally, round the answer to two decimal places.
+- Display the calculated Fahrenheit temperature to the user in a clear and formatted manner.
 
-If you want to be awesome, use the degree symbol in your output. Copy and paste this: °
+If you want to use the degree symbol in your output, I've provided it here to copy and paste: °
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-4-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+--- Celsius to Fahrenheit Calculator ---
+Enter the temperature in Celsius: 62
+62°C is equal to 143.6°F
+```

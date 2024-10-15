@@ -26,7 +26,7 @@ Break the chain at your own risk!
 
 </div>
 
-#### Skills to Practice
+### Skills to Practice
 
 - Creating and running a program
 - Printing console output
@@ -37,10 +37,14 @@ Break the chain at your own risk!
 1. Create a console project named **Challenge 1-1**.
 2. Complete the folowing task: Write a fun, appropriate chain letter. Your chain letter program should output at least 5 lines.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-1-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Hey there! You're the lucky recipient of a chain letter. Please copy this letter and send it to 10 of your friends.
+
+If you ignore this letter, then your favorite song will always be stuck in your head-but you'll forget the lyrics. Also, every time you pour your cereal, you'll run out of milk just before the bowl is full. 
+
+If you complete the instructions I've given you, all your favorite shows will come back for another season, and your pizzas will always have the perfect cheese-to-topping ratio. Remember, the internet overlords are watching!
+
+Break the chain at your own risk!
+```
