@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 7 - Change Calculator
+title: Code Challenge 1.7 - Change Calculator
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 7 - Change Calculator
+## Code Challenge 1.7 - Change Calculator
 
 ---
 
@@ -25,7 +25,7 @@ This change calculator would help novice cashiers give back the correct change s
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge7ChangeCalculator**.
+1. Create a console project named **Challenge 1-7**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter how much change to give back. The value should be between 1-99.
    2. Calculate the correct number for each coin denomination: quarters, dimes, nickels, and pennies.
@@ -35,6 +35,6 @@ This change calculator would help novice cashiers give back the correct change s
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-7-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-1-7-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

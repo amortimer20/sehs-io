@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 12 - Fizz Buzz
+title: Code Challenge 2.4 - Fizz Buzz
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 12 - FizzBuzz
+## Code Challenge 2.4 - FizzBuzz
 
 ---
 
@@ -22,7 +22,7 @@ FizzBuzz is a classic elementary programming challenge. The program outputs 100 
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge12FizzBuzz**.
+1. Create a console project named **Challenge 2-4**.
 2. Begin by outputting the numbers 1 through 100 using a loop of your choice.
 3. However, if the current number is divisible by 3, instead output the word 'Fizz'.
 4. Or, if the current number is divisible by 5, instead output the word 'Buzz'.
@@ -32,6 +32,6 @@ FizzBuzz is a classic elementary programming challenge. The program outputs 100 
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-12-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-2-4-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

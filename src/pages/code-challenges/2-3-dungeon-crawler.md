@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 11 - Dungeon Crawler
+title: Code Challenge 2.3 - Dungeon Crawler
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 11 - Dungeon Crawler
+## Code Challenge 2.3 - Dungeon Crawler
 
 ---
 
@@ -23,7 +23,7 @@ In your introductory programming course, you learned how to make a lightweight _
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge11DungeonCrawler**.
+1. Create a console project named **Challenge 2-3**.
 2. Create your own custom dungeon crawler program. The following requirements must be met:
    - You must use nested if statements and branching statements, `if, else if, else`, to implement your levels.
    - Use at least two number variables that keep track of something. It can be an item quantity, health, etc.
@@ -35,6 +35,6 @@ In your introductory programming course, you learned how to make a lightweight _
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-11-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-2-3-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

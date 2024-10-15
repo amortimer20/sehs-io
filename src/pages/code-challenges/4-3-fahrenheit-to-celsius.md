@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Function Challenge 3 - Fahrenheit to Celsius
+title: Code Challenge 4.3 - Fahrenheit to Celsius Part 2
 ---
 
 [← Back](/code-challenges/)
 
-## Function Challenge 3 - Fahrenheit to Celsius
+## Code Challenge 3 - Fahrenheit to Celsius Part 2
 
 ---
 
@@ -16,7 +16,7 @@ This function converts a Fahrenheit temperature to its equivalent Celsius temper
 
 ### Challenge Tasks
 
-1. Create a console project named **FunctionChallenge3FtoC**.
+1. Create a console project named **Challenge 4-3**.
 2. Implement a function with the given signature:
 
 **C#**

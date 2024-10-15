@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 8 - Line Slope Formula
+title: Code Challenge 1.8 - Line Slope Formula
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 8 - Line Slope Formula
+## Code Challenge 1.8 - Line Slope Formula
 
 ---
 
@@ -31,7 +31,7 @@ where _m_ is the slope, the ordered pair _(x1, y1)_ is the first point, and the 
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge8LineSlopeCalculator**.
+1. Create a console project named **Challenge 1-8**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter four values corresponding to two points of a line i.e. **(x1, y1)** and **(x2, y2)**.
    2. Calculate the slope using the Slope Formula.
@@ -41,6 +41,6 @@ where _m_ is the slope, the ordered pair _(x1, y1)_ is the first point, and the 
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-8-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-1-8-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

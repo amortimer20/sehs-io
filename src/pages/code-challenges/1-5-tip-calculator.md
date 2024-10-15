@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 5 - Tip Calculator
+title: Code Challenge 1.5 - Tip Calculator
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 5 - Tip Calculator
+## Code Challenge 1.5 - Tip Calculator
 
 ---
 
@@ -40,7 +40,7 @@ Let's be honest, you're probably a cheapskate. _You_ need a program that allows 
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge5TipCalculator**.
+1. Create a console project named **Challenge 1-5**.
 2. Complete the folowing tasks:
   1. Prompt the user to enter their bill amount.
   2. Prompt the user to enter their tip percentage as a whole number. For example, 20 means 20%.
@@ -50,6 +50,6 @@ Let's be honest, you're probably a cheapskate. _You_ need a program that allows 
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-5-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-1-5-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Function Challenge 2 - Min and Max
+title: Code Challenge 4.2 - Min and Max
 ---
 
 [← Back](/code-challenges/)
 
-## Function Challenge 2 - Min and Max
+## Code Challenge 4.2 - Min and Max
 
 ---
 
@@ -16,7 +16,7 @@ These functions evaluate and return either the smallest number or the largest nu
 
 ### Challenge Tasks
 
-1. Create a console project named **FunctionChallenge2MinMax**.
+1. Create a console project named **Challenge 4-2**.
 2. Implement functions with the given signatures:
 
 **C#**

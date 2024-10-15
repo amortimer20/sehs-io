@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 6 - Height to Inches Calculator
+title: Code Challenge 1.6 - Height to Inches Calculator
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 6 - Inches to Height Calculator
+## Code Challenge 1.6 - Inches to Height Calculator
 
 ---
 
@@ -25,7 +25,7 @@ This calculator converts the user's height in inches and converts it to feet and
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge6HeightToInches**.
+1. Create a console project named **Challenge 1-6**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter their height in inches.
    2. Convert the height in inches to feet **and** inches.
@@ -35,6 +35,6 @@ This calculator converts the user's height in inches and converts it to feet and
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-6-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-1-6-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

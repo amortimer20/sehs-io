@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 8 Quadratic Equation
+title: Code Challenge 2.2 Quadratic Equation
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 10 - Quadratic Equation
+## Code Challenge 2.2 - Quadratic Equation
 
 ---
 
@@ -23,7 +23,7 @@ The quadratic equation is a fundamental algebra formula for discovering roots of
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge10Quadratics**.
+1. Create a console project named **Challenge 2-2**.
 2. Complete the folowing tasks:
    1. Prompt the user to enter the values for variables **a**, **b**, and **c**.
    2. Calculate the discriminant
@@ -36,6 +36,6 @@ The quadratic equation is a fundamental algebra formula for discovering roots of
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-10-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-2-2-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

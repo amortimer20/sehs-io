@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Function Challenge 4 - Average
+title: Code Challenge 4.4 - Average
 ---
 
 [← Back](/code-challenges/)
 
-## Function Challenge 4 - Average
+## Code Challenge 4.4 - Average
 
 ---
 
@@ -16,7 +16,7 @@ This function returns the average given a list of numbers.
 
 ### Challenge Tasks
 
-1. Create a console project named **FunctionChallenge4Average**.
+1. Create a console project named **Challenge 4-4**.
 2. Implement a function with the given signature:
 
 **C#**

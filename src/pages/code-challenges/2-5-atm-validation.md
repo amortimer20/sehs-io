@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 13 - ATM Validation
+title: Code Challenge 2.5 - ATM Validation
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 13 - ATM Validation
+## Code Challenge 2.5 - ATM Validation
 
 ---
 
@@ -31,7 +31,7 @@ The ATM Lite program in the Programming Fundamentals courses does not validate d
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge13ATMValidation**.
+1. Create a console project named **Challenge 2-5**.
 2. Create a banking ATM program that has the following features:
 
 - Shows a main menu with the following options:
@@ -61,6 +61,6 @@ double balance = 500;
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-13-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-2-5-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

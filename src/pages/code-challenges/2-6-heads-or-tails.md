@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 14 - Heads or Tails
+title: Code Challenge 2.6 - Heads or Tails
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 14 - Heads or Tails Game
+## Code Challenge 2.6 - Heads or Tails Game
 
 ---
 
@@ -21,7 +21,7 @@ Heads or tails is a simple game where someone flips a coin and hides how it land
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge14HeadsOrTails**.
+1. Create a console project named **Challenge 2-6**.
 2. Use random number generation to _flip_ 'heads' or 'tails'.
 3. Prompt the user to guess "heads" or "tails".
 4. Tell them if they guessed correctly or incorrectly.
@@ -32,6 +32,6 @@ Heads or tails is a simple game where someone flips a coin and hides how it land
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-14-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-2-6-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

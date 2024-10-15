@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 17 - Sample Data Generator
+title: Code Challenge 3.2 - Sample Data Generator
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 17 - Sample Data Generator
+## Code Challenge 3.2 - Sample Data Generator
 
 ---
 
@@ -22,7 +22,7 @@ Generating sample data is incredibly useful when testing algorithms or for autom
 
 ### Challenge Tasks
 
-1. Create a console project named **CodeChallenge17SampleData**.
+1. Create a console project named **Challenge 3-2**.
 2. Ask the user for a minimum and maximum number. Your sample data should be in the range of these numbers.
 3. Ask the user how much data to generate. i.e. The response 500 should generate 500 sample numbers.
 4. Ask the user if they want the data sorted before displaying it.
@@ -33,6 +33,6 @@ Generating sample data is incredibly useful when testing algorithms or for autom
 
 <div class="row">
     <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-17-sample.mp4" autoplay loop width="100%"></video>
+        <video src="/courses/code-challenges/code-challenge-3-2-sample.mp4" autoplay loop width="100%"></video>
     </div>
 </div>

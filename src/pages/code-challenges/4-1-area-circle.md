@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Function Challenge 1 - Area of a Circle
+title: Code Challenge 4.1 - Area of a Circle
 ---
 
 [← Back](/code-challenges/)
 
-## Function Challenge 1 - Area of a Circle
+## Code Challenge 4.1 - Area of a Circle
 
 ---
 
@@ -22,7 +22,7 @@ The function may be tested with a program that prompts the user to enter the rad
 
 ### Challenge Tasks
 
-1. Create a console project named **FunctionChallenge1CircleArea**.
+1. Create a console project named **Challenge 4-1**.
 2. Implement a function with the given signature:
 
 **C#**
