@@ -10,7 +10,48 @@ title: C# Fundamentals 1.6 Prompting for Input
 
 ### Introduction
 
-In this introductory section, we have been writing output using `Console.WriteLine()`. Now we will learn another method that complements `Console.WriteLine()`, and that is the `Console.ReadLine()` method. This method allows us to receive input from the user. I.e. The user can interact with the program via the console. Writing to and reading from the console is known as input and output, or I/O for short. We will also use a method called `Console.Write()`. Notice that it looks very similar to `Console.WriteLine()` sans the word _line_. This method still displays a message, but it keeps the cursor on the same line as the output. This allows the user to type on the same line as the message. This is purely for aesthetics, but I think you will prefer it.
+In our previous lessons, we’ve used the Console.WriteLine() method to display messages to the user. But so far, our programs haven’t allowed users to provide input.
+
+In this lesson, we’re going to learn how to get input from the user using the `Console.ReadLine()` method. With this method, users can interact with the program by typing into the console. This exchange of information between the user and the program is known as input and output (often abbreviated as I/O).
+
+#### Console.ReadLine()
+
+`Console.ReadLine()` is a method that pauses the program and waits for the user to type something in the console. When the user presses Enter, the input they typed is returned as a string. When a method does its job, it often gives back a result. This result is called the return value. The return value may be saved to a variable or used in some other expression.
+
+In short, `Console.ReadLine()` can be thought of as asking a question and waiting for an answer.
+
+```cs
+Console.WriteLine("Enter your favorite color:");
+string favoriteColor = Console.ReadLine();
+Console.WriteLine("Your favorite color is " + favoriteColor);
+```
+
+```txt
+Enter your favorite color:
+purple [Enter]
+Your favorite color is purple
+```
+
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/input-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
+#### Console.Write()
+
+You might have noticed that `Console.WriteLine()` always moves the cursor to a new line after printing the message. Sometimes, we want the cursor to stay on the same line so that the user can input their information on the same line as the prompt. We have a method, `Console.Write()`, that helps us with this.
+
+The `Console.Write()` method works similarly to Console.WriteLine(), but it does not move the cursor to the next line after outputting text. This allows for cleaner looking prompts.
+
+```cs
+Console.Write("Enter your favorite color: ");
+string favoriteColor = Console.ReadLine();
+Console.WriteLine("Your favorite color is " + favoriteColor);
+```
+
+```txt
+Enter your favorite color: purple [Enter]
+Your favorite color is purple
+```
 
 #### Skills to Practice
 
@@ -27,75 +68,92 @@ In this introductory section, we have been writing output using `Console.WriteLi
 #### Code
 
 ```cs
-// Buddy the Elf Greeting Program
-// The program will pause and wait for the user to type a response.
-Console.Write("Hey! What's your name? My name's Buddy! ");
-string name = Console.ReadLine();
-Console.WriteLine($"{name}, that's fun to say! {name}, {name}...");
+Console.WriteLine("--- Demo 1 - Simple To-Do List ---");
 
-Console.Write("Does someone need a hug? ");
-string answer = Console.ReadLine();
-Console.WriteLine($"{answer}!? I just wanted a hug!");
+Console.WriteLine("Let's add a few tasks to your list.");
 
-Console.Write("Buddy the Elf, what's your favorite color? ");
-string favoriteColor = Console.ReadLine();
-Console.WriteLine($"That's a nice {favoriteColor} outfit, very {favoriteColor}-y.\n\n");
+Console.Write("Task 1: ");
+string task1 = Console.ReadLine();
 
-// Secret Agent ID Program
-Console.WriteLine("----- SECRET AGENT CONSOLE -----");
-Console.WriteLine("IDENTITY NOT FOUND. CREATING NEW IDENTITY...");
+Console.Write("Task 2: ");
+string task2 = Console.ReadLine();
 
-Console.Write("Enter your first name: ");
-string firstName = Console.ReadLine();
-Console.Write("Enter your code name: ");
-string codeName = Console.ReadLine();
+Console.Write("Task 3: ");
+string task3 = Console.ReadLine();
+
+Console.WriteLine("\nYour To-Do List:");
+Console.WriteLine("1. " + task1);
+Console.WriteLine("2. " + task2);
+Console.WriteLine("3. " + task3);
+
+
+// Pause the program and wait for the user to press Enter before continuing to the next demo
+Console.WriteLine("Press enter to continue...");
+Console.ReadLine();
+
+
+Console.WriteLine("--- Demo 2 - User Profile Setup ---");
+Console.WriteLine("WELCOME! LET'S SET UP YOUR PROFILE...");
+
+Console.Write("Enter your username: ");
+string username = Console.ReadLine();
+
+Console.Write("What’s your favorite subject in school? ");
+string subject = Console.ReadLine();
 
 // List of options
-Console.WriteLine("Choose your gadget:");
-Console.WriteLine("- ASMR Radio");
-Console.WriteLine("- Flashbang Energy Drink");
-Console.WriteLine("- Metamucil");
+Console.WriteLine("Choose your preferred after-school activity:");
+Console.WriteLine("- Sports");
+Console.WriteLine("- Music");
+Console.WriteLine("- Gaming");
+Console.WriteLine("- Volunteering");
 Console.Write("-> "); // Cool arrow prompt; Doesn't do anything special
-string gadget = Console.ReadLine();
-Console.WriteLine();
+string activity = Console.ReadLine();
 
-Console.WriteLine("-- Constructing your agent identity --");
-Console.WriteLine($"AGENT NAME: {firstName} - CODE NAME: {codeName}");
-Console.WriteLine($"GADGET: {gadget}");
-Console.WriteLine("-- IDENTITY CONFIRMED EXITING... --");
+Console.WriteLine("\n- Creating your profile -");
+Console.WriteLine($"NAME: {username}");
+Console.WriteLine($"FAVORITE SUBJECT: {subject}");
+Console.WriteLine($"AFTER-SCHOOL ACTIVITY: {activity}");
 ```
 
 #### Debug
 
-**Important!** Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter**.
+Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter** to submit your input.
 
-Your programs will no longer need look exactly like the sample output. Write whatever you want, you don't have to follow the sample exactly!
+Your programs no longer need look exactly like the sample output. Feel free to type whatever you like.
 
 ```txt
-Hey! What's your name? My name's Buddy! Anthony
-Anthony, that's fun to say! Anthony, Anthony...
-Does someone need a hug? No, weirdo
-No, weirdo!? I just wanted a hug!
-Buddy the Elf, what's your favorite color? purple
-That's a nice purple outfit, very purple-y.
+--- Demo 1 - Simple To-Do List ---
+Let's add a few tasks to your list.
+Task 1: cook
+Task 2: clean
+Task 3: homework
 
+Your To-Do List:
+1. cook
+2. clean
+3. homework
+Press enter to continue...
 
------ SECRET AGENT CONSOLE -----
-IDENTITY NOT FOUND. CREATING NEW IDENTITY...
-Enter your first name: Anthony
-Enter your code name: Agent Poopy Pants
-Choose your gadget:
-- ASMR Radio
-- Flashbang Energy Drink
-- Metamucil
--> Metamucil
+--- Demo 2 - User Profile Setup ---
+WELCOME! LET'S SET UP YOUR PROFILE...
+Enter your username: chungus23
+What's your favorite subject in school? computer science
+Choose your preferred after-school activity:
+- Sports
+- Music
+- Gaming
+- Volunteering
+-> gaming
 
--- Constructing your agent identity --
-AGENT NAME: Anthony - CODE NAME: Agent Poopy Pants
-GADGET: Metamucil
--- IDENTITY CONFIRMED EXITING... --
+- Creating your profile -
+NAME: chungus23
+FAVORITE SUBJECT: computer science
+AFTER-SCHOOL ACTIVITY: gaming
 ```
 
 ### Tips, Tricks, and Reflection
 
-- You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `Console.ReadLine()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!
+- You might have tried asking the user for a number and then attempted to perform calculations with that input. However, this won’t work just yet because `Console.ReadLine()` always returns the input as a string, or text. To perform math operations, we need to convert these strings into numbers. In the next activity, we'll learn how to make this conversion so that we can use the input in calculations!
+
+- Think about other types of input you might need to work with besides numbers and text (dates, colors, lists of items, etc.). How do you think we might handle those kinds of information?
