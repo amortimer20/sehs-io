@@ -12,7 +12,7 @@ title: Code Challenge 3.1 - Raffle
 
 ### Objective
 
- Your task is to create a program that simulates a raffle. Participants can submit one or more entries, and the program will randomly select a winner.
+Your task is to create a program that simulates a raffle. Participants can submit one or more entries, and the program will randomly select a winner.
 
 ### Skills to Practice
 
