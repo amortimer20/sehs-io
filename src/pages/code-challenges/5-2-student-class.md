@@ -21,7 +21,7 @@ Your task is to design and implement a Student class and write a program that te
 
 ### Challenge Tasks
 
-1. **Create a console project named **Challenge 5-2**.**
+1. **Create a console project named Challenge 5-2.**
 2. **Draw the UML Diagram:**
    - Draw the UML diagram for the Student class, including fields, constructors, and methods.
 3. **Class Implementation:**

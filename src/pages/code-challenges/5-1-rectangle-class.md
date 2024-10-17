@@ -23,7 +23,7 @@ Your task is to design and implement a Rectangle class and write a program that 
 
 ### Challenge Tasks
 
-1. **Create a console project named **Challenge 5-1**.
+1. **Create a console project named Challenge 5-1.**
 2. **Draw the UML Diagram:**
     -Draw the UML diagram for the Rectangle class, including fields, constructors, and methods.
 3. **Class Implementation:**
