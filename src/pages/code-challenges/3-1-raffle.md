@@ -6,31 +6,35 @@ title: Code Challenge 3.1 - Raffle
 
 [← Back](/code-challenges/)
 
-## Code Challenge 3.1 - Raffle
+## Code Challenge 3.1 - Raffle 🎟️
 
 ---
 
-### Introduction
+### Objective
 
-A raffle is a simple contest where many individuals can submit one or more entries, and a winner is picked at random.
+ Your task is to create a program that simulates a raffle. Participants can submit one or more entries, and the program will randomly select a winner.
 
-#### Skills to Practice
+### Skills to Practice
 
-- Adding elements to an array
+- Adding elements to a collection
 - Repeating code with loops
 - Generating a random index
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 3-1**.
-2. Let the user input names to enter into the raffle. Enter the names into an array.
-3. If you're using a statically sized array, such as with C# or C++, you can set a size/limit of 100 contestants.
-4. When the user is finished adding entries, draw a random winner from the array.
+- Create a console project named **Challenge 3-1**.
+- Allow the user to input names to enter into the raffle. Store the names in a collection.
+    - If you're using a fixed-size data type, such as a C# array, you may choose the maximum number of contestants.
+- Once the user has finished adding entries, randomly select a winner from the collection.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-3-1-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Enter a name to add to the raffle (or type 'done'): Alice [Enter]
+Enter a name to add to the raffle (or type 'done'): Bob [Enter]
+Enter a name to add to the raffle (or type 'done'): Charlie [Enter]
+Enter a name to add to the raffle (or type 'done'): done [Enter]
+
+Drawing a winner...
+Congratulations, Bob! You are the winner of the raffle!
+```
