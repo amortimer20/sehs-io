@@ -10,31 +10,34 @@ title: Code Challenge 1.7 - Change Calculator
 
 ---
 
-### Introduction
+### Objective
 
-When a cashier performs transactions at a register, they quickly learn how to give back change efficiently. You start with the largest coin denomination and work your way down until you have exact change. For example, if the cahsier needs to give back 55 cents, they would take out two quarters and one nickel. You could technically give back 55 pennies, 5 dimes and a nickel, or some other change combination, but it's arguably less efficient.
+Your task is to write a program that helps novice cashiers give back the correct change efficiently. The program should start with the largest coin denomination and work its way down until the exact change is given.
 
-This change calculator would help novice cashiers give back the correct change starting with the largest denomination to the smallest.
+**Example:** If a cashier needs to return 55 cents, your program should display: two quarters and one nickel. While there are other combinations, this method ensures efficiency.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Prompting a user for input
 - Saving user input to variables
-- Performing a calculation using the modulus operator
-- Formatting output using variables
+- Converting input to the correct data type (if necessary)
+- Performing arithmetic calculations
+- Formatting custom output using variables
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 1-7**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter how much change to give back. The value should be between 1-99.
-   2. Calculate the correct number for each coin denomination: quarters, dimes, nickels, and pennies.
-   3. Output the number of each coin denomination to give back.
+- Create a console project named **Challenge 1-7**.
+- Prompt the user to input the amount of change needed. For simplicity, assume the value will range from 1 to 99 cents.
+- Calculate the change starting with the largest denomination (quarters) and work down to the smallest (pennies).
+- Display the result in a clear and concise format.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-7-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Enter the amount of change needed (in cents): 68 [Enter]
+You will need:
+2 quarters
+1 dime
+1 nickel
+3 pennies
+```

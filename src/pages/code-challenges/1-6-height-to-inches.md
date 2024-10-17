@@ -1,40 +1,39 @@
 ---
 divStyles: "container mt-4"
 layout: "../../layouts/Layout.astro"
-title: Code Challenge 1.6 - Height to Inches Calculator
+title: Code Challenge 1.6 - Height Converter
 ---
 
 [← Back](/code-challenges/)
 
-## Code Challenge 1.6 - Inches to Height Calculator
+## Code Challenge 1.6 - Height Converter
 
 ---
 
-### Introduction
+### Objective
 
-This calculator code challenge is deceivingly more challenging than the previous challenges. The formula for this calculator makes use of the modulus operator (%). Remember, the modulus operator, or mod for short, performs division and returns the remainder.
+Your task is to write a program that converts a given height from inches to feet and inches.
 
-This calculator converts the user's height in inches and converts it to feet and inches. For example, I'm 70 inches tall. That means I'm 5 foot 10 inches.
+**Example:** If the user inputs 70 inches, your program should display: 5 feet 10 inches.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Prompting a user for input
 - Saving user input to variables
-- Performing a calculation using the modulus operator
-- Formatting output using variables
+- Converting input to the correct data type (if necessary)
+- Performing arithmetic calculations
+- Formatting custom output using variables
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 1-6**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter their height in inches.
-   2. Convert the height in inches to feet **and** inches.
-   3. Output the result to the user.
+- Create a console project named **Challenge 1-6**.
+- Prompt the user to input their height in inches.
+- Convert the height to feet and inches.
+- Display the result in the format: "{X} feet {Y} inches."
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-1-6-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Enter yout height in inches: 70 [Enter]
+Your height is 5 feet 10 inches.
+```
