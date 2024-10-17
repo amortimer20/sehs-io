@@ -12,30 +12,49 @@ title: Code Challenge 2.2 Quadratic Equation
 
 ### Introduction
 
-The quadratic equation is a fundamental algebra formula for discovering roots of a parabola. This equation seems intimidating to calculate, but the key to it is to first calculate the _discriminant_, or _b squared - 4ac_. Depending on the result, you either need to use both formulas, just one of them, or neither of them.
+Your task is to create a program that solves quadratic equations using the quadratic formula. Given coefficients a, b, and c, your program should calculate the roots of the equation a<sup>2</sup> + bx + c = 0.
 
 ![Quadratic Equation](/courses/code-challenges/quadratic-equation.png)
 
-#### Skills to Practice
+### Skills to Practice
 
-- Invoke math functions
+- Invoking math functions for complex calculations
 - Branching with selection statements
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 2-2**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter the values for variables **a**, **b**, and **c**.
-   2. Calculate the discriminant
-   3. If the discriminant is greater than zero, there are **two roots**. Calculate both formulas.
-   4. If the discriminant is equal to zero, there is **one root**. Use either formula.
-   5. If the discriminant is negative, there are **no roots**. No need to calculate further.
-   6. Output the result(s) to the user.
+- Create a console project named **Challenge 2-2**.
+- Prompt the user to input the coefficients a, b, and c.
+- Calculate the discriminant (_b<sup>2</sup> - 4ac_).
+- Determine the roots of the equation based on the discriminant:
+    - If the discriminant is positive, there are two distinct real roots.
+    - If the discriminant is zero, there is one real root.
+    - If the discriminant is negative, there are no real roots.
+- Display the roots in a clear format.
 
-#### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-2-2-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+### Sample Output
+
+**Sample 1: two real roots**
+```txt
+Enter the coefficient a: 1 [Enter]
+Enter the coefficient b: -3 [Enter]
+Enter the coefficient c: 2 [Enter]
+The roots of the equation are: 2 and 1.
+```
+
+**Sample 2: one real root**
+```txt
+Enter the coefficient a: 1 [Enter]
+Enter the coefficient b: 2 [Enter]
+Enter the coefficient c: 1 [Enter]
+The root of the equation is: -1.
+```
+
+**Sample 3: no real roots**
+```txt
+Enter the coefficient a: 1 [Enter]
+Enter the coefficient b: 2 [Enter]
+Enter the coefficient c: 5 [Enter]
+There are no real roots.
+```

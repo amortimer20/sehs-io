@@ -6,13 +6,15 @@ title: Code Challenge 2.1 - Magic 8-Ball
 
 [← Back](/code-challenges/)
 
-## Code Challenge 2.1 - Magic 8-Ball
+## Code Challenge 2.1 - Magic 8-Ball 🎱
 
 ---
 
-### Introduction
+### Objective
 
-The Magic 8-Ball is a fortune-telling toy. You ask the 8-ball a question, shake it up, and a response is shown in a little window. Some example responses include:
+Your task is to create a program that simulates a Magic 8-Ball game. Users can ask a question and receive a random response from the Magic 8-Ball.
+
+**Example Responses**
 
 - It is certain.
 - Without a doubt.
@@ -21,23 +23,21 @@ The Magic 8-Ball is a fortune-telling toy. You ask the 8-ball a question, shake 
 - Don't count on it.
 - Outlook not so good.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Writing selection statements
 - Generating random numbers
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 2-1**.
-2. Complete the folowing tasks:
-   1. Prompt the user to enter a question. You don't need to save the question, because we don't actually use their question in any meaningful way. We're just giving the user hope.
-   2. Generate a random number. This random number will match up to some response.
-   3. Depending on the random number, output an answer from the examples above. Include them all in your program.
+- Create a console project named **Challenge 2-1**.
+- Prompt the user to enter a question. While the user's input isn't used in any calculation, it makes the interaction feel personal and engaging.
+- Generate a random number. This number will correspond to a response. 
+- Output a random response from the list of examples provided. Make sure all possible responses are included in your program.
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-2-1-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+```txt
+Ask the Magic 8-Ball a question: Will I ace my exam? [Enter]
+Magic 8-Ball says: Outlook not so good.
+```

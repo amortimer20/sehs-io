@@ -6,35 +6,71 @@ title: Code Challenge 2.3 - Dungeon Crawler
 
 [← Back](/code-challenges/)
 
-## Code Challenge 2.3 - Dungeon Crawler
+## Code Challenge 2.3 - Dungeon Crawler 🏰🐉
 
 ---
 
-### Introduction
+### Objective
 
 In your introductory programming course, you learned how to make a lightweight _choose your own adventure_ dungeon crawler program. In this challenge, you will be able to put your own creativity to the test and implement your own version of the dungeon crawler program.
 
-#### Skills to Practice
+### Skills to Practice
 
 - Writing nested if statements
-- Writing compound Boolean logic expressions with AND `&&` and OR `||`
+- Writing compound Boolean logic expressions with `&&` (AND) and `||` (OR)
 - Branching with if, else if, and else
 - Debugging an application
 
 ### Challenge Tasks
 
-1. Create a console project named **Challenge 2-3**.
-2. Create your own custom dungeon crawler program. The following requirements must be met:
-   - You must use nested if statements and branching statements, `if, else if, else`, to implement your levels.
-   - Use at least two number variables that keep track of something. It can be an item quantity, health, etc.
-   - Use at least one boolean variable to keep track of the state of something in your program. For example, whether you unlocked a door, triggered some event, etc.
-3. In your conditions, make use of the compound Boolean operators AND `&&` and OR `||` at least once for each operator.
-4. Have fun! This will be your longest program yet, and it makes use of everything you used thus far in the course. But it should be an enjoyable experience. Use your imagination and run with it.
+- Create a console project named **Challenge 2-3**.
+- Game development: Design an engaging dungeon crawler that allows players to make choices and explore different paths. Utilize nested if statements to create intricate levels and scenarios.
+- Implement Boolean Logic: Make your game logic more dynamic by using compound Boolean expressions (&& for AND, || for OR) to control the flow of your adventure.
+- Track Game Variables: Use at least two numerical variables to manage elements such as player health, inventory, or score. Incorporate at least one boolean variable to handle game states like unlocking doors or triggering traps.
+- Use Your Imagination: This is your chance to build an epic story. Whether it’s battling mythical creatures, discovering hidden treasures, or solving ancient puzzles, make it memorable!
 
-#### Sample Output
+### Sample Output
 
-<div class="row">
-    <div class="col-sm-12 col-xl-10 offset-xl-1">
-        <video src="/courses/code-challenges/code-challenge-2-3-sample.mp4" autoplay loop width="100%"></video>
-    </div>
-</div>
+These examples are not complete applications. They are snippets of output designed to help you generate ideas.
+
+**Sample 1**
+
+```txt
+You enter a dark and musty room. A flickering torch hangs on the wall.
+Do you (1) take the torch, or (2) proceed in darkness? 
+1 [Enter]
+
+You grab the torch. The light reveals a hidden door at the back of the room.
+Do you (1) open the hidden door, or (2) continue exploring the room?
+2 [Enter]
+
+As you search the room, you find an old chest. Inside, you discover a healing potion.
+Your health is now: 80
+```
+
+**Sample 2**
+
+```txt
+You find yourself at a fork in the path.
+Do you (1) go left, or (2) go right?
+1 [Enter]
+
+A giant spider attacks you! Do you (1) fight, or (2) run?
+1 [Enter]
+
+You bravely fight the spider and defeat it. You gain a magic amulet.
+```
+
+**Sample 3**
+
+```txt
+You reach a locked door. Do you (1) use the key you found earlier, or (2) try to force it open?
+2 [Enter]
+
+The door won't budge, but you notice a lever on the wall.
+Do you (1) pull the lever, or (2) keep searching the area?
+1 [Enter]
+
+The lever opens a secret passage! You proceed deeper into the dungeon.
+Your inventory: 2 health potions, 1 magic amulet
+```
