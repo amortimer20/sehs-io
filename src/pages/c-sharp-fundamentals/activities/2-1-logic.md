@@ -205,13 +205,13 @@ Let’s look at some examples of boolean expressions in C#:
 
 ```cs
 int age = 18;
-bool isOldEnough = age >= 18;  // true
+bool isOldEnough = age >= 18;
 ```
 
 In this example, the expression `age >= 18` checks if the age is greater than or equal to 18. If the condition is true, `isOldEnough` is set to `true`; otherwise, it will be set to `false`.
 
 ```cs
-bool isEqual = (1000 == 1000);  // true
+bool isEqual = (1000 == 1000);
 ```
 
 Here, we are checking if 1000 is equal to 1000. Since this is obviously true, `isEqual` is assigned the value `true`.
@@ -236,7 +236,7 @@ Boolean logic is essential for enabling computers to make decisions. By using bo
 #### Code
 
 ```cs
-// Declare and initialize variables
+// Initialize variables
 string name = "Mr. Mortimer";
 int age = 30;
 double bankAccount = 150.00;
@@ -249,39 +249,34 @@ bool isOldEnoughToDrive = age >= 16;
 bool canBuyDodgeChallenger = bankAccount > 31000;
 bool isSeniorCitizen = age >= 65;
 
-// Output name comparisons and use variables
 Console.WriteLine("-Name Checks-");
-Console.WriteLine($"Is my name Mr. Mortimer? {isMyNameMortimer}");  // true
-Console.WriteLine($"Is my name Mr. Mertens? {name == "Mr. Mertens"}");  // false
-Console.WriteLine($"My name is not Mr. Merriman: {name != "Mr. Merriman"}");  // true
+Console.WriteLine($"Is my name Mr. Mortimer? {isMyNameMortimer}");
+Console.WriteLine($"Is my name Mr. Mertens? {name == "Mr. Mertens"}");
+Console.WriteLine($"My name is not Mr. Merriman: {name != "Mr. Merriman"}");
 
-// Output age-related logic and use assigned boolean variables
 Console.WriteLine("\n-Age-Related Checks-");
-Console.WriteLine($"Am I old enough to drive? {isOldEnoughToDrive}");  // true
+Console.WriteLine($"Am I old enough to drive? {isOldEnoughToDrive}");
 bool isOldEnoughToRentCar = age >= 25;
-Console.WriteLine($"Am I old enough to rent a car? {isOldEnoughToRentCar}");  // true
-Console.WriteLine($"Am I eligible for a senior citizen discount? {isSeniorCitizen}");  // false
+Console.WriteLine($"Am I old enough to rent a car? {isOldEnoughToRentCar}");
+Console.WriteLine($"Am I eligible for a senior citizen discount? {isSeniorCitizen}");
 
-// Output bank account checks and use boolean expressions
 Console.WriteLine("-Bank Account Checks-");
-Console.WriteLine($"Do I have enough to buy a Dodge Challenger? {canBuyDodgeChallenger}");  // false
+Console.WriteLine($"Do I have enough to buy a Dodge Challenger? {canBuyDodgeChallenger}");
 bool hasPositiveBalance = bankAccount > 0;
-Console.WriteLine($"Do I have a positive bank balance? {hasPositiveBalance}");  // true
+Console.WriteLine($"Do I have a positive bank balance? {hasPositiveBalance}");
 
-// Output boolean checks directly using variables
 Console.WriteLine("\n-Boolean Checks-");
-Console.WriteLine($"{name} is a teacher: {isATeacher}");  // true
-Console.WriteLine($"{name} is a millionaire: {isAMillionaire}");  // false
+Console.WriteLine($"{name} is a teacher: {isATeacher}");
+Console.WriteLine($"{name} is a millionaire: {isAMillionaire}");
 bool isNotMillionaire = !isAMillionaire;
-Console.WriteLine($"So, {name} isn't a millionaire? {isNotMillionaire}");  // true
+Console.WriteLine($"So, {name} isn't a millionaire? {isNotMillionaire}");
 
-// Bonus examples: logical AND (&&) and logical OR (||) assigned to bool variables
-// Covered more in lesson 2.4
+// Bonus: logical AND && and logical OR || (Covered in lesson 2.4)
 Console.WriteLine("\n-Logical Operator Examples-");
 bool canDriveAndBuyCar = isOldEnoughToDrive && canBuyDodgeChallenger;
-Console.WriteLine($"Am I old enough to drive AND have enough to buy a Dodge Challenger? {canDriveAndBuyCar}");  // false
+Console.WriteLine($"Am I old enough to drive AND have enough to buy a Dodge Challenger? {canDriveAndBuyCar}");
 bool canDriveOrBuyCar = isOldEnoughToDrive || canBuyDodgeChallenger;
-Console.WriteLine($"Am I old enough to drive OR have enough to buy a Dodge Challenger? {canDriveOrBuyCar}");  // true
+Console.WriteLine($"Am I old enough to drive OR have enough to buy a Dodge Challenger? {canDriveOrBuyCar}");
 ```
 
 #### Debug
