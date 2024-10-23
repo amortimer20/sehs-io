@@ -37,10 +37,10 @@ Create a program that evaluates student scores and assigns letter grades accordi
 
 ```txt
 Enter the number of students: 4
-Enter score for student 1: 78
-Enter score for student 2: 85
-Enter score for student 3: 92
-Enter score for student 4: 67
+Enter score for student 1: 78 [Enter]
+Enter score for student 2: 85 [Enter]
+Enter score for student 3: 92 [Enter]
+Enter score for student 4: 67 [Enter]
 
 Student 1 score is 78 and grade is B
 Student 2 score is 85 and grade is A
