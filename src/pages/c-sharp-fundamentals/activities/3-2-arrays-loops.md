@@ -12,11 +12,13 @@ title: C# Fundamentals 3.2 Arrays and Loops
 
 ### Introduction
 
-At this point, we've seen how arrays allow us to store multiple elements under a single variable, making it much easier to manage collections of data. However, the examples we've worked with might not seem very practical. After all, we've been manually accessing specific indexes, assigning values, and retrieving them one by one. This approach works fine when dealing with a handful of elements, but what if you had hundreds or even thousands of elements to process?
+At this point, we've seen how arrays allow us to store multiple elements under a single variable, making it much easier to manage collections of data. So far, we’ve manually accessed and modified specific indexes in our arrays, but this approach is impractical for large datasets. Working with each element individually would be both inefficient and error-prone.
 
-Manually working with each index would not only be inefficient but also highly error-prone. Imagine trying to manage a large dataset—having to manually reference each element would be overwhelming and impractical.
+In this lesson, we’ll explore how to traverse arrays efficiently and dynamically handle their size, improving both flexibility and scalability.
 
 **Sample array with output**
+
+Consider this simple example:
 
 ```cs
 string[] games = ["Fallout", "Sonic", "Super Mario"];
@@ -36,7 +38,11 @@ Sonic
 Super Mario
 ```
 
-Notice the repetition and copied code? Let's refactor this so it uses a while loop.
+As you can see, this code is repetitive. Let’s refactor it to use a loop for better efficiency.
+
+#### Using a While Loop to Traverse Arrays
+
+Instead of manually incrementing `i` and writing multiple `Console.WriteLine()` statements, we can use a while loop:
 
 ```cs
 string[] games = ["Fallout", "Sonic", "Super Mario"];
@@ -49,11 +55,11 @@ while (i < 3)
 }
 ```
 
-While this code works, it’s not flexible. If the array size changes, we would need to update the condition manually. To address this, we can use the `Length` property of arrays.
+This code is more streamlined, but notice that the condition `i < 3` is still hardcoded. What if the array had more or fewer elements? To make this flexible, we can use the array's `Length` property.
 
-#### Array.Length
+#### Array.Length Property
 
-Arrays in C# have a property called `Length`, which gives the total number of elements in the array. This makes our code more flexible by allowing us to loop through all elements, regardless of how many there are.
+Arrays in C# have a `Length` property, which automatically gives the total number of elements in the array. Using this property, we can adapt our code to any array size without needing to manually adjust the loop condition.
 
 Note, we will cover properties properly later on in the course.
 
@@ -62,18 +68,18 @@ Note, we will cover properties properly later on in the course.
 string[] games = ["Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound"];
 int i = 0;
 
-while (i < games.Length) // games.Length returns 7
+while (i < games.Length) // games.Length dynamically adjusts to the array size
 {
     Console.WriteLine(games[i]);
     i++;
 }
 ```
 
-In this code, games.Length dynamically adjusts to the size of the array. The loop will process every element, even if the array grows or shrinks.
+This ensures that the loop will run as many times as there are elements in the array, no matter how large or small it becomes.
 
-#### For Loops
+#### Using a For Loop
 
-A for loop is a more concise and often preferred way to iterate through arrays. We can use a for loop perform one more refactor our code.
+The for loop is often preferred for iterating over arrays because it consolidates the initialization, condition, and increment into one line, making the code more concise.
 
 ```cs
 string[] games = ["Fallout", "Sonic", "Super Mario", "Final Fantasy", "The Legend of Zelda", "Metroid", "Earthbound"];
@@ -84,7 +90,36 @@ for (int i = 0; i < games.Length; i++)
 }
 ```
 
-The result is the same as the while loop, but the for loop makes the code more concise and easier to read. You'll often see for loops favored when working with arrays because of this simplicity. However, always choose the loop type that best fits your needs.
+This for loop achieves the same result as the while loop but is shorter and easier to read.
+
+#### Dynamically Setting Array Length at Runtime
+
+Up until now, we’ve hardcoded arrays with a fixed length in the examples. However, in real-world applications, the length of an array might not be known in advance. What if we want to allow the user to specify how many elements the array should have? This can be achieved by asking the user for input and creating the array dynamically based on that input.
+
+Here’s how you can set the length of an array dynamically at runtime:
+
+```cs
+Console.Write("Enter the number of games: ");
+int numGames = Convert.ToInt32(Console.ReadLine()); 
+
+string[] games = new string[numGames];  // Create an array of the specified length
+
+// Prompt the user to enter the names of the games
+for (int i = 0; i < games.Length; i++)
+{
+    Console.Write($"Enter the name of game {i + 1}: ");
+    games[i] = Console.ReadLine();
+}
+
+// Output all the games entered
+Console.WriteLine("\nHere are the games you entered:");
+for (int i = 0; i < games.Length; i++)
+{
+    Console.WriteLine(games[i]);
+}
+```
+
+This approach opens the door for more interactive and flexible programs. Arrays can now handle any size of input data, giving the user full control.
 
 #### Skills to Practice
 
