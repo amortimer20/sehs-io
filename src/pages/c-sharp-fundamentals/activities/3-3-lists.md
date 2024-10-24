@@ -98,7 +98,7 @@ List<string> roster =
 ```cs
 List<int> stats = new List<string>() { 99, 72, 33, 5, 100, 67, 1776 };
 
-List<string> roster = List<string>()
+List<string> roster = new List<string>()
 {
     "Jim",
     "Jack",
