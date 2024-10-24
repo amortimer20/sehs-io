@@ -50,7 +50,7 @@ Console.WriteLine(number1);
 int number1 = 5;
 ```
 
-### Naming Rules and Conventions
+#### Naming Rules and Conventions
 
 There are some syntax rules for naming variables, and there are best practices known as conventions. Here are a few tips for naming variables:
 
