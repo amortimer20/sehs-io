@@ -10,97 +10,114 @@ title: Python Fundamentals 1.5 Manipulating Variables
 
 ### Introduction
 
-This activity will take you a little bit deeper into how variables can be used. While the programs below are merely simulations, they will demonstrate how variables can have their values changed. Here are a few things you need to understand:
+In programming, variables are used to store data that can be used later in the program. You’ve already learned how to declare and use variables. But one of the most powerful things about variables is that they don’t have to stay the same throughout a program. We can change the value of a variable after it's been initialized.
 
-- The equal sign is called the assignment operator in programming. It is used to save, or assign a value to a variable.
-- We can overwrite a variable’s _existing_ value using the assignment operator.
+Changing the value of a variable allows you to work with dynamic data. For example, a game might change a player's score every time they earn points, or an app could update a temperature reading when the weather changes.
+
+Let’s say you have a variable that holds your age:
+
+```python
+age = 15
+```
+
+In this example, `age` is a variable, and it currently holds the value 15. But time passes, and you have a birthday, so now your age is 16. You can change the value of the `age` variable like this:
+
+```python
+age = 16
+```
+
+Changing the variable's value is as simple as assigning a new value.
+
+#### Keeping Track
+
+Sometimes, you will need to modify a variable by adding, subtracting, etc. to it. For example, let's say you're making a fighting game and your player takes damage:
+
+```python
+health = 100
+
+# Take damage
+health = health - 10
+```
+
+This takes the current value of `health`, subtracts 10, and saves the new result. If you're thinking of variables from Algebra class, this might seem odd. Remember, variables in programming aren't exactly the same as those in math class.
 
 #### Skills to Practice
 
-- Manipulate variable values
+- Manipulate variable values using the assignment operator
 
 ### Instructions
 
 #### Setup
 
-1. Create a new Python application. Name the project **1.5 Manipulating Variables**.
+1. Create a new Python application. Name the project **1-5 Manipulating Variables**.
 2. Click Create.
 
 #### Code
 
 ```python
-# Video game demo
-print("--- Battle Simulator ---")
+print("--- Demo 1 - Battle Demo ---")
 player_health = 100
+player_attack = 25
 enemy_health = 100
-enemy_attack_damage = 20
+enemy_attack = 20
 potions = 3
-
 print(f"Health: {player_health}")
 print(f"Enemy health: {enemy_health}")
 print()
 
-print("Round 1")
 print("Player attacks.")
-# Subtract 15 from enemy_health. Save new enemy_health value.
-enemy_health = enemy_health - 15
-print(f"You did 15 damage! Enemy health: {enemy_health}")
-# Subtract enemy_attack_damage from player health. Save new player_health value.
-player_health = player_health - enemy_attack_damage
-print(f"Enemy did {enemy_attack_damage} damage! Player health: {player_health}")
+enemy_health = enemy_health - player_attack
+print(f"You did {player_attack} damage! Enemy health: {enemy_health}")
+print()
+
+print("Enemy attacks.")
+player_health = player_health - enemy_attack
+print(f"Enemy did {enemy_attack} damage! Player health: {player_health}")
 print()
 
 print("Using potion...")
 player_health = player_health + 10
-potions = potions - 1
-print(f"Player health: {player_health}. Potions left: {potions}")
-
-print("Buying one potion...")
 potions = potions + 1
-print(f"Potions left: {potions}")
-print("Using the potion!!!")
-potions = potions - 1
+print(f"Player health: {player_health}. Potions left: {potions}")
+print("\n\n")  # What does \n do? Google search 'Python \n'
 
 
-print("\n\n") # What does this do??? Google search "\n python"
-
-
-# Bank account demo
-print("--- Banking Simulator ---")
+print("--- Demo 2 - Banking Simulator ---")
 account_name = "Checking Account"
-account_balance = 100.50
-
-print(f"{account_name} balance: {account_balance}")
+balance = 100.50
+print(f"{account_name} balance: {balance}")
 print(f"Depositing $99.01 to {account_name}")
-account_balance = account_balance + 99.01
-print(f"{account_name} balance: {account_balance}")
+balance = balance + 99.01
+print(f"{account_name} balance: {balance}")
 ```
 
 #### Debug
 
 ```txt
---- Battle Simulator ---
+--- Demo 1 - Battle Demo ---
 Health: 100
 Enemy health: 100
 
-Round 1
 Player attacks.
-You did 15 damage! Enemy health: 85
+You did 25 damage! Enemy health: 75
+
+Enemy attacks.
 Enemy did 20 damage! Player health: 80
 
 Using potion...
-Player health: 90. Potions left: 2
-Buying one potion...
-Potions left: 3
-Using the potion!!!
+Player health: 90. Potions left: 4
 
---- Banking Simulator ---
-Checking Account balance: $100.5
+
+
+--- Demo 2 - Banking Simulator ---
+Checking Account balance: 100.5
 Depositing $99.01 to Checking Account
-Checking Account balance: $199.51
+Checking Account balance: 199.51
 ```
 
 ### Tips, Tricks, and Reflection
 
 - Remember that variables need to be spelled exactly the same every time.
-- Make sure to use the right data type for your variables. When performing math, use numbers, not strings.
+- Use your judgement when deciding whether to use an integer or float variable. Should the value be allowed to have decimals in it?
+    - Can dollar amounts have a decimal?
+    - When shopping online, does the quantity of what you're buying usually need a decimal place?
