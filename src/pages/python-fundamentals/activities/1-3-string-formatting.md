@@ -10,20 +10,20 @@ title: Python Fundamentals 1.3 String Formatting
 
 ### Introduction
 
-In the previous activity, the math expressions were output seperately from the strings. Although this works, it doesn't look nice. In programming we format strings to construct complex text messages. In Python, there are two popular ways to format strings: _passing multiple arguments_\* and _string interpolation_.
+In the previous activity, we output math expressions separately from strings. While this works, it may not always look neat or readable. In programming, we format strings to create more complex and user-friendly text outputs. In Python, there are two common ways to format strings: passing multiple arguments to `print()` and string interpolation.
 
-Passing multiple argument simply means you separate the different data in the print function with commas.
+Passing multiple arguments means providing different pieces of data, separated by commas, within the `print()` function. Each argument is printed in sequence, with spaces automatically added between them.
 
 ```python
-print("My age in months is ", 30 * 12)
+print("My age in months is", 30 * 12)
 ```
 
-\* If we're arguing semantics, this is _technically_ output formatting, not string formatting, but it has the desired effect.
+Although this is technically output formatting rather than true string formatting, it achieves a similar result in terms of combining text and data.
 
-A newer way to format strings is to use a feature called _string interpolation_. With string interpolation, you prefix a string with the character _f_. You then use the `{}` symbol to insert code expressions anywhere you want execute code in the string.
+A more modern and flexible way to format strings is to use string interpolation. This method allows you to embed expressions directly within a string. To use it, you prefix the string with the letter f and place any code or expressions inside curly braces `{ }` to have them evaluated and included in the output.
 
 ```python
-f"My age in months is {30 * 12}."
+print(f"My age in months is {30 * 12}.")
 ```
 
 #### Skills to Practice
@@ -35,7 +35,7 @@ f"My age in months is {30 * 12}."
 
 #### Setup
 
-1. Create a new Python application. Name the project **1.3 String Formatting**.
+1. Create a new Python application. Name the project **1-3 String Formatting**.
 2. Click Create.
 
 #### Code
@@ -74,4 +74,4 @@ Therefore, a woodchuck can chuck 1920 wood panels every hour.
 
 ### Tips, Tricks, and Reflection
 
-- You are welcome to use either technique for string formatting, but this course will favor string interpolation.
+- You are welcome to use either technique for formatting, but this course favors string interpolation. I personally only use passing multiple arguments for basic examples.
