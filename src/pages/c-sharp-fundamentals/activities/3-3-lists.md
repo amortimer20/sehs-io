@@ -12,19 +12,23 @@ title: C# Fundamentals 3.3 Lists
 
 ### Introduction
 
-Lists are a convenient data type for storing elements in a collection. While they are similar to arrays in that they can store elements of a given type in a collection, there is one significant difference: **lists are resizable**. In other words, we don't need to set their size, unlike arrays. This makes lists an attractive option when you need to store values in a group, but you don't know ahead of time what the size needs to be, or if there is ever a final size. Consider this exmaple, do you always shop for the same number of items every time you go to the grocery store? Of course not. Sometimes you may have a cart overflowing with foods, and sometimes you have just a few items you need to pick up.
+Lists are a convenient data type for storing collections of elements. Similar to arrays, lists can store multiple elements of a given type. However, unlike arrays, **lists are dynamic and can grow or shrink** in size. This makes lists particularly useful when you need to store an unknown number of elements, or when the number of elements may change over time.
 
-Lists are declared using different syntax than you may be used to: `List<data type> nameOfList = new List<string>();`. Notice the data type is surrounded by angle brackets. This is called generic syntax. It's an intermediate level concept that you needn't worry to much about at this point.
+For example, when you go grocery shopping, do you always know exactly how many items you'll buy? Not always! Sometimes you buy just a few things, and other times your cart is full. A list is perfect for handling this kind of varying data.
+
+Here's an example of how to declare a list in C#:
 
 ```cs
 List<string> games = new List<string>();
 ```
 
-This code initializes an empty list. Keep in mind that until elements are added, there are no available indexes. `games[0]` will cause an out of range error.
+This line of code initializes an empty list that will hold strings. Notice the syntax `List<string>`. The type (in this case, `string`) is surrounded by angle brackets—this is called **generic syntax**. Generics allow lists to hold elements of any data type, but the list will only hold elements of one specific type, as defined when the list is created.
 
-##### List.Add() Method
+You don't need to worry too much about the advanced details of generics for now. Just know that the angle brackets specify the type of element the list will hold.
 
-When you create a new list, it's empty. Therefore, there is no index available to insert an element. To add a new element to a list, use the method `List.Add()`, where `List` is the name of your variable.
+#### Adding Elements to a List
+
+When you create a new list, it starts out empty. To add elements, use the Add() method:
 
 ```cs
 games.Add("Sonic Adventure");
@@ -33,9 +37,21 @@ games.Add("Marvel vs. Capcom");
 games.Add("Power Stone");
 ```
 
-##### List.Count Property
 
-Similar to Array.Length, List.Count returns the number of elements contained in the list. This is helpful when iterating through list elements.
+#### Accessing Elements in a List
+
+You can access elements in a list using square brackets, just like arrays. However, be careful when accessing elements in a list—since lists can grow dynamically, trying to access an index that doesn’t exist will cause an error. For example:
+
+```cs
+List<int> grades = new List<int>();
+Console.WriteLine(grades[0]); // an empty list has no indexes
+```
+
+Since the list starts empty, attempting to access an element (e.g., grades[0]) before adding anything will cause an "IndexOutOfRange" error.
+
+#### List.Count Property
+
+To find out how many elements are currently in the list, use the `Count` property. This is similar to `Array.Length`:
 
 ```cs
 Console.WriteLine($"Number of games: {games.Count}");
@@ -45,6 +61,9 @@ for (int i = 0; i < games.Count; i++)
     Console.WriteLine($"- {games[i]}");
 }
 ```
+
+**Output**
+
 ```txt
 Number of games: 4
 - Sonic Adventure
@@ -55,14 +74,30 @@ Number of games: 4
 
 Notice that elements are still accessed using the square bracket notation. You can still access and modify elements at any valid index.
 
-##### List Initialization Syntax
+##### Initializing a List with Elements
 
-Lists can also be initialized with data, similar to initialization syntax with arrays.
+You can also initialize a list with elements, similar to arrays:
+
+**Newer Collection Expression Syntax**
+
+```cs
+```cs
+List<int> stats = [ 99, 72, 33, 5, 100, 67, 1776 ];
+
+// For larger datasets, you can break down data over multiple lines.
+List<string> roster = 
+[
+    "Jim",
+    "Jack",
+    "Joe Bob"
+];
+```
+
+**Older Initializer Syntax**
 
 ```cs
 List<int> stats = new List<string>() { 99, 72, 33, 5, 100, 67, 1776 };
 
-// For larger datasets, you can break down data over multiple lines.
 List<string> roster = List<string>()
 {
     "Jim",
@@ -71,15 +106,20 @@ List<string> roster = List<string>()
 };
 ```
 
-##### Arrays vs. Lists
+#### Lists vs. Arrays
 
-Follow this rule: if you know the number of elements needed ahead of time, you can use an array. If the number of elements will vary, use a list. In theory, you could use a list for just about any scenario over an array, but you should always consider your options.
+Use this rule of thumb:
+
+- If you know the exact number of elements you need, you can use an array.
+- If the number of elements might change, or you don’t know the size ahead of time, use a list.
+
+Arrays are may be efficient in cases where the number of elements is fixed, but lists provide more flexibility in dynamic situations. For most scenarios, lists offer greater convenience and versatility.
 
 #### Skills to Practice
 
 - Initializing lists
+- Adding elements to a list
 - Iterating through list elements
-- Refactoring previous applications to use lists where necessary
 
 ---
 
@@ -94,17 +134,17 @@ Follow this rule: if you know the number of elements needed ahead of time, you c
 
 ```cs
 List<string> tasks = new List<string>();
-bool addingTasks = true;
+string input = "";
 
 Console.WriteLine("--- Todo List ---");
 
-while (addingTasks)
+while (input != "2")
 {
     Console.WriteLine("-Menu-");
     Console.WriteLine("1) Add a task");
     Console.WriteLine("2) Finish");
     Console.Write("-> ");
-    string input = Console.ReadLine();
+    input = Console.ReadLine();
 
     if (input == "1")
     {
@@ -114,19 +154,17 @@ while (addingTasks)
     }
     else if (input == "2")
     {
-        addingTasks = false;
+        Console.WriteLine("\nPrinting List");
+
+        for (int i = 0; i < tasks.Count; i++)
+        {
+            Console.WriteLine($"- {tasks[i]}");
+        }
     }
     else
     {
         Console.WriteLine("Invalid option. Try again.\n");
     }
-}
-
-Console.WriteLine("\nPrinting List");
-
-for (int i = 0; i < tasks.Count; i++)
-{
-    Console.WriteLine($"* {tasks[i]}");
 }
 ```
 
@@ -155,9 +193,9 @@ Enter task: Cook dinner
 -> 2
 
 Printing List
-* Homework
-* Clean bedroom
-* Cook dinner
+- Homework
+- Clean bedroom
+- Cook dinner
 ```
 
 ---
