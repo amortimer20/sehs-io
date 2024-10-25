@@ -64,7 +64,7 @@ for (int i = 10; i >= 1; i--)
 #### Code
 
 ```cs
-Console.WriteLine("--- Counting Multiples ---");
+Console.WriteLine("--- Demo 1 - Counting Multiples ---");
 
 Console.Write("Choose a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -82,40 +82,44 @@ for (int i = 0; i < length; i++)
 Console.WriteLine("\nPress Enter to continue.\n");
 Console.ReadLine();
 
-Console.WriteLine("--- Calculating Exponents ---");
+Console.WriteLine("--- Demo 2 - Square Tables ---");
 
-Console.Write("Choose a base number: ");
-number = Convert.ToInt32(Console.ReadLine());
-int product = number;
+Console.Write("How many numbers would you like displayed? ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write($"How many exponents of the base {number} would you like listed? ");
-length = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("\nNumber\tSquare");
+Console.WriteLine("----------------");
 
-for (int i = 1; i <= length; i++)
+// Use a for loop to print numbers 1 to 10 and their squares
+for (int i = 1; i <= num; i++)
 {
-    Console.WriteLine($"{number}^{i} = {product}"); // Carat ^ can be used to represent exponents
-    product = product * number;
+    Console.WriteLine("{0}\t{1}", i, i * i);
 }
+
 ```
 
 #### Debug
 
 ```txt
---- Counting Multiples ---
-Choose a number: 12 [Enter]
-How many multiples of 12 would you like listed? 10 [Enter]
-12 24 36 48 60 72 84 96 108 120
+--- Demo 1 - Counting Multiples ---
+Choose a number: 3
+How many multiples of 3 would you like listed? 5
+3 6 9 12 15
 Press Enter to continue.
 
 
---- Calculating Exponents ---
-Choose a base number: 3 [Enter]
-How many exponents of the base 3 would you like listed? 5 [Enter]
-3^1 = 3
-3^2 = 9
-3^3 = 27
-3^4 = 81
-3^5 = 243
+--- Demo 2 - Square Tables ---
+How many numbers would you like displayed? 7
+
+Number  Square
+----------------
+1       1
+2       4
+3       9
+4       16
+5       25
+6       36
+7       49
 ```
 
 ---
