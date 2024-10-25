@@ -49,6 +49,44 @@ for (int row = 1; row <= 5; row++)
 
 <video src="/courses/c-sharp-fundamentals/nested-loop-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
 
+#### Table Data: Single For loop or Nested For Loop?
+
+Use a plain for loop when you need to iterate through a single set of data and print out each item. For example, if you’re listing numbers 1 to 10 and their squares, one for loop is enough.
+
+A nested for loop comes in handy when you need to work with two-dimensional data, like a grid or table where each cell represents a combination of two different sets of data. For example, if you’re creating a table that displays Celsius values and their Fahrneheit equivalents:
+
+```cs
+Console.WriteLine("Celsius\tFahrenheit");
+Console.WriteLine("-------------------");
+
+for (int celsius = 0; celsius <= 100; celsius += 10)
+{
+    for (int increment = 0; increment < 1; increment++)
+    {
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        Console.WriteLine("{0}\t{1}", celsius, fahrenheit);
+    }
+}
+```
+
+**Output**
+
+```txt
+Celsius Fahrenheit
+-------------------
+0       32
+10      50
+20      68
+30      86
+40      104
+50      122
+60      140
+70      158
+80      176
+90      194
+100     212
+```
+
 #### Skills to Practice
 
 - Writing nested loops
