@@ -43,6 +43,10 @@ double decimalNumber = Convert.ToDouble("100.4"); // Converts the string "100.4"
 Console.WriteLine(decimalNumber + 10.6); // Outputs 111.0
 ```
 
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/numeric-input-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Handling Errors with Invalid Input
 
 What happens if a user enters something unexpected, like trying to convert "abc" into a number? Or what if we try to convert a string that contains a decimal into an integer, like "32.5"?
