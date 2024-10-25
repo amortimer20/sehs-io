@@ -64,7 +64,7 @@ for (int celsius = 0; celsius <= 100; celsius += 10)
     for (int increment = 0; increment < 1; increment++)
     {
         double fahrenheit = (celsius * 9 / 5) + 32;
-        Console.WriteLine("{0}\t{1}", celsius, fahrenheit);
+        Console.WriteLine($"{celsius}\t{fahrenheit}");
     }
 }
 ```
