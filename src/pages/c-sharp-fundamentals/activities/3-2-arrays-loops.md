@@ -140,7 +140,7 @@ This approach opens the door for more interactive and flexible programs. Arrays 
 #### Code
 
 ```cs
-Console.WriteLine("Demo 1 - Populate an array\n");
+Console.WriteLine("--- Demo 1 - Populate an array ---\n");
 
 Console.Write("How many numbers will your collection contain? ");
 int size = Convert.ToInt32(Console.ReadLine());
@@ -165,7 +165,7 @@ Console.WriteLine();
 Console.WriteLine("\nPress enter to continue...");
 Console.ReadLine();
 
-Console.WriteLine("Demo 2 - Sum Calculator\n");
+Console.WriteLine("--- Demo 2 - Sum Calculator ---\n");
 
 double sum = 0;
 
@@ -177,26 +177,52 @@ for (int i = 0; i < numbers.Length; i++)
 }
 
 Console.WriteLine($"The sum is {sum}");
+
+Console.WriteLine("\nPress enter to continue...");
+Console.ReadLine();
+
+Console.WriteLine("--- Demo 3 - Scores Table ---\n");
+
+string[] names = ["Alice", "Bob", "Charlie", "Daisy"];
+int[] scores = [85, 92, 78, 88];
+
+// Print table header
+Console.WriteLine("Name\t\tScore");
+Console.WriteLine("---------------------");
+
+// Print each name and score using a for loop
+for (int i = 0; i < names.Length; i++)
+{
+    Console.WriteLine($"{names[i]}\t\t{scores[i]}");
+}
 ```
 
 #### Debug
 
 ```txt
-Demo 1 - Populate an array
+--- Demo 1 - Populate an array ---
 
-How many numbers will your collection contain? 5
-Element 1: 34
-Element 2: 19
-Element 3: 25.5
-Element 4: 42
-Element 5: 96
-Here are your elements: 34 19 25.5 42 96
+How many numbers will your collection contain? 2
+Element 1: 7
+Element 2: 9
+Here are your elements: 7 9
 
 Press enter to continue...
 
-Demo 2 - Sum Calculator
+--- Demo 2 - Sum Calculator ---
 
-The sum is 216.5
+The sum is 16
+
+Press enter to continue...
+
+--- Demo 3 - Scores Table ---
+
+Name            Score
+---------------------
+Alice           85
+Bob             92
+Charlie         78
+Daisy           88
 ```
 
 ---
