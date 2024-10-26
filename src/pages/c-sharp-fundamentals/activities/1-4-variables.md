@@ -40,6 +40,10 @@ int sum = number1 + number 2;
 Console.WriteLine($"The sum is {sum}");
 ```
 
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/variables-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Variable Scope
 
 Variable Scope refers to where a variable can be accessed in your code. For example, the program below will not run because `number1` must be declared before it can be used.
