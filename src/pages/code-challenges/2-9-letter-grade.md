@@ -10,7 +10,7 @@ title: Code Challenge 2.9 - Letter Grade Calculator
 
 ---
 
-### Objectives
+### Objective
 
 Write a program that takes a numerical grade as input and converts it into a letter grade.
 
