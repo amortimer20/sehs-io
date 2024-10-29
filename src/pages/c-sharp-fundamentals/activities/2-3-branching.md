@@ -12,12 +12,12 @@ title: C# Fundamentals 2.3 Branching Statements
 
 ### Introduction
 
-The last activity introduced us to the idea of controlling the flow of an application with _if statements_. The age validator app checked each if statement's condition resulted in true. There are many instances where you only want one selection to execute. i.e. One or the other.
+The last activity introduced the concept of controlling an application’s flow using _if_ statements. We used an age validator app that executed code only when an if statement’s condition evaluated to `true`. However, there are many cases where only one of several options should run—for instance, one outcome or the other.
 
-We can _branch_ if statements with to other kinds of statements, `else if`and `else`.
+We can extend an if statement to include other types of statements: `else if` and `else`.
 
-- `else if` must follow and if statement, and will only check it's condition if the preceding if statement condition resulted in `false`. You can chain as many else if statements as you want, but they _must_ come after the initial if statement.
-- `else` must be at the end of an if or else if statement. It does not require a condition, and will execute if any preceding `if` or `else if` statement coniditions result in `false`.
+- `else if` follows an if statement and only checks its condition if the preceding if condition is false. You can chain multiple else if statements, but each must come after the initial if.
+- `else` comes at the end of an `if` or else `if chain`. It has no condition of its own and executes only if all preceding conditions are `false`. In other words, you can think of `else` as a fallback or safety.
 
 **Example**
 
@@ -32,18 +32,18 @@ if (age >= 16)
 }
 else if (age == 15)
 {
-    Console.WriteLine("You can't drive on your own yet, but you are eligible for a learners permit.");
+    Console.WriteLine("You can't drive on your own yet, but you are eligible for a learner’s permit.");
 }
 else
 {
-    Console.WriteLine("I'm sorry, but you are not old enough to drive");
+    Console.WriteLine("I'm sorry, but you are not old enough to drive.");
 }
 ```
 
 #### Skills to Practice
 
 - Branching if statements with `else if` and `else`
-- Making a main menu
+- Implementing menu systems
 
 ---
 
@@ -57,8 +57,7 @@ else
 #### Code
 
 ```cs
-// Zodiac Calendar
-Console.WriteLine("--- Zodiac Calendar ---\n");
+Console.WriteLine("--- Demo 1 - Zodiac Calendar ---\n");
 Console.Write("Enter your birth year: ");
 string input = Console.ReadLine();
 int year = Convert.ToInt32(input);
@@ -115,11 +114,11 @@ else
     Console.WriteLine("sheep");
 }
 
-Console.WriteLine();
+Console.WriteLine("\nPress enter to continue...");
+Console.ReadLine();
 
 
-// Simple ATM Demo
-Console.WriteLine("\n--- ATM Demo ---\n");
+Console.WriteLine("\n--- Demo 2 - ATM Demo ---\n");
 Console.Write("Set your initial balance: $");
 input = Console.ReadLine();
 double balance = Convert.ToDouble(input);
