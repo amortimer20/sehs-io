@@ -37,7 +37,7 @@ I like to eat dates
 **Example using lists**
 
 ```cs
-List<int> numbers = new List<int> { 2, 4, 6, 8, 10 };
+List<int> numbers = [ 2, 4, 6, 8, 10 ];
 
 Console.WriteLine("Here are some even numbers:");
 foreach (int number in numbers)
