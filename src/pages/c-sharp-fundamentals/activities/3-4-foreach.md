@@ -12,17 +12,20 @@ title: C# Fundamentals 3.4 Foreach Loops
 
 ### Introduction
 
-Although while loops and for loops are capable of iterating through collections, there is another C# loop that makes iterating through collections very easy and intuitive. This loop is known as a **foreach loop**, and it's purpose is to iterate through array elements in sequence, or one at a time.
+In C#, both `while` loops and `for` loops are capable of iterating through collections, but there’s another type of loop that makes this process even simpler and more intuitive: the `foreach` loop. The purpose of a `foreach` loop is to iterate over each element in a collection, such as an array or list, automatically processing each item one by one without needing to manage an index.
 
-**Example**
+**Example using an array**
+
 ```cs
-string[] fruits = new string[] { "apples", "bananas", "cherries", "dates" };
+string[] fruits = [ "apples", "bananas", "cherries", "dates" ];
 
 foreach (string fruit in fruits)
 {
     Console.WriteLine("I like to eat " + fruit);
 }
 ```
+
+**Output**
 
 ```txt
 I like to eat apples
@@ -31,22 +34,49 @@ I like to eat cherries
 I like to eat dates
 ```
 
-Notice the simplicity. No keeping track of _i_, no fear of accidentally trying to access an index that is out of range. As with the _i_ variable and for loops, the declared variable is only accessible within the scope of the foreach loop.
+**Example using lists**
 
-Here is the rule for tracing foreach loops: **for every element, perform one iteration**. For every iteration, the foreach loop will assign the next element to the variable. So, the fruit variable is initially assigned the string `"apple"`, then `"bananas"`, and so on. Four elements yields four iterations.
+```cs
+List<int> numbers = new List<int> { 2, 4, 6, 8, 10 };
 
-##### For Loop vs Foreach Loop
+Console.WriteLine("Here are some even numbers:");
+foreach (int number in numbers)
+{
+    Console.WriteLine(number);
+}
+```
 
-You may be wondering if the foreach loop renders while and for loops obselete. The answer is a resounding no!
+**Outuput**
 
-- When you need to access each element without modifications, use a foreach loop.
-- When you need to **modify**, or change elements, consider a for loop or even a while loop, depending on your needs.
+```txt
+Here are some even numbers:
+2
+4
+6
+8
+10
+```
 
-Foreach loops are not meant to modify the collection it's iterating through, so I would consider a for loop in this case.
+Notice how simple this loop is compared to a for loop: you don’t need to keep track of an index variable or worry about accessing invalid indexes. The foreach loop automatically assigns each element in fruits to the fruit variable in sequence, allowing you to use it directly.
+
+Here’s a good rule to remember when using a foreach loop: for each element in the collection, the loop will iterate once. For instance, with four elements in the fruits array, there will be four iterations, and each time, fruit will be assigned the next element in the sequence.
+
+**Example Video**
+
+<video src="/courses/c-sharp-fundamentals/foreach-loop-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
+#### When to Use a for Loop vs. a foreach Loop
+
+The foreach loop is a great tool, but it doesn’t replace while or for loops in all situations. Here are some guidelines:
+
+- Use a foreach loop when you simply want to read or access each element without modifying the collection.
+- If you need to modify elements in a collection, consider a for or while loop instead. foreach is not designed for modifying the items in the collection it’s iterating over.
+
+Even if both for and foreach loops are valid for a collection, foreach is often clearer for reading code since it makes the purpose of iteration obvious—processing each item in a collection without needing to worry about indices. Choosing foreach over for can make code easier to maintain in many cases.
 
 #### Skills to Practice
 
-- Iterating through arrays using foreach loops
+- Iterating through collections using foreach loops
 - Refactoring previous similar applications to use foreach loops where necessary
 
 ---
@@ -62,11 +92,11 @@ Foreach loops are not meant to modify the collection it's iterating through, so 
 
 ```cs
 List<string> shoppingCart = new List<string>();
-string input = "";
+string menuChoice = "";
 
 Console.WriteLine("--- Shopping Cart ---");
 
-while (input != "3")
+while (menuChoice != "3")
 {
     Console.WriteLine("-Menu-");
     Console.WriteLine("1) Add item to shopping cart");
@@ -74,24 +104,32 @@ while (input != "3")
     Console.WriteLine("3) Exit");
 
     Console.Write("-> ");
-    input = Console.ReadLine();
+    menuChoice = Console.ReadLine();
 
-    if (input == "1")
+    if (menuChoice == "1")
     {
         Console.Write("Enter new item: ");
-        input = Console.ReadLine();
-        shoppingCart.Add(input);
+        string newItem = Console.ReadLine();
+        shoppingCart.Add(newItem);
+        Console.WriteLine($"'{newItem}' added to the cart.");
     }
-    else if (input == "2")
+    else if (menuChoice == "2")
     {
         Console.WriteLine("\n-Cart Contents-");
-
-        foreach (string item in shoppingCart)
+        
+        if (shoppingCart.Count == 0)
         {
-            Console.WriteLine($"- {item}");
+            Console.WriteLine("The cart is empty.");
+        }
+        else
+        {
+            foreach (string item in shoppingCart)
+            {
+                Console.WriteLine($"- {item}");
+            }
         }
     }
-    else if (input == "3")
+    else if (menuChoice == "3")
     {
         Console.WriteLine("Exiting.");
     }
@@ -152,4 +190,4 @@ Exiting.
 
 ### Tips, Tricks, and Reflection
 
-- Foreach loops can also iterate through characters of a string in a very intuitive way. We'll play around with this idea shortly.
+- A foreach loop can also be used to iterate through each character in a string, making it easy to process text one character at a time. We’ll explore this concept soon.
