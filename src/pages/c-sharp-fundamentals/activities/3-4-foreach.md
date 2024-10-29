@@ -191,3 +191,24 @@ Exiting.
 ### Tips, Tricks, and Reflection
 
 - A foreach loop can also be used to iterate through each character in a string, making it easy to process text one character at a time. We’ll explore this concept soon.
+- You may accidentally reference the entire collection instead of the iteration variable within the foreach loop, leading to incorrect code and logic errors. For example:
+
+```cs
+int[] numbers = [ 1, 2, 3, 4, 5 ];
+
+foreach (int number in numbers)
+{
+    Console.WriteLine(numbers);
+}
+```
+
+The intended output would normally be `number`, not `numbers`.
+
+```cs
+foreach (int number in numbers)
+{
+    Console.WriteLine(number);  // Correctly references the iteration variable
+}
+```
+
+If the singular/plural naming convention throws you off, consider using single letter variable names. e.g. `foreach (int n in numbers)`.
