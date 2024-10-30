@@ -12,7 +12,7 @@ title: C# Fundamentals 2.7 Number Guessing Game
 
 ### Introduction
 
-All sorts of simple, but fun programs can be created with a few simple loops and if statements. For example, this simple little guessing game can be created with a basic while loop.
+Creating fun and engaging programs doesn't always require complex coding—sometimes a few simple loops and if statements can do the trick. In this activity, you'll design a classic number guessing game using a basic while loop.
 
 #### Skills to Practice
 
