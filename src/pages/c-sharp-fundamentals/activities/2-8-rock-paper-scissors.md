@@ -12,12 +12,15 @@ title: C# Fundamentals 2.8 Rock, Paper, Scissors Game
 
 ### Introduction
 
-Rock, paper, scissors is a fun game to play between friends. Here is a basic rundown of the rules:
+Rock, Paper, Scissors is more than just a childhood game—it's a timeless classic that’s perfect for friendly competition. Here’s a quick overview of the rules:
 
-- Choose rock, paper, or scissors
-- Paper covers rock
-- Rock crushes scissors
-- Scissors cuts paper
+Choose your move: Rock, Paper, or Scissors
+
+- Rock crushes Scissors
+- Paper covers Rock
+- Scissors cuts Paper
+
+In this activity, you'll develop a digital version of Rock, Paper, Scissors. Not only will it sharpen your coding skills, but it will also give you a deeper understanding of how to implement logic and control flow in your programs.
 
 #### Skills to Practice
 
@@ -41,28 +44,24 @@ int losses = 0;
 int round = 1;
 bool playing = true;
 Random random = new();
+Console.WriteLine("--- ROCK, PAPER, SCISSORS ---");
 
-Console.WriteLine("---ROCK, PAPER, SCISSORS---");
-Console.WriteLine(" --202X Terminal Edition--");
-
-/*
-This is a multi-line comment.
-
-1. Set the header: round number, wins, losses
-2. Prompt user for player hand
-3. Generate a random computer hand
-4. Check who won
-    i. If same hand - tie
-   ii. If player chooses rock
-      a. Computer paper - lose
-      b. Computer scissors - win
-  iii. If player chooses paper
-      a. Computer scissors - lose
-      b. Computer rock - win
-   iv. If player chooses scissors
-      a. Computer rock - lose
-      b. Computer paper - win
-5. Prompt user to play again
+/* This is a multi-line comment.
+   1. Set the header: round number, wins, losses
+   2. Prompt user for player hand
+   3. Generate a random computer hand
+   4. Check who won
+       i. If same hand - tie
+      ii. If player chooses rock
+         a. Computer paper - lose
+         b. Computer scissors - win
+     iii. If player chooses paper
+         a. Computer scissors - lose
+         b. Computer rock - win
+      iv. If player chooses scissors
+         a. Computer rock - lose
+         b. Computer paper - win
+   5. Prompt user to play again
 */
 
 while (playing)
@@ -72,7 +71,7 @@ while (playing)
     Console.WriteLine("Rock, Paper, Scissors?");
     Console.Write("-> ");
     string player = Console.ReadLine().ToLower();
-
+    
     int randomNumber = random.Next(0, 3);
     string computer;
 
@@ -127,12 +126,11 @@ while (playing)
     }
     else
     {
-        Console.WriteLine("You typed something wrong. You suck.");
+        Console.WriteLine("Invalid input. Please choose Rock, Paper, or Scissors.");
     }
 
     Console.Write("Play again (yes/no)? ");
-    string playAgain = Console.ReadLine();
-
+    string playAgain = Console.ReadLine().ToLower();
     if (playAgain == "no")
     {
         playing = false;
@@ -147,8 +145,7 @@ while (playing)
 #### Debug
 
 ```txt
----ROCK, PAPER, SCISSORS---
- --202X Terminal Edition--
+--- ROCK, PAPER, SCISSORS ---
 
 ROUND 1!
 W: 0 - L: 0
@@ -180,11 +177,11 @@ Play again (yes/no)? no
 ### Tips, Tricks, and Reflection
 
 - You can also try rewrite the code to use nested if statements within each player choice to avoid using logical and `&&`. But more nesting `==` more headaches.
-- Try making a two player version of rock, paper, scissors. When player one's turn is done, you can call the method `Console.Clear()` to clear the screen, so player two can't cheat.
+- Try making a two player version of rock, paper, scissors. When player one's turn is done, you can call the method `Console.Clear()` to clear the screen, so player two peek at the previous choice:
 
 ```cs
 Console.Clear();
 ```
 
-- If you want to ascend as a programmer, try upgrading the game to **Rock, paper, scissors, lizard, Spock**!
-- As the complexity of your applications increases, it's more important than ever to write out the requirements beforehand. The multi-line comment in the activity code is a basic, but useful guide to tracking what needs to be implemented in the program.
+- For a more advanced version, consider upgrading the game to include Rock, Paper, Scissors, Lizard, Spock!
+- As your applications become more complex, it's crucial to outline the requirements beforehand. The multi-line comment in the activity code is a simple yet effective guide to keep track of what needs to be implemented in the program.
