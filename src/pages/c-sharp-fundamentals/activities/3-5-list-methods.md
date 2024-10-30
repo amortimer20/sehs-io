@@ -12,12 +12,14 @@ title: C# Fundamentals 3.5 List Methods
 
 ### Introduction
 
-In addition to `List.Add()`, we will cover more methods that make lists easy to work with. For a complete reference of the available properties and methods, see the link below.
+In this lesson, we'll cover various methods that make lists easy to work with. We'll explore different ways to manipulate and interact with lists beyond just `List.Add()`. These methods and many more exist to help you manipulate and interact with lists effectively. Refer to the official documentation at the end of this lesson for a complete list of methods and properties.
 
 **Example List**
+
+We'll use this list of movies as our example throughout this introduction:
+
 ```cs
-List<string> movies = new List<string>()
-{
+List<string> movies = [
     "Jurassic Park",
     "Toy Story",
     "Mortal Kombat",
@@ -28,81 +30,151 @@ List<string> movies = new List<string>()
     "True Lies",
     "The Matrix",
     "The Lion King"
-};
+];
 ```
 
-**`List.Clear()`** - Removes all elements from the list.
+---
+
+`List.Clear()` - Removes all elements from the list.
 
 ```cs
 movies.Clear();
 Console.WriteLine(movies.Count); // Outputs 0
 ```
 
-**`List.Contains(item)`** - Determines whether an element is in the list. Returns true if the element is found; otherwise, false.
+---
+
+`List.Contains(item)` - Determines whether an element is in the list. Returns true if the element is found; otherwise, false.
 
 ```cs
-movies.Contains("Toy Story"); // returns true
-movies.Contains("A Bug's Life"); //returns false
+bool containsToyStory = movies.Contains("Toy Story"); // returns true
+bool containsBugsLife = movies.Contains("A Bug's Life"); // returns false
 ```
 
-**`List.IndexOf(item)`** - Returns the index of the first occurrence of a value in the list. If not found, returns **-1**.
+---
+
+`List.IndexOf(item)` - Returns the index of the first occurrence of a value in the list. If not found, returns **-1**.
 
 ```cs
-movies.IndexOf("Toy Story"); // returns 1
-movies.IndexOf("A Bug's Life"); //returns -1
+int indexOfToyStory = movies.IndexOf("Toy Story"); // returns 1
+int indexOfBugsLife = movies.IndexOf("A Bug's Life"); // returns -1
 ```
 
-**`List.Insert(index, item)`** - Inserts an element into the list at the specified index. Elements at or to the right of the index get shifted to the right.
+---
+
+`List.Insert(index, item)` - Inserts an element into the list at the specified index. Elements at or to the right of the index get shifted to the right.
 
 ```cs
 movies.Insert(2, "Toy Story 2");
-/* {
-    "Jurassic Park", "Toy Story", "Toy Story 2", "Mortal Kombat", "Braveheart", "Big Daddy",
-    "Armageddon", "Forrest Gump", "True Lies", "The Matrix", "The Lion King"
-} */
 ```
 
-**`List.Remove(item)`** - Removes the first occurrence of a specific object from the list. Returns true if the item was sucessfully removed; otherwise, false.
+```txt
+[
+    "Jurassic Park", 
+    "Toy Story", 
+    "Toy Story 2", 
+    "Mortal Kombat", 
+    "Braveheart", 
+    "Big Daddy",
+    "Armageddon", 
+    "Forrest Gump", 
+    "True Lies", 
+    "The Matrix", 
+    "The Lion King"
+]
+```
+
+---
+
+`List.Remove(item)` - Removes the first occurrence of a specific object from the list. Returns true if the item was sucessfully removed; otherwise, false.
 
 ```cs
-movies.Insert("Jurassic Park");
-/* {
-    "Toy Story", "Mortal Kombat", "Braveheart", "Big Daddy", "Armageddon",
-    "Forrest Gump", "True Lies", "The Matrix", "The Lion King"
-} */
+bool removed = movies.Remove("Jurassic Park");
 ```
 
-**`List.RemoveAt(index)`** - Removes the element at the specified index of the list.
+```txt
+[
+    "Toy Story",
+    "Mortal Kombat",
+    "Braveheart",
+    "Big Daddy",
+    "Armageddon",
+    "Forrest Gump",
+    "True Lies",
+    "The Matrix",
+    "The Lion King"
+]
+```
+
+---
+
+`List.RemoveAt(index)` - Removes the element at the specified index of the list.
 
 ```cs
 movies.RemoveAt(5);
-/* {
-    "Jurassic Park", "Toy Story", "Mortal Kombat", "Braveheart", "Big Daddy",
-    "Forrest Gump", "True Lies", "The Matrix", "The Lion King"
-} */
 ```
 
-**`List.Reverse()`** - Reverses the order of the elements in the list.
+```txt
+[
+    "Jurassic Park",
+    "Toy Story",
+    "Mortal Kombat",
+    "Braveheart",
+    "Big Daddy",
+    "Forrest Gump",
+    "True Lies",
+    "The Matrix",
+    "The Lion King"
+]
+```
+
+---
+
+`List.Reverse()` - Reverses the order of the elements in the list.
 ```cs
 movies.Reverse();
-/* {
-    "The Lion King", "The Matrix", "True Lies", "Forrest Gump", "Armageddon",
-    "Big Daddy", "Braveheart", "Mortal Kombat", "Toy Story", "Jurassic Park"
-} */
 ```
 
+```txt
+[
+    "The Lion King",
+    "The Matrix",
+    "True Lies",
+    "Forrest Gump",
+    "Armageddon",
+    "Big Daddy",
+    "Braveheart",
+    "Mortal Kombat",
+    "Toy Story",
+    "Jurassic Park"
+]
+```
 
-**`List.Sort()`** - Sorts the elements in the list.
+---
+
+
+`List.Sort()` - Sorts the elements in the list.
 
 ```cs
 movies.Sort();
-/* {
-    "Armageddon", "Big Daddy", "Braveheart", "Forrest Gump", "Jurassic Park",
-    "Mortal Kombat", "The Lion King", "The Matrix", "Toy Story", "True Lies"
-} */
 ```
 
-This activity only uses a subset of the methods, but know that these methods and many more exist to help you work with lists.
+```txt
+[
+    "Armageddon",
+    "Big Daddy",
+    "Braveheart",
+    "Forrest Gump",
+    "Jurassic Park",
+    "Mortal Kombat",
+    "The Lion King",
+    "The Matrix",
+    "Toy Story",
+    "True Lies"
+]
+```
+
+---
 
 #### Skills to Practice
 
@@ -123,8 +195,7 @@ This activity only uses a subset of the methods, but know that these methods and
 
 ```cs
 bool managingInventory = true;
-List<string> inventory = new List<string>()
-{
+List<string> inventory = [
     "axe",
     "shovel",
     "axe",
@@ -135,7 +206,7 @@ List<string> inventory = new List<string>()
     "sleeping bag",
     "flint",
     "sleeping bag"
-};
+];
 
 Console.WriteLine("--- Inventory Manager ---");
 
@@ -151,20 +222,22 @@ while (managingInventory)
     Console.WriteLine("7) Delete inventory");
     Console.WriteLine("8) Exit");
     Console.Write("-> ");
+
     string input = Console.ReadLine();
 
     if (input == "1")
     {
         Console.WriteLine("-Inventory-");
-
         if (inventory.Count == 0)
         {
             Console.WriteLine("No inventory.");
         }
-
-        foreach (string item in inventory)
+        else
         {
-            Console.WriteLine("- " + item);
+            foreach (string item in inventory)
+            {
+                Console.WriteLine("- " + item);
+            }
         }
     }
     else if (input == "2")
@@ -178,12 +251,19 @@ while (managingInventory)
     {
         Console.Write("New Item: ");
         input = Console.ReadLine();
-
         Console.Write($"Which index? (0-{inventory.Count - 1}): ");
         int index = Convert.ToInt32(Console.ReadLine());
 
-        inventory.Insert(index, input);
-        Console.WriteLine(input + " inserted into list.");
+        // Validate index
+        if (index >= 0 && index < inventory.Count)
+        {
+            inventory.Insert(index, input);
+            Console.WriteLine(input + " inserted into list.");
+        }
+        else
+        {
+            Console.WriteLine("Invalid index.");
+        }
     }
     else if (input == "4")
     {
@@ -217,17 +297,19 @@ while (managingInventory)
         }
         else
         {
-            Console.WriteLine(input + " not found, or an error occured.");
+            Console.WriteLine(input + " not found, or an error occurred.");
         }
     }
     else if (input == "7")
     {
+        // Clear the inventory
         Console.Write("Are you sure? (y/n) ");
         input = Console.ReadLine();
 
         if (input == "y")
         {
             inventory.Clear();
+            Console.WriteLine("Inventory cleared.");
         }
         else
         {
@@ -238,6 +320,10 @@ while (managingInventory)
     {
         Console.WriteLine("Exiting.");
         managingInventory = false;
+    }
+    else
+    {
+        Console.WriteLine("Invalid selection. Please choose a valid option.");
     }
 }
 ```
