@@ -1,30 +1,32 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: C# Fundamentals 2.5 Nested If Statements
+title: C# Fundamentals 2.5 Nesting
 ---
 
 [← Back](/c-sharp-fundamentals/)
 
-## Activity 2.5 Nested If Statements
+## Activity 2.5 Nesting
 
 ---
 
 ### Introduction
 
-This lesson doesn't introduce any new syntax. Rather, a new technique called **nesting** is used. Nesting is simply writing code blocks within other code blocks. With even basic programs, it's necessary to make selections/decisions as a result of some other selection being made.
+This lesson doesn't introduce any new syntax. Rather, it focuses on a new technique called nesting. Nesting involves placing code blocks within other code blocks. This technique is crucial for making decisions based on previous selections, which is common in even basic programs.
+
+#### What is Nesting?
+
+Nesting is the process of placing one set of instructions (a code block) inside another. This allows for more complex logic and decision-making within your program. It's like having a series of questions where the answer to one question determines which question will be asked next.
 
 **Example**
 
 ```cs
 Console.Write("Would you like to delete your account? ");
 string answer = Console.ReadLine();
-
 if (answer == "yes")
 {
     Console.Write("Are you ABSOLUTELY SURE? ");
     answer = Console.ReadLine();
-
     if (answer == "yes")
     {
         Console.WriteLine("Deleting your account.");
@@ -40,13 +42,25 @@ else
 }
 ```
 
-It's so important to keep your code nicely formatted. Here is a review of the tips from before:
+In this example, we ask the user if they want to delete their account. If they answer "yes", we ask them again to confirm. Depending on their responses, different actions are taken.
 
-- Always indent one tab (2-4 spaces) for every code block. If you have a nested if statement, then the code in the nested code block should indented again.
-- `if`, `else if`, and `else` statements that belong together should not have space inbetween them. Butt them right up against eachother so you can see that they're grouped.
-- Space your code based on sections. You don't need to have your entire program bunched up together.
+#### Importance of Code Formatting
 
-This program is called a choose your own adventure game. It's going to be the biggest program you make so far. Take your time, and test your code frequently. Don't try to write the whole program and then test it at the end, or else it could spell disaster when you try to debug. Write one section at a time, and then test it.
+It's crucial to keep your code nicely formatted. Here are some tips:
+
+- **Indentation**: Always indent one tab (2-4 spaces) for every code block. If you have a nested if statement, the code in the nested block should be indented again.
+- **Grouping Statements**: if, else if, and else statements that belong together should not have space between them. Group them together to visually indicate that they are related.
+- **Spacing Sections**: Space your code based on sections. Avoid bunching up your entire program; this makes it easier to read and debug.
+
+#### Common Pitfalls
+
+- **Misalignment**: Ensure your indents are consistent. Misaligned code can be hard to read and debug.
+
+- **Over-nesting**: Too many nested levels can make the code hard to follow. Consider refactoring if your code gets too nested.
+
+#### Dungeon Crawler Activity
+
+Now, let's apply what you've learned to a simple program. This program is a choose-your-own-adventure game, and it's the biggest program you'll write so far. Take your time, and test your code frequently. Don't try to write the whole program and then test it at the end, or it could spell disaster when you try to debug. Write one section at a time, and then test it.
 
 #### Skills to Practice
 
@@ -63,39 +77,40 @@ This program is called a choose your own adventure game. It's going to be the bi
 ## Code
 
 ```cs
-// If the player beats one of the scenarios, set it's boolean variable to true
+// If the player beats one of the scenarios, set its boolean variable to true
 bool wolfpackEnding = false;
 bool dragonEnding = false;
 int gold = 0;
 int twinkies = 0;
 
 Console.WriteLine("Your car crashes into a tree during a thunderstorm in the woods.");
-Console.WriteLine("As the storm intensifies, you run into a nearby cave to seek shelter.");
-Console.WriteLine("Upon entering the cave, you see two diverging paths...\n");
+Console.WriteLine("Darkness surrounds you as thunder crashes and rain pours.");
+Console.WriteLine("You spot a cave nearby, dimly lit by flashes of lightning, and run towards it for shelter.");
+Console.WriteLine("Inside, you see two shadowy paths diverging deeper into the unknown...\n");
 
 // Append .ToLower() to any string, string variable, or method that returns a string.
 // This method returns a string with all lowercase characters.
 Console.Write("Which path do you take? (left or right) -> ");
 string path = Console.ReadLine().ToLower();
 
-Console.WriteLine("\nAs you leave, you see a delicious Hostess Twinkie.");
+Console.WriteLine("\nAs you move forward, you see something glimmering on the ground — a Hostess Twinkie.");
 Console.WriteLine("Do you eat the Twinkie for sustenance, or will you save it for later?");
 
 Console.Write("(take or eat) -> ");
-string choice = Console.ReadLine().ToLower();
+string twinkieChoice = Console.ReadLine().ToLower();
 
-if (choice == "take")
+if (twinkieChoice == "take")
 {
-    Console.WriteLine("You never know when a Twinkie will come in handy...\n");
+    Console.WriteLine("You slip the Twinkie into your pocket, unsure what awaits in the darkness...\n");
     twinkies++;
 }
-else if (choice == "eat")
+else if (twinkieChoice == "eat")
 {
-    Console.WriteLine("It's going to be a long night, so you decide to eat it.\n");
+    Console.WriteLine("Feeling uneasy, you eat the Twinkie to keep up your strength.\n");
 }
 else
 {
-    Console.WriteLine("You leave the twinkie alone.\n");
+    Console.WriteLine("You leave the Twinkie untouched, feeling an ominous presence watching.\n");
 }
 
 // Left -> Wolfpack
@@ -103,82 +118,77 @@ else
 // Else -> No path chosen
 if (path == "left")
 {
-    Console.WriteLine("You decide to take the left path.");
-    Console.WriteLine("You stumble into a pack of wolves lying together.");
-    Console.WriteLine("The pack leader slowly approaches...\n");
+    Console.WriteLine("You cautiously take the left path.");
+    Console.WriteLine("A few steps in, you freeze as the piercing eyes of a pack of wolves emerge from the shadows.");
+    Console.WriteLine("The pack leader, larger and fiercer than the others, steps forward, growling softly...\n");
 
-    Console.Write("Do you pet the pack leader? (yes or no) -> ");
-    // We can reuse the choice variable declared earlier if
-    // the data isn't needed anymore.
-    choice = Console.ReadLine().ToLower();
+    Console.Write("Do you offer the pack leader your hand in peace? (yes or no) -> ");
+    string wolfChoice = Console.ReadLine().ToLower();
 
-    if (choice == "yes" && twinkies >= 1)
+    if (wolfChoice == "yes" && twinkies >= 1)
     {
-        Console.WriteLine("As you approach, the wolves smell a delicious snack cake..");
-        Console.WriteLine("In a fit of hungry rage, they rip you to shreds!\n");
+        Console.WriteLine("As you reach out, the wolves smell the Twinkie...");
+        Console.WriteLine("In a frenzy of hunger, they turn on you, and you're surrounded with no escape!\n");
     }
-    else if (choice == "yes")
+    else if (wolfChoice == "yes")
     {
-        Console.WriteLine("The pack leader respects and accepts you.");
-        Console.WriteLine("You are given a gold satchel by the pack leader.");
-        Console.WriteLine("You also cuddle with the wolf pack until the storm subsides...\n");
-        gold = gold + 5;
+        Console.WriteLine("The pack leader sniffs your hand and accepts you into the fold.");
+        Console.WriteLine("You're given a small satchel of gold as a token of their trust.");
+        Console.WriteLine("You settle in with the wolves, awaiting dawn as the storm howls outside...\n");
+        gold += 5;
         wolfpackEnding = true;
     }
     else
     {
-        Console.WriteLine("The pack leader senses your fear.");
-        Console.WriteLine("The entire pack crowds around you and devours you...\n");
+        Console.WriteLine("Sensing your hesitation, the wolves close in, their teeth bared.");
+        Console.WriteLine("You feel their claws sink in, and everything goes black...\n");
     }
 } // End left path
 else if (path == "right")
 {
-    Console.WriteLine("You decide to take the right path.");
-    Console.WriteLine("\nLater down the trail, you stumble upon an overweight,");
-    Console.WriteLine("repulsive looking talking dragon named Mort the Pudgy.");
-    Console.WriteLine("The dragon speaks: 'Did you bring me snack cakes??'");
+    Console.WriteLine("You take the right path, deeper into the damp, dark cave.");
+    Console.WriteLine("Suddenly, a rotten, smoky smell fills the air. A massive dragon with dull, greedy eyes looms in the shadows.");
+    Console.WriteLine("The dragon sniffs the air and sneers, 'Did you bring me something sweet?'");
 
-    Console.Write("Do you have a treat to give this foul creature? (yes, no) -> ");
-    choice = Console.ReadLine();
+    Console.Write("Do you offer him a treat? (yes or no) -> ");
+    string dragonChoice = Console.ReadLine().ToLower();
 
-    if (choice == "yes" && twinkies >= 1)
+    if (dragonChoice == "yes" && twinkies >= 1)
     {
-        Console.WriteLine("Me love Twinkie!!! Here take gold!");
-        Console.WriteLine("The dragon grants you the gold he was guarding.\n");
+        Console.WriteLine("The dragon’s eyes widen as he devours the Twinkie. 'Delicious!' he roars.");
+        Console.WriteLine("In gratitude, he hands you a pile of gold coins.\n");
         Console.Write("How much gold do you take? -> ");
-        choice = Console.ReadLine();
-        int goldAmount = Convert.ToInt32(choice);
+        string goldChoice = Console.ReadLine();
+        int goldAmount = Convert.ToInt32(goldChoice);
 
         if (goldAmount > 0 && goldAmount <= 100)
         {
-            Console.WriteLine("Mortimer the Pudgy grants you his gold...\n");
-            gold = gold + goldAmount;
+            Console.WriteLine("The dragon grunts approval, allowing you to take the gold...\n");
+            gold += goldAmount;
         }
         else if (goldAmount > 100)
         {
-            Console.WriteLine("'Greedy! No gold for you!'\n");
+            Console.WriteLine("The dragon’s eyes narrow, and he hisses, 'Greed will get you nothing.'\n");
         }
         else
         {
-            Console.WriteLine("Mortimer the pudgy respects your piety.");
-            Console.WriteLine("You are granted all of the gold!\n");
-            gold = gold + 100000;
+            Console.WriteLine("The dragon, impressed by your modesty, lets you take all the gold!\n");
+            gold += 100000;
         }
 
         dragonEnding = true;
     }
     else
     {
-        Console.WriteLine("'Fool!!!'");
-        Console.WriteLine("The dragon devours you whole.");
-        Console.WriteLine("He desired a delicious Hostess treat, settling for you instead...\n");
+        Console.WriteLine("The dragon’s face darkens, and he lunges towards you!");
+        Console.WriteLine("His jaws close around you as everything fades to black...\n");
     }
 } // End right path
 else
 {
-    Console.WriteLine("You decide not to enter. You receive a thundershock and lie in the storm...\n");
+    Console.WriteLine("You hesitate, feeling the storm grow stronger as lightning flashes around you.");
+    Console.WriteLine("Suddenly, a bolt strikes nearby, and you fall to the ground, darkness closing in.\n");
 }
-
 
 // Endgame
 Console.WriteLine("-- Ending --");
@@ -191,7 +201,7 @@ if (wolfpackEnding)
 }
 else if (dragonEnding)
 {
-    Console.WriteLine("By tempting Mortimer the Pudgy with a delicious Hostess snack cake, you avoid his wrath.");
+    Console.WriteLine("By tempting the dragon with a delicious Hostess snack cake, you avoid his wrath.");
     Console.WriteLine("He flies you back home after the storm, but not after raiding the nearest Hostess factory.");
     Console.WriteLine("You survived!!!");
 }
@@ -202,40 +212,35 @@ else
 
 if (gold > 0)
 {
-    Console.WriteLine($"\nYou not only survived, but you found {gold} gold! Good work!");
+    Console.WriteLine($"\nYou not only survived, but you found {gold} gold!");
 }
 ```
 
 #### Debug
 
 ```txt
-Upon entering the cave, you see two diverging paths...
+Your car crashes into a tree during a thunderstorm in the woods.
+Darkness surrounds you as thunder crashes and rain pours.
+You spot a cave nearby, dimly lit by flashes of lightning, and run towards it for shelter.
+Inside, you see two shadowy paths diverging deeper into the unknown...
 
-Which path do you take? (left or right) -> right
+Which path do you take? (left or right) -> left
 
-As you leave, you see a delicious Hostess Twinkie.
+As you move forward, you see something glimmering on the ground - a Hostess Twinkie.
 Do you eat the Twinkie for sustenance, or will you save it for later?
 (take or eat) -> take
-You never know when a Twinkie will come in handy...
+You slip the Twinkie into your pocket, unsure what awaits in the darkness...
 
-You decide to take the right path.
+You cautiously take the left path.
+A few steps in, you freeze as the piercing eyes of a pack of wolves emerge from the shadows.
+The pack leader, larger and fiercer than the others, steps forward, growling softly...
 
-Later down the trail, you stumble upon an overweight,
-repulsive looking talking dragon named Mort the Pudgy.
-The dragon speaks: 'Did you bring me snack cakes??'
-Do you have a treat to give this foul creature? (yes, no) -> yes
-Me love Twinkie!!! Here take gold!
-The dragon grants you the gold he was guarding.
-
-How much gold do you take? -> 99
-Mortimer the Pudgy grants you his gold...
+Do you offer the pack leader your hand in peace? (yes or no) -> yes
+As you reach out, the wolves smell the Twinkie...
+In a frenzy of hunger, they turn on you, and you're surrounded with no escape!
 
 -- Ending --
-By tempting Mortimer the Pudgy with a delicious Hostess snack cake, you avoid his wrath.
-He flies you back home after the storm, but not after raiding the nearest Hostess factory.
-You survived!!!
-
-You not only survived, but you found 99 gold! Good work!
+Game Over!
 ```
 
 ### Tips, Tricks, and Reflection
