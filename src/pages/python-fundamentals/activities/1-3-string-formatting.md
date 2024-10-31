@@ -8,6 +8,8 @@ title: Python Fundamentals 1.3 String Formatting
 
 ## Activity 1.3 String Formatting
 
+---
+
 ### Introduction
 
 In the previous activity, we output math expressions separately from strings. While this works, it may not always look neat or readable. In programming, we format strings to create more complex and user-friendly text outputs. In Python, there are two common ways to format strings: passing multiple arguments to `print()` and string interpolation.

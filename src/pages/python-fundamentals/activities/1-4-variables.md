@@ -8,6 +8,8 @@ title: Python Fundamentals 1.4 Variables
 
 ## Activity 1.4 Variables
 
+---
+
 ### Introduction
 
 Variables allow us to store data during our program's execution. Sometimes, variables are described as containers for storing information. For example, in an RPG video game, your character has attributes such as health, magic, and stamina. These values need to be tracked throughout the game. Variables enable us to store and use this data within the program.

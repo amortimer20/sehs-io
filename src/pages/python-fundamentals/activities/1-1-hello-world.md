@@ -8,6 +8,8 @@ title: Python Fundamentals 1.1 Hello World
 
 ## Activity 1.1 Hello World!
 
+---
+
 ### Introduction
 
 In this lesson, you will learn about output in programming. For console applications, **output** refers to information displayed to the user. However, the meaning of output can vary depending on the context. To output information to the user, we use the `print()` function.
