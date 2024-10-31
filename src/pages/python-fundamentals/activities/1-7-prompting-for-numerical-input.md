@@ -12,7 +12,7 @@ title: Python Fundamentals 1.7 Prompting for Numerical Input
 
 ### Introduction
 
-In the last activity, we learned how to prompt the user for input and store their response in a variable using `input()`. However, there's an important detail to remember: `input()` method always returns the user input as a **string**. This means if you ask the user to enter a number, you’ll get that number as text, not as something you can use for arithmetic.
+In the last activity, we learned how to prompt the user for input and store their response in a variable using `input()`. However, there's an important detail to remember: `input()` function always returns the user input as a **string**. This means if you ask the user to enter a number, you’ll get that number as text, not as something you can use for arithmetic.
 
 **Examples**
 
