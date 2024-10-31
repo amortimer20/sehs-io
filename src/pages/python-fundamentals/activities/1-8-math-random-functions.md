@@ -15,8 +15,6 @@ title: Python Fundamentals 1.8 Constants, Math Functions, and Random Numbers
 This lesson introduces you to some essential math functions and constants provided by the Python math module. These tools will be invaluable throughout your programming journey, helping you perform advanced mathematical operations with ease. Here are some of the functions and constants we'll cover:
 
 - `round()` - Rounds a number to the nearest integer or to a specified number of decimal places.
-- `math.ceil()` - Rounds a number up to the nearest integer.
-- `math.floor()` - Rounds a number down to the nearest integer.
 - `math.sqrt()` - Calculates the square root of a non-negative number.
 - `math.pow()` - Raises a base number to the specified exponent.
 - `math.pi` - Represents the constant value π (pi).
