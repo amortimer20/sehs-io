@@ -43,6 +43,10 @@ health = health - 10
 
 This takes the current value of `health`, subtracts 10, and saves the new result. If you're thinking of variables from Algebra class, this might seem odd. Remember, variables in programming aren't exactly the same as those in math class.
 
+**Example Video**
+
+<video src="/courses/python-fundamentals/manipulating-variables-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Skills to Practice
 
 - Manipulate variable values using the assignment operator

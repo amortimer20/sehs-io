@@ -35,6 +35,10 @@ sum = number1 + number2
 print(f"The sum is {sum}")
 ```
 
+**Example Video**
+
+<video src="/courses/python-fundamentals/variables-animation.mp4" controls style="width: 100%; max-width: 640px;"></video>
+
 #### Variable Scope
 
 Variable scope refers to where a variable can be accessed in your code. For example, the program below will raise an error because number1 must be declared before it can be used.
