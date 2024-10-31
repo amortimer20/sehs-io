@@ -76,8 +76,7 @@ In this case, we’ll get an error because the `Convert.ToInt32()` method cannot
 #### Code
 
 ```cs
-// Age to months calculator
-Console.WriteLine("--- Age to Months Calculator ---");
+Console.WriteLine("--- Demo 1 - Age to Months Calculator ---");
 // Steps involved in the statements below:
 // 1) User types in age
 // 2) Convert string input to integer and save it to a new variable
@@ -87,8 +86,12 @@ int age = Convert.ToInt32(ageString);
 
 Console.WriteLine($"You are {age} years old. That's {age * 12} months old, you old fart!\n");
 
-// Square area calculator
-Console.WriteLine("--- Square Area Calculator ---");
+
+Console.WriteLine("\nPress enter to continue...");
+Console.ReadLine();
+
+
+Console.WriteLine("--- Demo 2 - Square Area Calculator ---");
 // Shorter, concise way to get input, convert to number, and save to variable
 Console.Write("Enter the length of the square: ");
 double length = Convert.ToDouble(Console.ReadLine());
@@ -100,13 +103,16 @@ Console.WriteLine($"The area of the square is {area}");
 #### Debug
 
 ```txt
---- Age to Months Calculator ---
+--- Demo 1 - Age to Months Calculator ---
 Enter your age: 30
 You are 30 years old. That's 360 months old, you old fart!
 
---- Square Area Calculator ---
-Enter the length of the square: 25.5
-The area of the square is 650.25
+
+Press enter to continue...
+
+--- Demo 2 - Square Area Calculator ---
+Enter the length of the square: 45
+The area of the square is 2025
 ```
 
 ---
