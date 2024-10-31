@@ -4,7 +4,7 @@ layout: "../../../layouts/Layout.astro"
 title: Python Fundamentals Part 1 Extras
 ---
 
-[← Back](/c-sharp-fundamentals/)
+[← Back](/python-fundamentals/)
 
 ## Python Fundamentals Part 1 Extras
 
