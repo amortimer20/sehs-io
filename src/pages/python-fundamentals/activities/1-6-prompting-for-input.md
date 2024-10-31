@@ -10,7 +10,29 @@ title: Python Fundamentals 1.6 Prompting for Input
 
 ### Introduction
 
-In this introductory section, we have been writing output using `print()`. Now we will learn another function that complements `print()`, and that is the `input()` function. This function allows us to receive input from the user. I.e. The user can interact with the program via the console. Writing to and reading from the console is known as input and output, or I/O for short.
+In our previous lessons, we’ve used the `print()` function to display messages to the user. But so far, our programs haven’t allowed users to provide input.
+
+In this lesson, we’re going to learn how to get input from the user using the `input()` function. With this function, users can interact with the program by typing into the console. This exchange of information between the user and the program is known as input and output (often abbreviated as I/O).
+
+#### input()
+
+`input()` is a function that outputs a message, often referred to as a **prompt**,  pauses the program and waits for the user to type something in the console. When the user presses Enter, the input they typed is returned as a string. When a function does its job, it often gives back a result. This result is called the **return value**. The return value may be saved to a variable or used in some other expression.
+
+In short, `input()` can be thought of as asking a question and waiting for an answer.
+
+```python
+favorite_color = input("Enter your favorite color: ")
+print("Your favorite color is", favorite_color)
+
+```
+
+```txt
+Enter your favorite color:
+purple [Enter]
+Your favorite color is purple
+```
+
+Notice the space after the colon? Run this sample program one more time, but remove the extra space. What changes?
 
 **Example Video**
 
@@ -25,79 +47,88 @@ In this introductory section, we have been writing output using `print()`. Now w
 
 #### Setup
 
-1. Create a new Python application. Name the project **1.6 Input**.
+1. Create a new Python application. Name the project **1-6 Input**.
 2. Click Create.
 
 #### Code
 
 ```python
-# Buddy the Elf Greeting Program
-# The program will pause and wait for the user to type a response.
-name = input("Hey! What's your name? My name's Buddy! ")
-print(f"{name}, that's fun to say! {name}, {name}...")
+print("--- Demo 1 - Simple To-Do List ---")
 
-answer = input("Does someone need a hug? ")
-print(f"{answer}!? I just wanted a hug!")
+print("Let's add a few tasks to your list.")
 
-favorite_color = input("Buddy the Elf, what's your favorite color? ")
-print(f"That's a nice {favorite_color} outfit, very {favorite_color}-y.")
-print()
+task1 = input("Task 1: ")
+task2 = input("Task 2: ")
+task3 = input("Task 3: ")
 
-# Secret Agent ID Program
-print("----- SECRET AGENT CONSOLE -----")
-print("IDENTITY NOT FOUND. CREATING NEW IDENTITY...")
+print("\nYour To-Do List:")
+print("1.", task1)
+print("2.", task2)
+print("3.", task3)
 
-first_name = input("Enter your first name: ")
-code_name = input("Enter your code name: ")
-agent_number = input("Enter your agent ID number: ")
 
-# I don't type the question inside of input(), because I want to make a list of choices for this prompt
-print("Choose your gadget:")
-print("- ASMR Radio")
-print("- Flashbang Energy Drink")
-print("- Metamucil")
-gadget = input("-> ") # Cool looking arrow prompt; Doesn't do anything special
-print()
+print("Press enter to continue...")
+input()
 
-print("-- Constructing your agent identity --")
-print(f"AGENT NAME: {first_name} - CODE NAME: {code_name}")
-print(f"AGENT ID NUMBER: {agent_number}")
-print(f"GADGET: {gadget}")
-print("-- IDENTITY CONFIRMED EXITING... --")
+
+print("--- Demo 2 - User Profile Setup ---")
+print("WELCOME! LET'S SET UP YOUR PROFILE...")
+
+username = input("Enter your username: ")
+subject = input("What’s your favorite subject in school? ")
+
+# List of options
+print("Choose your preferred after-school activity:")
+print("- Sports")
+print("- Music")
+print("- Gaming")
+print("- Volunteering")
+activity = input("-> ") # Cool arrow prompt; Doesn't do anything special
+
+print("\n- Creating your profile -")
+print(f"NAME: {username}")
+print(f"FAVORITE SUBJECT: {subject}")
+print(f"AFTER-SCHOOL ACTIVITY: {activity}")
 ```
 
 #### Debug
 
-**Important!** Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter**.
+Since you can now type into the console, it's not enough to just click run and look at the output, you need to interact with the program! To do this, click into the console, type your input, and press **enter** to submit your input.
 
-Your programs will no longer need look exactly like the sample output. Write whatever you want, you don't have to follow the sample exactly!
+Your programs no longer need look exactly like the sample output. Feel free to type whatever you like.
 
 ```txt
-Hey! What's your name? My name's Buddy! Anthony
-Anthony, that's fun to say! Anthony, Anthony...
-Does someone need a hug? I hate you
-I hate you!? I just wanted a hug!
-Buddy the Elf, what's your favorite color? purple
-That's a nice purple outfit, very purple-y.
+--- Demo 1 - Simple To-Do List ---
+Let's add a few tasks to your list.
+Task 1: cook
+Task 2: clean
+Task 3: homework
 
------ SECRET AGENT CONSOLE -----
-IDENTITY NOT FOUND. CREATING NEW IDENTITY...
-Enter your first name: Anthony
-Enter your code name: Habib
-Enter your agent ID number: 233000
-Choose your gadget:
-- ASMR Radio
-- Flashbang Energy Drink
-- Metamucil
--> ASMR Radio
+Your To-Do List:
+1. cook
+2. clean
+3. homework
+Press enter to continue...
 
--- Constructing your agent identity --
-AGENT NAME: Anthony - CODE NAME: Habib
-AGENT ID NUMBER: 233000
-GADGET: ASMR Radio
--- IDENTITY CONFIRMED EXITING... --
+--- Demo 2 - User Profile Setup ---
+WELCOME! LET'S SET UP YOUR PROFILE...
+Enter your username: chungus23
+What's your favorite subject in school? computer science
+Choose your preferred after-school activity:
+- Sports
+- Music
+- Gaming
+- Volunteering
+-> gaming
+
+- Creating your profile -
+NAME: chungus23
+FAVORITE SUBJECT: computer science
+AFTER-SCHOOL ACTIVITY: gaming
 ```
 
 ### Tips, Tricks, and Reflection
 
-- You may have tried prompting the user for a number and performing math calculations with the input. However, that won't work right now. That's because `input()` always returns the user input as a _string_. We need to learn how to convert strings to number in order to use the values in math expressions. Check out the next activity to learn more!
+- You might have tried asking the user for a number and then attempted to perform calculations with that input. However, this won’t work just yet because `input()` always returns the input as a string, or text. To perform math operations, we need to convert these strings into numbers. In the next activity, we'll learn how to make this conversion so that we can use the input in calculations!
+
+- Think about other types of input you might need to work with besides numbers and text (dates, colors, lists of items, etc.). How do you think we might handle those kinds of information?
