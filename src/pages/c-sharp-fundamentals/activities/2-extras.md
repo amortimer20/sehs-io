@@ -1,7 +1,7 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: C# Fundamentals Part 1 Extras
+title: C# Fundamentals Part 2 Extras
 ---
 
 ## C# Fundamentals Part 2 Extras
