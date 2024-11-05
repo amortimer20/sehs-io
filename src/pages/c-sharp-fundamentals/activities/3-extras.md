@@ -4,6 +4,8 @@ layout: "../../../layouts/Layout.astro"
 title: C# Fundamentals Part 3 Extras
 ---
 
+[← Back](/c-sharp-fundamentals/)
+
 ## C# Fundamentals Part 3 Extras
 
 ---
