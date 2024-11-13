@@ -12,13 +12,13 @@ title: C# Fundamentals 4.2 Method Parameters
 
 ### Introduction
 
-Methods become much more powerful when we can send different pieces of information them to affect their behavior. The ability to pass information to a method is by using **parameters**. A parameter is simply a variable declared in a method signature. When we call a method with parameters, we can pass information that gets assigned to those parameter variables. The result is a method that can behave dynamically based on inputs passed to it.
+Methods become much more powerful when we can pass specific information to them, allowing them to behave differently depending on the input. This is done by using parameters. A **parameter** is a variable that is part of a method’s signature and is used to accept values passed into the method. These values allow a method to operate dynamically based on the data it receives.
 
-In the example below, one parameter is declared, `double number`. A parameter is just a variable defined in a given context. It is scoped to its method, meaning `number` is only accessible inside of `CubeNumber()`. Once `CubeNumber()` is finished execution, the value of `number` is deleted.
+When we call a method with parameters, we supply values known as arguments, which are then assigned to the parameter variables. In C#, the terms parameter (the variable in the method definition) and argument (the value passed when calling the method) are often used interchangeably, though they refer to distinct parts of the process.
 
-The number 20 is passed to `number`. Data passed to a parameter is called an **argument**. Programmers regularly use the terms **parameter** and **argument** interchangably. Although they're closely related, they are two distinct things.
+In the example below, the method `CubeNumber()` has a single parameter, double number. This parameter is a variable that exists only within the scope of CubeNumber—meaning that number can only be used inside `CubeNumber()` and will no longer exist once the method finishes executing.
 
-**Example**
+**Example: Single Parameter**
 ```cs
 double CubeNumber(double number)
 {
@@ -33,9 +33,16 @@ Console.WriteLine(answer);
 8000
 ```
 
-You can specify as many parameters as you need for a given method definition. Keep in mind, **the order of arguments matters**. In the example below, `baseNumber` is assigned 10, and exponent is assigned 3.
+In this example, `CubeNumber()` is called with the argument `20`, which is assigned to the `number` parameter. The method then returns the cube of `number`.
 
-**Multiple Parameters**
+#### Multiple Parameters
+
+You can specify multiple parameters in a method definition to provide more data for the method to work with. The **order of arguments matters** when you call a method with multiple parameters—the first argument matches the first parameter, the second argument matches the second parameter, and so on.
+
+In the example below, the Power method has two parameters: baseNumber and exponent. When Power is called, the first argument (10) is assigned to baseNumber, and the second argument (3) is assigned to exponent.
+
+**Example: Multiple Parameters**
+
 ```cs
 double Power(double baseNumber, double exponent)
 {
@@ -43,17 +50,48 @@ double Power(double baseNumber, double exponent)
 
     for (int i = 1; i < exponent; i++)
     {
-        product = product * baseNumber;
+        product *= baseNumber;
     }
 
     return product;
 }
 
-Console.WriteLine(Power(10, 3));
+Console.WriteLine("10^3 equals " + Power(10, 3));
 ```
 ```txt
-1000
+10^3 equals 1000
 ```
+
+#### Parameters with Reference Types
+
+Recall that arrays and lists are both reference types. This means that when you pass an array or a list to a method, you’re not passing a copy of the data. Instead, you’re passing a reference to the original array or list. Any changes made to the array or list within the method will affect the original object outside the method as well.
+
+Consider this example, where a method modifies elements of an array passed as a parameter:
+
+**Example: Modifying an Array Parameter**
+
+```cs
+void DoubleValues(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        numbers[i] *= 2;
+    }
+}
+
+int[] myNumbers = [ 1, 2, 3 ];
+DoubleValues(myNumbers);
+
+foreach (int n in myNumbers)
+{
+    Console.Write(n + " ");
+}
+```
+```txt
+2 4 6
+```
+
+In this example, `DoubleValues` receives a reference to `myNumbers`, so the method modifies the original array. After calling `DoubleValues`, the elements in `myNumbers` are doubled.
 
 **Example Video**
 
@@ -170,4 +208,9 @@ Enter amperage: 2
 
 ### Tips, Tricks, and Reflection
 
-- Remember, lists and arrays are reference types. If you specify a list or array parameter, it's not receiving a copy of the data strucure, but a reference to it. Any modifications to the collection affects the original list/array!
+**Key Points to Remember**
+
+- **Parameters vs. Arguments**: Parameters are the variables listed in the method signature, while arguments are the actual values passed when calling the method.
+- **Scope of Parameters**: Parameters exist only within their method and cannot be accessed outside of it.
+- **Order of Arguments**: When a method has multiple parameters, ensure that arguments are passed in the correct order to avoid unexpected behavior.
+- **Intentional Modification**: Be careful when passing arrays and lists to methods, as any modification will affect the original collection outside the method.
