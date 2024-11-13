@@ -112,8 +112,6 @@ void Greeting()
 
 #### Code
 
-These programs are not written using best practices. However, we're just practicing defining and calling methods at this point.
-
 ```cs
 // Method definition for Greeting
 void GreetBasedOnTime()
