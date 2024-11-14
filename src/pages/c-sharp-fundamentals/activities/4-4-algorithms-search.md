@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: C# Fundamentals 4.4 Algorithms Part 2 - Search
+title: C# Fundamentals 4.4 Algorithms Part 2 - Searching
 ---
 
 [← Back](/c-sharp-fundamentals/)
 
-## Activity 4.4 Algorithms Part 2 - Search
+## Activity 4.4 Algorithms Part 2 - Searching
 
 ---
 
