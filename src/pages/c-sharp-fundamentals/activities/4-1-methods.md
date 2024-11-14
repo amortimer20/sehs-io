@@ -14,6 +14,13 @@ title: C# Fundamentals 4.1 Defining Methods
 
 Methods (also known as functions, subroutines, sub-programs, or procedures) are a fundamental construct in programming. They allow us to create reusable code blocks that can perform specific tasks. Think about `Console.WriteLine()`, which you've used in every application so far. You may not know exactly how it works behind the scenes or how many lines of code it requires to display text in the console. But that’s okay—methods are designed to let us use functionality without having to know all the details. We can reuse methods not only within a single application but across different projects, making code both modular and efficient. Reusable code is a core part of program design, and this principle is central to **procedural programming**.
 
+**Key Benefits of Implementing Methods**
+- **Reusability**: Write code once and use it multiple times.
+- **Modularity**: Break down complex problems into smaller, manageable parts.
+- **Readability**: Make code more organized and easier to understand.
+- **Debugging**: Simplify the process of finding and fixing errors.
+- **Efficiency**: Avoid repeated code, making programs more efficient.
+
 #### Defining a Method
 
 To create a user-defined method—one that is custom-built for your application—you need a **method definition**. This consists of two main parts: the **method signature** and the **method body**.
