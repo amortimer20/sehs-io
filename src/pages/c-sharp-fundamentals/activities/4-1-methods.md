@@ -12,13 +12,16 @@ title: C# Fundamentals 4.1 Defining Methods
 
 ### Introduction
 
-Methods (also known as functions, subroutines, sub-programs, or procedures) are an important construct in programming as they allow us to create reusable sets of code. Consider this: you use `Console.WriteLine()` in every application you've made thus far. But, do you actually know what it's doing behind the scenes, or how many lines of code it takes to perform the action of displaying text in a console? Probably not, but that's fine! Programmers can implement methods that can be reused not only throughout an application, but also across different projects. Creating reusable code is foundational to the idea of program design. We refer to structuring programs around reusable procedures as **procedural programming**.
+Methods (also known as functions, subroutines, sub-programs, or procedures) are a fundamental construct in programming. They allow us to create reusable code blocks that can perform specific tasks. Think about `Console.WriteLine()`, which you've used in every application so far. You may not know exactly how it works behind the scenes or how many lines of code it requires to display text in the console. But that’s okay—methods are designed to let us use functionality without having to know all the details. We can reuse methods not only within a single application but across different projects, making code both modular and efficient. Reusable code is a core part of program design, and this principle is central to **procedural programming**.
 
 #### Defining a Method
 
-To create a user-defined method, which is a custom method created by a programmer for their application, we create what is called a **method definition**. Method definitions are composed of two parts, the **method signature** and the the **method body**. The signature defines three key pieces of information: the method **identifier** (name), the **return type**, and any necessary **parameters**. The method body is the code block that follows the signature. We will learn about parameters in the next lesson.
+To create a user-defined method—one that is custom-built for your application—you need a **method definition**. This consists of two main parts: the **method signature** and the **method body**.
 
-The signature for the example below is `void Greeting()`. The method body is the code block containing the two statements.
+- The **signature** defines three key pieces of information: the method’s identifier (its name), the return type, and any required parameters.
+- The **method body** is the code block that follows the signature, containing the actual instructions the method will execute.
+
+In the example below, the signature is `void Greeting()`, and the method body is the code block containing two statements.
 
 **Example Method Definition**
 ```cs
@@ -29,11 +32,11 @@ void Greeting()
 }
 ```
 
-You may be expecting this program to display the two messages in a console. However, if you try to execute this program, nothing happens.
+You may expect this code to display the two messages in the console, but if you try to execute it, nothing will happen. This brings us to the next important part of methods: calling them.
 
 #### Calling a Method
 
-Just because you implemented a method, it does not mean it will execute. It's up to you to decide when you need your method to execute. Here's what's cool: we can use a defined method wherever and whenever we want! To **call/invoke/use** a method, write its name, including the parentheses.
+Defining a method doesn’t automatically execute it. Instead, you, as the programmer, decide when and where a method should run. You can use a defined method anywhere in your program by calling or invoking it by name, followed by parentheses.
 
 ```cs
 // Some code
@@ -43,7 +46,7 @@ Greeting();
 // Even more code
 ```
 
-You can imagine the code was copy-pasted. However, we now have reusable code. If we need to make changes, we only need to change the method body once. This is very helpful for maintainability.
+By calling `Greeting()` in multiple places, you avoid duplicating code and make your program easier to update. If you need to make a change, you only have to update the method body in one place. This is an example of code reuse and maintainability.
 
 **Example Video**
 
@@ -51,13 +54,13 @@ You can imagine the code was copy-pasted. However, we now have reusable code. If
 
 #### Return Types
 
-Methods have the ability to return a value when it is finished executing. For example, the `Console.ReadLine()` method returns a string containing user input. Return values allow us to save useful information that the method has generated. The signature for `Console.ReadLine()` looks like this: `string Console.ReadLine()`. The signature tells you what the return type is, and in this case, the return type is `string`. It's up to you as the programmer to decide if it's necessary to store the value the method returns.
+In a method, the return type specifies what kind of data the method will give back once it finishes executing. For example, the return type of `Console.ReadLine()` is `string`, meaning it provides a string value after the user enters input. he signature for `Console.ReadLine()` looks like this: `string Console.ReadLine()`. 
+
+Not every method needs to produce a value. When a method doesn’t return any information, its return type is defined as `void`.
 
 ```cs
 string input = Console.ReadLine();
 ```
-
-If a method has no value to return, the signature will have a return type of `void`, as with the `Greeting()` method in the first example.
 
 **Example Method with a Return Type**
 
@@ -76,7 +79,7 @@ The `RandomNumber()` method has a return type of `int`, as defined in the signat
 
 #### Scope
 
-In Part 2, there were instances where declared variables were only accessible in a given section of code. This is known as **scope**. Scope defines the context in which a variable is able to be used. Regarding methods, any variables declared inside a method body are only accessible within that method. Their value is also deleted in memory whenever the method finishes execution. Variables defined in a method body are referred to as **local variables**, as they are only accessible in that section. A variable accessible anywhere is in what's known as **global** scope.
+In previous lessons, you learned that variables declared within certain code blocks are only accessible within those blocks. This concept is known as **scope**. Scope determines the context in which a variable can be used. Within methods, any variables declared in the method body are only accessible inside that method and are deleted from memory once the method finishes executing. These are called local variables. In contrast, variables accessible throughout a program have what’s known as **global** scope.
 
 **Example**
 
