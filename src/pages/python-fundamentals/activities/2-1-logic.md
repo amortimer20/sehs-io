@@ -1,12 +1,12 @@
 ---
 divStyles: "container mt-4"
 layout: "../../../layouts/Layout.astro"
-title: Python Fundamentals 2.1 Logic Crash Course
+title: Python Fundamentals 2.1 Boolean Logic
 ---
 
 [← Back](/python-fundamentals/)
 
-## Activity 2.1 Logic Crash Course
+## Activity 2.1 Boolean Logic
 
 ---
 
