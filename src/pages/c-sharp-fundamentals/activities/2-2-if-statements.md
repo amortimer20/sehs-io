@@ -57,11 +57,11 @@ In this case, the block of code inside the curly braces will always run, regardl
   - Creating a condition
   - Creating a code block
 
-#### Instructions
-
 ---
 
-### Setup
+### Instructions
+
+#### Setup
 
 1. Create a new C# console application. Name the project **2.2 If Statements**.
 2. Click Create.
