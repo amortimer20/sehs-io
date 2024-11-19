@@ -93,7 +93,7 @@ Console.WriteLine("----------------");
 // Use a for loop to print numbers 1 to 10 and their squares
 for (int i = 1; i <= num; i++)
 {
-    Console.WriteLine("{0}\t{1}", i, i * i);
+    Console.WriteLine($"{i}\t{i * i}");
 }
 
 ```
