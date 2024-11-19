@@ -104,7 +104,17 @@ void ViewTasks(List<string> tasks, List<bool> completionStatus)
         Console.WriteLine("\nTasks:");
         for (int i = 0; i < tasks.Count; i++)
         {
-            string status = completionStatus[i] ? "Completed" : "Incomplete";
+            string status;
+
+            if (completionStatus[i] == true)
+            {
+                status = "Completed";
+            }
+            else
+            {
+                status = "Incomplete";
+            }
+
             Console.WriteLine($"{i + 1}. {tasks[i]} - {status}");
         }
     }
