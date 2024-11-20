@@ -50,11 +50,13 @@ Console.WriteLine($"The total sum is: {totalSum}");
 
 **Steps:**
 
-1. Initialize a collection.
-2. Set a variable to store the accumulated result (e.g., totalSum).
-3. Iterate through each element in the array using a loop.
-4. Add each element to the accumulated result.
-5. Optionally, output the final accumulated result.
+For a given collection:
+
+1. Set a variable to store the accumulated result (e.g., totalSum).
+2. Iterate through each element in the array using a loop.
+3. Add each element to the accumulated result.
+
+Optionally, output the final accumulated result.
 
 ---
 
@@ -64,8 +66,9 @@ The min and max algorithm involves iterating through a collection of elements to
 
 ```cs
 int[] numbers = [ 3, 1, 4, 1, 5, 9 ];
+
+// Find min
 int minValue = numbers[0];
-int maxValue = numbers[0];
 
 foreach (int number in numbers)
 {
@@ -73,6 +76,13 @@ foreach (int number in numbers)
     {
         minValue = number;
     }
+}
+
+// Find max
+int maxValue = numbers[0];
+
+foreach (int number in numbers)
+{
     if (number > maxValue)
     {
         maxValue = number;
@@ -86,12 +96,14 @@ Console.WriteLine($"The maximum value is: {maxValue}");
 
 **Steps:**
 
-1. Initialize a collection.
-2. Set the first element as the initial minimum and maximum values (minValue and maxValue).
-3. Iterate through each element in the array starting from the second element.
-4. Update the minValue if the current element is smaller.
-5. Update the maxValue if the current element is larger.
-6. Optionally, iutput the final minimum and maximum values.
+For a given collection:
+
+1. Set the first element as the initial minimum and maximum values (minValue and maxValue).
+2. Iterate through each element in the array starting from the second element.
+3. Update the minValue if the current element is smaller.
+4. Update the maxValue if the current element is larger.
+
+Optionally, iutput the final minimum and maximum values.
 
 **Note**
 
@@ -118,11 +130,12 @@ numbers[indexB] = temp;
 
 **Steps:**
 
-1. Initialize a collection.
-2. Define two indexes representing the positions of the elements to be swapped.
-3. Use a temporary variable to hold the value of the first element.
-4. Assign the value of the second element to the first element’s position.
-5. Assign the value stored in the temporary variable to the second element’s position.
+For a given collection:
+
+1. Define two indexes representing the positions of the elements to be swapped.
+2. Use a temporary variable to hold the value of the first element.
+3. Assign the value of the second element to the first element’s position.
+4. Assign the value stored in the temporary variable to the second element’s position.
 
 ---
 
@@ -151,12 +164,14 @@ foreach (int number in numbers)
 
 **Steps:**
 
-1. Initialize a collection.
-2. Create an instance of the Random class to generate random indices.
-3. Iterate through the array from the last element to the first.
-4. Generate a random index j within the range of 0 to i.
-5. Swap the elements at indices i and j using a temporary variable.
-6. Optionally, iterate through the array to verify that the elements have been shuffled.
+For a given collection:
+
+1. Create an instance of the Random class to generate random indices.
+2. Iterate through the array from the last element to the first.
+3. Generate a random index j within the range of 0 to i.
+4. Swap the elements at indices i and j using a temporary variable.
+
+Optionally, iterate through the array to verify that the elements have been shuffled.
 
 *You may notice that there are algorithms that are named after their inventors as a way to honor their contributions to the field of computer science and mathematics.
 
@@ -191,11 +206,13 @@ foreach (int number in mergedArray)
 
 **Steps:**
 
-1. Initialize two arrays of integers.
-2. Create an array to hold the merged result.
-3. Copy the elements of the first array into the merged array.
-4. Copy the elements of the second array into the merged array, starting after the last element of the first array.
-5. Optionally, Iterate through the merged array to verify that the elements have been combined.
+For two given collections:
+
+1. Create an array to hold the merged result.
+2. Copy the elements of the first array into the merged array.
+3. Copy the elements of the second array into the merged array, starting after the last element of the first array.
+
+Optionally, Iterate through the merged array to verify that the elements have been combined.
 
 ##### Simple Merge Algorithm with Lists
 
@@ -204,25 +221,34 @@ This version of the merge algorithm combines two lists, which can be more flexib
 ```cs
 List<int> list1 = [ 1, 3, 5, 7 ];
 List<int> list2 = [ 2, 4, 6, 8 ];
+List<int> mergedList = [];
+
+foreach (int number in list1)
+{
+    mergedList.Add(number);
+}
 
 foreach (int number in list2)
 {
-    list1.Add(number);
+    mergedList.Add(number);
 }
 ```
 
 **Steps:**
 
-1. Initialize two collections.
-2. Use a foreach loop to iterate through the elements of the second list.
-3. Add each element from the second list to the first list using the Add() method.
+For two given collections:
+
+1. Initialize an empty list.
+1. Use a foreach loop to iterate through the elements of the first list, adding each element to the new list using the `Add()` method.
+1. Use a foreach loop to iterate through the elements of the second list, adding each element to the new list using the `Add()` method.
 
 **Bonus Method:** `AddRange()`
 
 As an alternative, you can use the AddRange() method to achieve the same result more concisely. The AddRange() method allows you to add all elements from one list to another in a single call.
 
 ```cs
-list1.AddRange(list2);
+mergedList.AddRange(list1);
+mergedList.AddRange(list2);
 ```
 
 ---
