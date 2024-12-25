@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
 
-import react from "@astrojs/react";
+import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
   markdown: {
     syntaxHighlight: false
   },
-  integrations: [react()],
+  integrations: [alpinejs()],
   site: 'https://sehs.io'
 });

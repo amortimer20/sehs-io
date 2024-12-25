@@ -1,19 +1,35 @@
 ---
-    import ColorPicker from '../../components/ColorPicker.jsx';
     import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="RGB Color Picker">
-    <div class="row justify-content-center align-items-center my-5">
-        <div class="col-auto">
-            <img src="/utilities/rgb-icon.png" class="img-title" />
+    <div class="container">
+        <div class="row justify-content-center align-items-center my-5">
+            <div class="col-auto">
+                <img src="/utilities/rgb-icon.png" class="img-title" />
+            </div>
+            <div class="col-auto">
+                <h1 class="text-center display-5">RGB Color Picker</h1>
+            </div>
         </div>
-        <div class="col-auto">
-            <h1 class="text-center display-5">RGB Color Picker</h1>
+        <div class="row mb-5">
+            <div x-data="rgb">
+                <div class="col-sm-12 col-md-6 offset-md-3 p-1">
+                    <label class="form-label" for="red">
+                        Red: <span x-text="r"></span>
+                    </label>
+                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="r" />
+                    <label class="form-label" for="green">Green: <span x-text="g"></span></label>
+                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="g" />
+                    <label class="form-label" for="blue">Blue: <span x-text="b"></span></label>
+                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="b" />
+                    <div class="color-square mt-3" 
+                        :style="{ backgroundColor: `rgb(${r}, ${g}, ${b})` }">
+                    </div>
+                    <p>Hex: <span x-text="hex"></span></p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row justify-content-center mb-5">
-        <ColorPicker client:load />
     </div>
 </Layout>
 
@@ -21,4 +37,26 @@
     .img-title {
         max-width: 125px;
     }
+
+    .color-square {
+        height: 250px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
 </style>
+
+<script>
+    import Alpine from "alpinejs";
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('rgb', () => ({
+            r: 0,
+            g: 0,
+            b: 0,
+            get hex() {
+                const toHex = (val: string) => parseInt(val).toString(16).padStart(2, '0');
+                return `#${toHex(this.r)}${toHex(this.g)}${toHex(this.b)}`;
+            }
+        }));
+    });
+</script>
