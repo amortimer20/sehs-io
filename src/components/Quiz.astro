@@ -1,0 +1,84 @@
+---
+const { dataURL } = Astro.props;
+---
+
+<div data-dataURL={dataURL}></div>
+<div x-data="practice">
+    <template x-if="currentQuestion">
+        <div>
+            <p>
+                (#<span x-text="currentQuestion.number"></span>)
+                <span x-html="currentQuestion.text"></span>
+            </p>
+            <template x-if="questionComplete">
+                <p class="text-info" x-html="currentQuestion.answerDetail"></p>
+            </template>
+            <div class="mb-3">
+                <label class="form-label" for="answer">Answer: </label>
+                <input id="answer" class="form-control" x-model="submittedAnswer" />
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" x-show="!questionComplete" x-text="buttonText" @click="submitAnswer">Submit Answer</button>
+                <button class="btn btn-primary" x-show="questionComplete" @click="displayNextQuestion">Next Question</button>
+            </div>
+        </div>
+    </template>
+    <template x-if="!currentQuestion">
+        <div class="d-grid gap-2 my-5">
+            <button class="btn btn-primary" @click="beginPractice">Begin</button>
+        </div>
+    </template>
+</div>
+
+<script>
+    import Alpine from "alpinejs";
+
+    enum QuestionType {
+        FillInTheBlank,
+        FreeResponse
+    }
+
+    const dataURL = document.querySelector<HTMLDivElement>('[data-dataURL]').dataset['dataurl'];
+
+    Alpine.data("practice", () => ({
+        buttonText: "Submit Answer",
+        currentQuestion: null,
+        questionComplete: false,
+        questionData: null,
+        submittedAnswer: "",
+        
+        beginPractice() {
+            fetch(dataURL)
+            .then((res) => res.json())
+            .then((data) => {
+                this.questionData = data;
+                this.currentQuestion = this.getRandomQuestion();
+            });
+        },
+
+        displayNextQuestion() {
+            this.submittedAnswer = "";
+            this.buttonText = "Submit Answer";
+            this.questionComplete = false;
+            this.currentQuestion = this.getRandomQuestion();
+        },
+
+        getRandomQuestion() { 
+            return this.questionData[Math.floor(Math.random() * this.questionData.length)]; 
+        },
+
+        submitAnswer() {
+            if (this.currentQuestion.questionType === QuestionType.FillInTheBlank) {
+                if (this.currentQuestion.correctAnswers.includes(this.submittedAnswer)) {
+                    this.questionComplete = true;
+                }
+                else {
+                    this.buttonText = "Try again!";
+                }
+            }
+            else if (this.currentQuestion.questionType === QuestionType.FreeResponse) {
+                this.questionComplete = true;
+            }
+        },
+    }));
+</script>
