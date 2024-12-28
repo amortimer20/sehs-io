@@ -4,28 +4,64 @@ const { dataURL } = Astro.props;
 
 <div data-dataURL={dataURL}></div>
 <div x-data="practice">
-    <template x-if="currentQuestion">
-        <div>
-            <p>
-                (#<span x-text="currentQuestion.number"></span>)
-                <span x-html="currentQuestion.text"></span>
-            </p>
-            <template x-if="questionComplete">
-                <p class="text-info" x-html="currentQuestion.answerDetail"></p>
-            </template>
-            <div class="mb-3">
-                <label class="form-label" for="answer">Answer: </label>
-                <input id="answer" class="form-control" x-model="submittedAnswer" />
-            </div>
-            <div class="mb-3">
-                <button class="btn btn-primary" x-show="!questionComplete" x-text="buttonText" @click="submitAnswer">Submit Answer</button>
-                <button class="btn btn-primary" x-show="questionComplete" @click="displayNextQuestion">Next Question</button>
-            </div>
-        </div>
-    </template>
     <template x-if="!currentQuestion">
         <div class="d-grid gap-2 my-5">
             <button class="btn btn-primary" @click="beginPractice">Begin</button>
+        </div>
+    </template>
+    <template x-if="currentQuestion">
+        <div class="card">
+            <div class="card-body">
+                <p>
+                    (#<span x-text="currentQuestion.number"></span>)
+                    <span x-html="currentQuestion.text"></span>
+                </p>
+                <!-- Fill in the blank question -->
+                <template x-if="currentQuestion.questionType === 0">
+                    <div>
+                        <div class="mb-3">
+                            <label class="form-label" for="answer">Answer: </label>
+                            <input id="answer" class="form-control" x-model="submittedAnswer" />
+                        </div>
+                    </div>
+                </template>
+                <!-- Free response question -->
+                <template x-if="currentQuestion.questionType === 1">
+                    <div>
+                        <div class="mb-3">
+                            <label class="form-label" for="answer">Answer: </label>
+                            <textarea id="answer" class="form-control" x-model="submittedAnswer"></textarea>
+                        </div>
+                    </div>
+                </template>
+                <div class="mb-3">
+                    <button
+                        class="btn btn-primary"
+                        x-show="!questionComplete"
+                        x-text="submitButtonText"
+                        @click="submitAnswer"
+                    >
+                        Submit Answer
+                    </button>
+                    <button
+                        class="btn btn-primary"
+                        x-show="questionComplete"
+                        x-text="nextQuestionButtonText"
+                        @click="displayNextQuestion"
+                    >
+                        Next Question
+                    </button>
+                </div>
+                <!-- Display answer -->
+                <template x-if="questionComplete">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <p class="text-info">Answer Details:</p>
+                            <p x-html="currentQuestion.answerDetail"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </template>
 </div>
@@ -41,10 +77,11 @@ const { dataURL } = Astro.props;
     const dataURL = document.querySelector<HTMLDivElement>('[data-dataURL]').dataset['dataurl'];
 
     Alpine.data("practice", () => ({
-        buttonText: "Submit Answer",
         currentQuestion: null,
+        nextQuestionButtonText: "Next Question",
         questionComplete: false,
         questionData: null,
+        submitButtonText: "Submit Answer",
         submittedAnswer: "",
         
         beginPractice() {
@@ -57,10 +94,11 @@ const { dataURL } = Astro.props;
         },
 
         displayNextQuestion() {
-            this.submittedAnswer = "";
-            this.buttonText = "Submit Answer";
-            this.questionComplete = false;
             this.currentQuestion = this.getRandomQuestion();
+            this.nextQuestionButtonText = "Next Question";
+            this.questionComplete = false;
+            this.submittedAnswer = "";
+            this.submitButtonText = "Submit Answer";
         },
 
         getRandomQuestion() { 
@@ -68,17 +106,31 @@ const { dataURL } = Astro.props;
         },
 
         submitAnswer() {
-            if (this.currentQuestion.questionType === QuestionType.FillInTheBlank) {
-                if (this.currentQuestion.correctAnswers.includes(this.submittedAnswer)) {
-                    this.questionComplete = true;
-                }
-                else {
-                    this.buttonText = "Try again!";
-                }
-            }
-            else if (this.currentQuestion.questionType === QuestionType.FreeResponse) {
+            if (this.currentQuestion.questionType === 0)
+                this.processFillInTheBlank()
+            else if (this.currentQuestion.questionType === 1)
+                this.processFreeResponse()
+        },
+
+        processFillInTheBlank() {
+            if (this.currentQuestion.correctAnswers.includes(this.submittedAnswer)) {
+                this.nextQuestionButtonText = "Correct! Next Question";
                 this.questionComplete = true;
             }
+            else {
+                this.submitButtonText = "Try again!";
+            }
         },
+
+        processFreeResponse() {
+            for (let keyword of this.currentQuestion.answerKeywords) {
+                let keywordHighlight = this.submittedAnswer.includes(keyword)
+                    ? `<span style="color: green !important;">✔️${keyword}</span>`
+                    : `<span style="color: red !important;">❌${keyword}</span>`;
+                this.currentQuestion.answerDetail = this.currentQuestion.answerDetail.replace(keyword, keywordHighlight);
+            }
+
+            this.questionComplete = true;
+        }
     }));
 </script>
