@@ -48,15 +48,13 @@
 <script>
     import Alpine from "alpinejs";
 
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('rgb', () => ({
-            r: 0,
-            g: 0,
-            b: 0,
-            get hex() {
-                const toHex = (val: string) => parseInt(val).toString(16).padStart(2, '0');
-                return `#${toHex(this.r)}${toHex(this.g)}${toHex(this.b)}`;
-            }
-        }));
-    });
+    Alpine.data('rgb', () => ({
+        r: 0,
+        g: 0,
+        b: 0,
+        get hex() {
+            const toHex = (val: string) => parseInt(val).toString(16).padStart(2, '0');
+            return `#${toHex(this.r)}${toHex(this.g)}${toHex(this.b)}`;
+        }
+    }));
 </script>

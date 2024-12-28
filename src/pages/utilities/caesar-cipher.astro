@@ -73,47 +73,45 @@ import Layout from '../../layouts/Layout.astro';
         return ((a % b) + b) % b;
     }
 
-    document.addEventListener('alpine:init', () =>{
-        Alpine.data('caesar_cipher', () => ({
-            degree: 0,
-            key: 0,
-            plaintext: '',
-            ciphertext: '',
-            get isForwardDisabled() { return this.key === 25; },
-            get isBackwardDisabled() { return this.key === 0; },
+    Alpine.data('caesar_cipher', () => ({
+        degree: 0,
+        key: 0,
+        plaintext: '',
+        ciphertext: '',
+        get isForwardDisabled() { return this.key === 25; },
+        get isBackwardDisabled() { return this.key === 0; },
 
-            // Event handler methods
-            increaseDial() { this.turnDial(13.846, 1); },
-            decreaseDial() { this.turnDial(-13.846, -1); },
-            encrypt() { this.ciphertext = this.transformText(this.plaintext, 'encrypt'); },
-            decrypt() { this.plaintext = this.transformText(this.ciphertext, 'decrypt'); },
+        // Event handler methods
+        increaseDial() { this.turnDial(13.846, 1); },
+        decreaseDial() { this.turnDial(-13.846, -1); },
+        encrypt() { this.ciphertext = this.transformText(this.plaintext, 'encrypt'); },
+        decrypt() { this.plaintext = this.transformText(this.ciphertext, 'decrypt'); },
 
-            // Utility methods
-            turnDial(degree: number, keyChange: number) {
-                this.degree += degree;
-                this.key += keyChange;
-                anime({
-                    targets: '#dial',
-                    rotate: this.degree,
-                    easing: 'linear',
-                    duration: 250
-                })
-            },
+        // Utility methods
+        turnDial(degree: number, keyChange: number) {
+            this.degree += degree;
+            this.key += keyChange;
+            anime({
+                targets: '#dial',
+                rotate: this.degree,
+                easing: 'linear',
+                duration: 250
+            })
+        },
 
-            transformText(text: string, op: string) {
-                let result = '';
-                let key = op === 'encrypt' ? this.key : -this.key;
+        transformText(text: string, op: string) {
+            let result = '';
+            let key = op === 'encrypt' ? this.key : -this.key;
 
-                for (let char of text.toUpperCase()) {
-                    result += LETTERS.includes(char) 
-                        ? LETTERS[mod(LETTERS.indexOf(char) + key, 26)] 
-                        : char;
-                }
-
-                return result;
+            for (let char of text.toUpperCase()) {
+                result += LETTERS.includes(char) 
+                    ? LETTERS[mod(LETTERS.indexOf(char) + key, 26)] 
+                    : char;
             }
-        }));
-    });
+
+            return result;
+        }
+    }));
 </script>
 
 <style>
