@@ -18,19 +18,41 @@ const { dataURL } = Astro.props;
                 </p>
                 <!-- Fill in the blank question -->
                 <template x-if="currentQuestion.questionType === 0">
-                    <div>
-                        <div class="mb-3">
-                            <label class="form-label" for="answer">Answer: </label>
-                            <input id="answer" class="form-control" x-model="submittedAnswer" />
-                        </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="answer">Answer: </label>
+                        <input id="answer" class="form-control" x-model="submittedAnswer" />
                     </div>
                 </template>
                 <!-- Free response question -->
                 <template x-if="currentQuestion.questionType === 1">
-                    <div>
-                        <div class="mb-3">
-                            <label class="form-label" for="answer">Answer: </label>
-                            <textarea id="answer" class="form-control" x-model="submittedAnswer"></textarea>
+                    <div class="mb-3">
+                        <label class="form-label" for="answer">Answer: </label>
+                        <textarea id="answer" class="form-control" x-model="submittedAnswer"></textarea>
+                    </div>
+                </template>
+                <!-- Multiple choice question -->
+                <template x-if="currentQuestion.questionType === 2">
+                    <div class="mb-3">
+                        <label class="form-label">Answer: </label>
+                        <template x-for="choice in currentQuestion.choices">
+                            <div class="form-check" x-id="['choice']">
+                                <input type="radio" :id="$id('choice')" class="form-check-input" :value="choice" x-model="submittedAnswer">
+                                <label :for="$id('choice')" x-text="choice"></label>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                 <!-- True of false question -->
+                <template x-if="currentQuestion.questionType === 3">
+                    <div class="mb-3">
+                        <label class="form-label">Answer: </label>
+                        <div class="form-check">
+                            <input type="radio" id="trueAnswer" value="true" x-model="submittedAnswer" />
+                            <label for="trueAnswer">True</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="falseAnswer" value="false" x-model="submittedAnswer" />
+                            <label for="falseAnswer">False</label>
                         </div>
                     </div>
                 </template>
@@ -71,7 +93,9 @@ const { dataURL } = Astro.props;
 
     enum QuestionType {
         FillInTheBlank,
-        FreeResponse
+        FreeResponse,
+        MultipleChoice,
+        TrueOrFalse
     }
 
     const dataURL = document.querySelector<HTMLDivElement>('[data-dataURL]').dataset['dataurl'];
@@ -106,23 +130,33 @@ const { dataURL } = Astro.props;
         },
 
         submitAnswer() {
-            if (this.currentQuestion.questionType === 0)
-                this.processFillInTheBlank()
-            else if (this.currentQuestion.questionType === 1)
-                this.processFreeResponse()
+            switch (this.currentQuestion.questionType) {
+                case QuestionType.FillInTheBlank:
+                    this.processAnswer(this.currentQuestion.correctAnswers.includes(this.submittedAnswer));
+                    break;
+                case QuestionType.FreeResponse:
+                    this.processFreeResponseAnswer();
+                    break;
+                case QuestionType.MultipleChoice:
+                    this.processAnswer(this.submittedAnswer === this.currentQuestion.correctChoice);
+                    break;
+                case QuestionType.TrueOrFalse:
+                    this.processAnswer(this.submittedAnswer === this.currentQuestion.answer);
+                    break;
+                default:
+                    console.error("Unknown question type");
+                    break;
+            }
         },
 
-        processFillInTheBlank() {
-            if (this.currentQuestion.correctAnswers.includes(this.submittedAnswer)) {
-                this.nextQuestionButtonText = "Correct! Next Question";
-                this.questionComplete = true;
-            }
-            else {
-                this.submitButtonText = "Try again!";
-            }
+        processAnswer(isCorrect: boolean) {
+            this.nextQuestionButtonText = isCorrect
+                ? "Correct! Next Question"
+                : "Incorrect. Next Question";
+            this.questionComplete = true;
         },
 
-        processFreeResponse() {
+        processFreeResponseAnswer() {
             for (let keyword of this.currentQuestion.answerKeywords) {
                 let keywordHighlight = this.submittedAnswer.includes(keyword)
                     ? `<span style="color: green !important;">✔️${keyword}</span>`
