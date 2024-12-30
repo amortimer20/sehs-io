@@ -1,5 +1,6 @@
 ---
     import Layout from '../../layouts/Layout.astro';
+    import RGBColorPicker from '../../components/RGBColorPicker.svelte';
 ---
 
 <Layout title="RGB Color Picker">
@@ -13,21 +14,8 @@
             </div>
         </div>
         <div class="row mb-5">
-            <div x-data="rgb">
-                <div class="col-sm-12 col-md-6 offset-md-3 p-1">
-                    <label class="form-label" for="red">
-                        Red: <span x-text="r"></span>
-                    </label>
-                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="r" />
-                    <label class="form-label" for="green">Green: <span x-text="g"></span></label>
-                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="g" />
-                    <label class="form-label" for="blue">Blue: <span x-text="b"></span></label>
-                    <input type="range" class="form-range" min="0" max="255" step="1" x-model="b" />
-                    <div class="color-square mt-3" 
-                        :style="{ backgroundColor: `rgb(${r}, ${g}, ${b})` }">
-                    </div>
-                    <p>Hex: <span x-text="hex"></span></p>
-                </div>
+            <div class="col-sm-12 col-md-6 offset-md-3 p-1">
+                <RGBColorPicker client:load />
             </div>
         </div>
     </div>
@@ -37,24 +25,4 @@
     .img-title {
         max-width: 125px;
     }
-
-    .color-square {
-        height: 250px;
-        border: 2px solid black;
-        border-radius: 5px;
-    }
 </style>
-
-<script>
-    import Alpine from "alpinejs";
-
-    Alpine.data('rgb', () => ({
-        r: 0,
-        g: 0,
-        b: 0,
-        get hex() {
-            const toHex = (val: string) => parseInt(val).toString(16).padStart(2, '0');
-            return `#${toHex(this.r)}${toHex(this.g)}${toHex(this.b)}`;
-        }
-    }));
-</script>

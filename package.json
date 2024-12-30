@@ -10,16 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.1",
-    "@types/alpinejs": "^3.13.11",
-    "alpinejs": "^3.14.8",
+    "@types/p5": "^1.6.0",
+    "@astrojs/svelte": "^7.0.2",
     "animejs": "^3.2.2",
-    "astro": "^4.15.9",
+    "astro": "^5.1.1",
     "bootstrap": "^5.3.1",
     "p5": "^1.6.0",
-    "prismjs": "~1.29.0"
-  },
-  "devDependencies": {
-    "@types/p5": "^1.6.0"
+    "prismjs": "~1.29.0",
+    "svelte": "^5.16.0",
+    "typescript": "^5.7.2"
   }
 }

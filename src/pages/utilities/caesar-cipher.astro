@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import CaesarCipherInteractive from '../../components/CaesarCipherInteractive.svelte';
 ---
 
 <Layout title="Caesar Cipher">
@@ -12,116 +13,14 @@ import Layout from '../../layouts/Layout.astro';
         </div>
     </div>
     <div class="container">
-        <div class="row mb-5" x-data="caesar_cipher">
-            <!-- Dial -->
-            <div class="col-sm-12 col-md-4 offset-md-2">
-                <div class="position-relative">
-                    <img src="/utilities/caesar-dial-outer.png" class="img-fluid" alt="dial outer" />
-                    <div class="overlay">
-                        <img
-                            id="dial"
-                            src="/utilities/caesar-dial-inner.png"
-                            class="d-block mx-auto w-75"
-                            alt="dial inner"
-                        />
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Form -->
-            <div class="col-sm-12 col-md-4">
-                <div class="mb-3">
-                    <label for="key" class="form-label">Key:</label>
-                    <input id="key" type="text" class="form-control w-auto" readonly x-model="key" />
-                    <div class="row mt-3">
-                        <div class="col-auto">
-                            <button class="btn btn-primary" :disabled="isBackwardDisabled" @click="decreaseDial">
-                                Backward
-                            </button>
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary" :disabled="isForwardDisabled" @click="increaseDial">
-                                Forward
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="plaintext">Plaintext:</label>
-                    <textarea id="plaintext" class="form-control" rows="3" x-model="plaintext"></textarea>
-                    <button class="form-control btn btn-primary mt-2" @click="encrypt">Encrypt</button>
-                </div>
-                <div class="mb-3">
-                    <label for="ciphertext">Ciphertext:</label>
-                    <textarea id="ciphertext" class="form-control" rows="3" x-model="ciphertext"></textarea>
-                    <button class="form-control btn btn-primary mt-2" @click="decrypt">Decrypt</button>
-                </div>
-            </div>
+        <div class="row mb-5">
+            <CaesarCipherInteractive client:load />
         </div>
     </div>
 </Layout>
 
-<script>
-    import Alpine from "alpinejs";
-    import anime from 'animejs';
-
-    const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-
-    function mod(a: number, b: number) {
-        a = +a;
-        b = +b;
-        return ((a % b) + b) % b;
-    }
-
-    Alpine.data('caesar_cipher', () => ({
-        degree: 0,
-        key: 0,
-        plaintext: '',
-        ciphertext: '',
-        get isForwardDisabled() { return this.key === 25; },
-        get isBackwardDisabled() { return this.key === 0; },
-
-        // Event handler methods
-        increaseDial() { this.turnDial(13.846, 1); },
-        decreaseDial() { this.turnDial(-13.846, -1); },
-        encrypt() { this.ciphertext = this.transformText(this.plaintext, 'encrypt'); },
-        decrypt() { this.plaintext = this.transformText(this.ciphertext, 'decrypt'); },
-
-        // Utility methods
-        turnDial(degree: number, keyChange: number) {
-            this.degree += degree;
-            this.key += keyChange;
-            anime({
-                targets: '#dial',
-                rotate: this.degree,
-                easing: 'linear',
-                duration: 250
-            })
-        },
-
-        transformText(text: string, op: string) {
-            let result = '';
-            let key = op === 'encrypt' ? this.key : -this.key;
-
-            for (let char of text.toUpperCase()) {
-                result += LETTERS.includes(char) 
-                    ? LETTERS[mod(LETTERS.indexOf(char) + key, 26)] 
-                    : char;
-            }
-
-            return result;
-        }
-    }));
-</script>
-
 <style>
     .img-title {
         max-width: 125px;
-    }
-
-    .overlay {
-        position: absolute;
-        bottom: 13%;
-        z-index: 1;
     }
 </style>
