@@ -28,10 +28,6 @@ A **class** is a blueprint or template that defines something. A class is also r
 
 Where does this all come into play when programming? OOP is all about desiging our programs into classes. We then create instances of a class, i.e. objects, and interact with those objects in our program. Again, although this is all foreign, we've actually been working with objects this entire time.
 
-**Dog Analogy**
-
-<img src="/courses/c-sharp-fundamentals/dog-blueprint.png" class="img-fluid mb-3" />
-
 ###### Class Definitions and Members
 
 When writing a class, you're describing three major things:
@@ -45,6 +41,95 @@ The identity defines what the class **is**. The attributes describe the values W
 Variables defined in a class are referred to as **fields**, as in data fields, or **instance variables**. That's because each dog object (or instance) will have it's own copy of those variables. We'll discuss this more below.
 
 **Example Dog Class**
+
+<!-- Dog tables -->
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered w-auto mx-auto small">
+            <thead>
+                <tr><th class="text-center">Identity: Dog Class</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src="/courses/c-sharp-fundamentals/dog-template.gif" class="img-fluid" />
+                    </td>
+                </tr>
+                <tr><td>Attributes: name, breed, age, color</td></tr>
+                <tr><td>Behavior: Bark(), Eat()</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 col-md-3">
+        <table class="table table-bordered w-auto mx-auto small">
+            <thead>
+                <tr><th class="text-center">Dog Object</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src="/courses/c-sharp-fundamentals/dog-running.gif" class="img-fluid" />
+                    </td>
+                </tr>
+                <tr><td>Fido, Greyhound, Age 3, gray</td></tr>
+                <tr><td>Fido can Bark() and Eat()</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-12 col-md-3">
+        <table class="table table-bordered w-auto mx-auto small">
+            <thead>
+                <tr><th class="text-center">Dog Object</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src="/courses/c-sharp-fundamentals/dog-barking.gif" class="img-fluid" />
+                    </td>
+                </tr>
+                <tr><td>Dodger, German Shephard, Age 6, black and brown</td></tr>
+                <tr><td>Dodger can Bark() and Eat()</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-12 col-md-3">
+        <table class="table table-bordered w-auto mx-auto small">
+            <thead>
+                <tr><th class="text-center">Dog Object</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src="/courses/c-sharp-fundamentals/dog-sitting.gif" class="img-fluid" />
+                    </td>
+                </tr>
+                <tr><td>Pooch, Husky, Age 1, blue</td></tr>
+                <tr><td>Pooch can Bark() and Eat()</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-12 col-md-3">
+        <table class="table table-bordered w-auto mx-auto small">
+            <thead>
+                <tr><th class="text-center">Dog Object</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">
+                        <img src="/courses/c-sharp-fundamentals/dog-sleeping.gif" class="img-fluid" />
+                    </td>
+                </tr>
+                <tr><td>Star, Shiba Inu, Age 2, tan</td></tr>
+                <tr><td>Star can Bark() and Eat()</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- End dog tables -->
+
 ```cs
 class Dog
 {
