@@ -64,7 +64,7 @@ Variables defined in a class are referred to as **fields**, as in data fields, o
 
 <div class="row">
     <div class="col-sm-12 col-md-3">
-        <table class="table table-bordered w-auto mx-auto small">
+        <table class="table table-bordered mx-auto small">
             <thead>
                 <tr><th class="text-center">Dog Object</th></tr>
             </thead>
@@ -80,7 +80,7 @@ Variables defined in a class are referred to as **fields**, as in data fields, o
         </table>
     </div>
     <div class="col-sm-12 col-md-3">
-        <table class="table table-bordered w-auto mx-auto small">
+        <table class="table table-bordered mx-auto small">
             <thead>
                 <tr><th class="text-center">Dog Object</th></tr>
             </thead>
@@ -90,13 +90,13 @@ Variables defined in a class are referred to as **fields**, as in data fields, o
                         <img src="/courses/c-sharp-fundamentals/dog-barking.gif" class="img-fluid" />
                     </td>
                 </tr>
-                <tr><td>Dodger, German Shephard, Age 6, black and brown</td></tr>
+                <tr><td>Dodger, Ger. Shep, Age 6, brown</td></tr>
                 <tr><td>Dodger can Bark() and Eat()</td></tr>
             </tbody>
         </table>
     </div>
     <div class="col-sm-12 col-md-3">
-        <table class="table table-bordered w-auto mx-auto small">
+        <table class="table table-bordered mx-auto small">
             <thead>
                 <tr><th class="text-center">Dog Object</th></tr>
             </thead>
@@ -112,7 +112,7 @@ Variables defined in a class are referred to as **fields**, as in data fields, o
         </table>
     </div>
     <div class="col-sm-12 col-md-3">
-        <table class="table table-bordered w-auto mx-auto small">
+        <table class="table table-bordered mx-auto small">
             <thead>
                 <tr><th class="text-center">Dog Object</th></tr>
             </thead>
