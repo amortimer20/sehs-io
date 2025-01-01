@@ -24,13 +24,13 @@ Your task is to design and implement a Rectangle class and write a program that 
 ### Challenge Tasks
 
 1. **Create a console project named Challenge 5-1.**
-2. **Draw the UML Diagram:**
-    -Draw the UML diagram for the Rectangle class, including fields, constructors, and methods.
+2. **Draw the Class Diagram:**
+    - Draw the class diagram for the Rectangle class, including fields, constructors, and methods.
 3. **Class Implementation:**
     - Define a class named Rectangle with the following specifications:
-        - Two double data fields named width and height with default values of 1.
-        A no-arg constructor that creates a default rectangle.
-        - A constructor that creates a rectangle with specified width and height.
+        - Two double data fields named `width` and `height`.
+        - A default, no-argument constructor that creates a rectangle with default values of 1.
+        - A constructor that creates a rectangle with specified width and height parameters.
         - A method named `GetArea()`<sup>*</sup> that returns the area of the rectangle.
         - A method named `GetPerimeter()`<sup>*</sup> that returns the perimeter of the rectangle.
 4. **Test Program:**
