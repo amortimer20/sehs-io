@@ -8,6 +8,8 @@ title: C# Fundamentals 1.3 String Formatting
 
 ## Activity 1.3 String Formatting
 
+---
+
 ### Introduction
 
 In the previous activity, we outputted math expressions separately from the strings. While this works, it's not very visually appealing. In programming, we format strings to construct complex text messages. In C#, there are two popular ways to format strings: string concatenation and string interpolation.
