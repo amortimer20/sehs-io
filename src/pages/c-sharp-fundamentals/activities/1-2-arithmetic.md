@@ -8,6 +8,8 @@ title: "C# Fundamentals 1.2 Arithmetic"
 
 ## Activity 1.2 Arithmetic
 
+---
+
 ### Introduction
 
 Mathematics is a cornerstone of computer science. Any useful program, from video games to online stores, relies on numbers. Whether it's calculating scores, processing transactions, or generating graphics, math is everywhere in software.

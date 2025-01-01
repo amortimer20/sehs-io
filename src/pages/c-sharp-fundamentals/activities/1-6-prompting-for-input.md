@@ -8,6 +8,8 @@ title: C# Fundamentals 1.6 Prompting for Input
 
 ## Activity 1.6 Prompting for Input
 
+---
+
 ### Introduction
 
 In our previous lessons, we’ve used the Console.WriteLine() method to display messages to the user. But so far, our programs haven’t allowed users to provide input.

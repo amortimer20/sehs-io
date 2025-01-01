@@ -8,6 +8,8 @@ title: C# Fundamentals 1.5 Manipulating Variables
 
 ## Activity 1.5 Manipulating Variables
 
+---
+
 ### Introduction
 
 In programming, variables are used to store data that can be used later in the program. You’ve already learned how to declare and use variables. But one of the most powerful things about variables is that they don’t have to stay the same throughout a program. We can change the value of a variable after it's been initialized.
