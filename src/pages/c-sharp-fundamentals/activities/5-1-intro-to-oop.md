@@ -240,6 +240,17 @@ Dog dog2 = dog1;
     </div>
 </div>
 
+##### Using the `this` Keyword
+
+The `this` keyword is a reference to the current instance of a class. It allows an object to refer to its own members (fields or methods). While often optional, `this` is necessary when distinguishing between a field and a parameter or variable with the same name. Using `this` makes your code more explicit and easier to read, which is especially useful in later topics.
+
+```cs
+public void Eat()
+{
+    Console.WriteLine($"{this.Name} is eating.");
+}
+```
+
 ##### Introduction Summary
 
 You may be wondering where do you start when trying to design a program using OOP. For now, just worry about this new syntax, because we're only dipping our toes in the OOP water. Object-oriented programming requires a shift in the way you reason about your code. With time and practice, you will become comfortable writing programs using this new style.
@@ -251,6 +262,7 @@ You may be wondering where do you start when trying to design a program using OO
     - Variables and methods defined in a class are referred to as class members.
     - Variables in a class are called fields or instance variables.
     - To make members accessible outside of the class, prefix them with the public keyword.
+    - The this keyword is used to explicitly reference the current object’s members.
 - Objects are instances of a class.
     - An object gets its own set of fields when it is initialized.
     - Object fields and methods are accessed using the dot operator.
