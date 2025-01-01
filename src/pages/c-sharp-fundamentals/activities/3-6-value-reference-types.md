@@ -18,6 +18,8 @@ When programming, it’s crucial to understand how data types are stored and man
 
 Value types hold data directly. Examples of value types include `int`, `double`, and `bool`. When you assign a value type variable to another variable, you copy the data. This means the two variables operate independently of each other.
 
+These basic data types are referred to as _primitive types_ in some programming languages, such as Java.
+
 **Example: Value Types**
 
 ```cs
