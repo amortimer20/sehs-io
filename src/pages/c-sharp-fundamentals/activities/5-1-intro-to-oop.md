@@ -215,6 +215,31 @@ Sparky is eating.
 Woof!
 ```
 
+##### Classes are Reference Types
+
+In Lesson 3.6, we discussed the distinction between value types and reference types. **Value types** store their actual data directly. When you assign a value type variable to another variable, the data is copied, meaning each variable has its own copy of the data. **Reference types**, on the other hand, store a memory address that points to the actual data. When you assign a reference type variable to another variable, only the memory address is copied. As a result, both variables refer to the same data in memory.
+
+Classes in C# are reference types. This means if you assign one class instance to another variable, both variables will point to the same object in memory. Any changes made to the object through one variable will be reflected when accessed through the other variable.
+
+**Example: Copying references**
+
+```cs
+Dog dog1 = new Dog();
+dog1.name = "Fido";
+dog1.breed = "Greyhound";
+dog1.age = 3;
+dog1.color = "gray";
+
+// dog2 and dog1 are pointing to the same object
+Dog dog2 = dog1; 
+```
+
+<div class="row">
+    <div class="col">
+        <img src="/courses/c-sharp-fundamentals/dog-reference.gif" class="img-fluid">
+    </div>
+</div>
+
 ##### Introduction Summary
 
 You may be wondering where do you start when trying to design a program using OOP. For now, just worry about this new syntax, because we're only dipping our toes in the OOP water. Object-oriented programming requires a shift in the way you reason about your code. With time and practice, you will become comfortable writing programs using this new style.
@@ -229,6 +254,8 @@ You may be wondering where do you start when trying to design a program using OO
 - Objects are instances of a class.
     - An object gets its own set of fields when it is initialized.
     - Object fields and methods are accessed using the dot operator.
+- Classes are reference types
+    - If a variable of a given class type is assigned a value of another variable, only the memory address is copied. As a result, both variables refer to the same data in memory.
 
 #### Skills to Practice
 
