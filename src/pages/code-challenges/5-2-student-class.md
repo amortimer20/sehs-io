@@ -22,12 +22,12 @@ Your task is to design and implement a Student class and write a program that te
 ### Challenge Tasks
 
 1. **Create a console project named Challenge 5-2.**
-2. **Draw the UML Diagram:**
-   - Draw the UML diagram for the Student class, including fields, constructors, and methods.
+2. **Draw the Class Diagram:**
+   - Draw the class diagram for the Student class, including fields, constructors, and methods.
 3. **Class Implementation:**
     - Define a class named `Student` with the following specifications:
         - Two string data fields named `name` and `id`.
-        - A constructor that initializes the fields.
+        - A constructor that initializes the fields with specified parameters.
         - A method named `GetDetails()`<sup>*</sup> that returns the student's name and id.
 4. **Test Program:**
     - Write a test program that creates two Student objects:
