@@ -62,6 +62,10 @@ Console.WriteLine("10^3 equals " + Power(10, 3));
 10^3 equals 1000
 ```
 
+#### Method Declaration Graphic
+
+![Function Declaration Graphic](/courses/c-sharp-fundamentals/function-syntax.png)
+
 #### Parameters with Reference Types
 
 Recall that arrays and lists are both reference types. This means that when you pass an array or a list to a method, you’re not passing a copy of the data. Instead, you’re passing a reference to the original array or list. Any changes made to the array or list within the method will affect the original object outside the method as well.
