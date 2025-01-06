@@ -17,7 +17,7 @@ In this activity, we will deepen our understanding of OOP concepts by exploring 
 1. **Synonyms for OOP Terms**: Learn alternate ways to describe key concepts like objects, methods, and attributes to enhance your ability to communicate effectively in programming discussions.
 2. **Class Diagrams**: Visualize the structure of classes and their relationships using class diagrams, a vital tool for designing and understanding OOP-based systems.
 
-##### Review of Object-Oriented Terms
+#### Review of Object-Oriented Terms
 
 Since a lot of content was covered in the opening activity, let's review important terms that were discussed.
 
@@ -27,7 +27,7 @@ Since a lot of content was covered in the opening activity, let's review importa
 - **fields**: Variables defined within a class that represent the attributes or properties of the class and its objects. Fields store the state of the object.
 - **methods**: Functions defined within a class that represent the behaviors or actions the class's objects can perform.
 
-##### Synonyms
+#### Synonyms
 
 In object-oriented programming, many terms have synonyms that vary depending on the programming language you're learning. Different terms may resonate with you better, so feel free to use the ones that make the most sense to you. Here's a list of common synonyms:
 
@@ -79,7 +79,7 @@ In object-oriented programming, many terms have synonyms that vary depending on 
 
 ---
 
-### Class Diagrams
+#### Class Diagrams
 
 Class diagrams are a key part of object-oriented programming and are used to visually represent the structure of a class. They provide a visual blueprint for designing software by showing the following elements of a class:
 

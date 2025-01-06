@@ -37,6 +37,11 @@ public class Movie
         Title = title;
         Director = director;
     }
+
+    public void GetDetails()
+    {
+        // Code ommitted
+    }
 }
 ```
 ```cs
@@ -71,7 +76,7 @@ public Movie(string title, string director)
 
 Notice that the constructors have the same name as the class. In C#, methods are allowed to have the same name as long as they differ in the number or type of parameters. This is known as **constructor overloading**. Constructor overloading allows you to provide multiple ways to initialize objects, offering flexibility for different scenarios. This concept can also be applied to regular methods, which we will explore in a later activity.
 
-##### Introduction Summary
+#### Introduction Summary
 
 - Constructors are special methods used to initialize objects.
 - The compiler provides an implicit default constructor if no constructor is defined.

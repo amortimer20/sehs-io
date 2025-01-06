@@ -18,7 +18,7 @@ Object-oriented programming, or OOP for short, is a way to model our programs ar
 
 C# is known as an object-oriented language. Meaning, the entire programming language is built with OOP in mind. To understand the inner workings of C#, you need to understand OOP. Where do you begin? We start with two concepts, classes and objects.
 
-##### Classes and Objects
+#### Classes and Objects
 
 At the heart of a traditional object-oriented programming language are classes and objects. Although you may not realize it, we've been working with these things the entire course.
 
@@ -28,7 +28,7 @@ A **class** is a blueprint or template that defines something. A class is also r
 
 Where does this all come into play when programming? OOP is all about desiging our programs into classes. We then create instances of a class, i.e. objects, and interact with those objects in our program. Again, although this is all foreign, we've actually been working with objects this entire time.
 
-###### Class Definitions and Members
+#### Class Definitions and Members
 
 When writing a class, you're describing three major things:
 
@@ -154,7 +154,7 @@ The dog class in the above has the following members: 4 fields (name, breed, age
 
 **Note**: Class definitions are defined in their own file by convention. You name the file after the name of the class. Therefor, the `Dog` class should be written in a file named **Dog.cs**.
 
-##### Instantiating an Object
+#### Instantiating an Object
 
 Once you're finished creating a class, you _use_ it by instantiating objects of that class. In other words, you create Dog objects.
 
@@ -167,7 +167,7 @@ This example creates two variables named `pet1` and `pet2`. The declared type is
 
 Since an object is stored in it's own place in memory, each object maintains it's own state, meaning they get their own copy of the fields. `pet1` has a seperate name, breed, age, and color from `pet2`.
 
-##### Access Modifiers and the Dot Operator
+#### Access Modifiers and the Dot Operator
 
 If you're following along with the example, you may get a syntax error in your main program file saying that Dog is inaccessible. In OOP, we have to define what classes and members are accessible from the outside. For now, just know that the `public` keyword is used to denote that a class or class member is accessible from outside the definition. The public keyword is known as an **access modifier**. Let's add public keywords to the Dog class. By convention, public fields are also capitalized. We'll change that too just to follow convention.
 
@@ -240,7 +240,7 @@ Dog dog2 = dog1;
     </div>
 </div>
 
-##### Using the `this` Keyword
+#### Using the `this` Keyword
 
 The `this` keyword is a reference to the current instance of a class. It allows an object to refer to its own members (fields or methods). While often optional, `this` is necessary when distinguishing between a field and a parameter or variable with the same name. Using `this` makes your code more explicit and easier to read, which is especially useful in later topics.
 
@@ -251,7 +251,7 @@ public void Eat()
 }
 ```
 
-##### Introduction Summary
+#### Introduction Summary
 
 You may be wondering where do you start when trying to design a program using OOP. For now, just worry about this new syntax, because we're only dipping our toes in the OOP water. Object-oriented programming requires a shift in the way you reason about your code. With time and practice, you will become comfortable writing programs using this new style.
 
