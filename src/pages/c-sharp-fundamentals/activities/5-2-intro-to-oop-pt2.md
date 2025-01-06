@@ -89,11 +89,29 @@ Class diagrams are a key part of object-oriented programming and are used to vis
 
 A class diagram is typically represented as a rectangle divided into these three sections.
 
+**Example Student Class**
+
+```cs
+class Student
+{
+    public string Name;
+    public int Age;
+    public int StudentId;
+
+    // code ommitted from methods
+    public void Enroll(string course) { }
+
+    public void Drop(string course) { }
+
+    public string GetDetails() { }
+}
+```
+
 <table class="table table-bordered text-center">
     <thead>
         <tr>
             <th>Class Diagram</th>
-            <th>Example: Simple Student Class
+            <th>Example: Student Class
         </tr>
     </thead>
     <tbody>
