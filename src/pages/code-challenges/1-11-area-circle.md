@@ -31,6 +31,6 @@ Create a console application that calculates the area of a circle based on user 
 
 ```txt
 --- Circle Area Calculator ---
-Enter the radius of the circle: 5
+Enter the radius of the circle: 5 [Enter]
 The area of the circle is 78.54
 ```

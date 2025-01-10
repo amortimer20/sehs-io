@@ -33,9 +33,9 @@ Create a console application that prompts the user to input the distance they pl
 
 ```txt
 --- Fuel Calculator ---
-How many miles are you traveling? 150
-What is your vehicle's gas mileage (mpg)? 34
-What is the current price of gas per gallon? $2.95
+How many miles are you traveling? 150 [Enter]
+What is your vehicle's gas mileage (mpg)? 34 [Enter]
+What is the current price of gas per gallon? $2.95 [Enter]
 
 For your trip, you will need 4.4 gallons of gas costing $12.98 total.
 ```
