@@ -179,7 +179,7 @@ while (option != "3")
         c1.Radius = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Enter new radius for circle 2: ");
-        c1.Radius = Convert.ToDouble(Console.ReadLine());
+        c2.Radius = Convert.ToDouble(Console.ReadLine());
     }
     else if (option == "3")
     {
