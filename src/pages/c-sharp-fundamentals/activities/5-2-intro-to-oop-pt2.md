@@ -52,6 +52,16 @@ In object-oriented programming, many terms have synonyms that vary depending on 
             </td>
         </tr>
         <tr>
+            <td>object</td>
+            <td>instance</td>
+            <td>
+                <strong>Python:</strong> <code>Dog("Fido", "Greyhound", 3)</code><br />
+                <strong>C#:</strong> <code>new Dog("Fido", "Greyhound", 3)</code><br />
+                <strong>Java:</strong> <code>new Dog("Fido", "Greyhound", 3)</code><br />
+                <strong>Ruby:</strong> <code>Dog.new("Fido", "Greyhound", 3)</code><br />
+            </td>
+        </tr>
+        <tr>
             <td>field</td>
             <td>instance variable<br />member variable<br />property (in some contexts)</td>
             <td>
