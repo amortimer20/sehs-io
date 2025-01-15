@@ -133,26 +133,15 @@ void RemoveMovie()
     Console.Write("Enter title: ");
     string title = Console.ReadLine();
 
-    bool removed = false; // Change to true if a movie was successfully removed
-
-    // Linear search
-    for (int i = 0; i < movies.Count; i++)
+    // Find movie by title and remove it if the title matches
+    foreach (Movie movie in movies)
     {
-        // Remove movie if the title is found
-        if (movies[i].Title == title)
+        if (movie.Title == title)
         {
-            movies.Remove(movies[i]);
-            removed = true;
+            movies.Remove(movie);
+            Console.WriteLine($"{title} was removed from watch list.");
+            break; // Exit the loop immediately after removing the movie
         }
-    }
-
-    if (removed)
-    {
-        Console.WriteLine($"{title} was removed from watch list.");
-    }
-    else
-    {
-        Console.WriteLine($"{title} was not found in watch list.");
     }
 }
 ```
