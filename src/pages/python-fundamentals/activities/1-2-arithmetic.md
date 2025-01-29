@@ -16,7 +16,7 @@ Mathematics is a cornerstone of computer science. Any useful program, from video
 
 In Python, we don’t just use math to crunch numbers; we also use it to display results to users. The `print()` function helps us with this—it can output text messages, numbers, and the results of math expressions.
 
-**Integers and Doubles**
+**Integers and Floats**
 
 Python, like many other programming languages, differentiates between whole numbers and decimal numbers. Whole numbers are called integers, while decimal numbers are referred to as floats (or floating-point numbers). This distinction is crucial for handling arithmetic operations accurately.
 
