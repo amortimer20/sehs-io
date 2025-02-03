@@ -47,7 +47,6 @@ print(f"My age in months is {30 * 12}.")
 print("10 squared is ", 10 * 10)
 print()
 
-# You can use parentheses to ensure the addition is not mixed up with concatenation.
 print("I'm 5 foot 10 inches. That's ", 5 * 12 + 10, " inches.")
 print()
 
