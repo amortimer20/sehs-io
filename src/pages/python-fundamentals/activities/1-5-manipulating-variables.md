@@ -83,7 +83,7 @@ print()
 
 print("Using potion...")
 player_health = player_health + 10
-potions = potions + 1
+potions = potions - 1
 print(f"Player health: {player_health}. Potions left: {potions}")
 print("\n\n")  # What does \n do? Google search 'Python \n'
 
