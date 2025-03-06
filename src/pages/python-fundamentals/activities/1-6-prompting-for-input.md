@@ -69,8 +69,7 @@ print("2.", task2)
 print("3.", task3)
 
 
-print("Press enter to continue...")
-input()
+input("Press enter to continue...")
 
 
 print("--- Demo 2 - User Profile Setup ---")
